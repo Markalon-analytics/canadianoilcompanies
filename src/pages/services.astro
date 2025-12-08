@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import CTASection from '../components/CTASection.astro';
+
+const services = [
+  {
+    title: 'Company Profiles',
+    description: 'Detailed profiles of major Canadian oil and gas companies including financials, production data, and strategic analysis.',
+    icon: '📊',
+  },
+  {
+    title: 'Market Intelligence',
+    description: 'Real-time market data, industry trends, and competitive analysis for informed decision making.',
+    icon: '💡',
+  },
+  {
+    title: 'Production Analytics',
+    description: 'Comprehensive production volumes, reserves data, and operational metrics across all major operators.',
+    icon: '⚡',
+  },
+  {
+    title: 'Financial Data',
+    description: 'Access to complete financial statements, market capitalization, and valuation metrics.',
+    icon: '💰',
+  },
+  {
+    title: 'Industry Reports',
+    description: 'In-depth reports on sector performance, regulatory changes, and market forecasts.',
+    icon: '📈',
+  },
+  {
+    title: 'Custom Research',
+    description: 'Tailored research and analysis to meet your specific information needs.',
+    icon: '🔍',
+  },
+];
+---
+
+<BaseLayout
+  title="Services | Canadian Oil Companies Directory"
+  description="Professional services for energy analysts including company profiles, market intelligence, and custom research."
+>
+  <Hero
+    badge="Professional Services"
+    title="Comprehensive Energy Intelligence Services"
+    subtitle="Everything you need to analyze and understand the Canadian energy sector"
+    primaryCTA="Get Started"
+    secondaryCTA="Contact Sales"
+  />
+
+  <section class="px-8 py-24 bg-white">
+    <div class="max-w-[1400px] mx-auto">
+      <SectionHeader
+        label="Our Services"
+        title="Tools & Resources for Energy Professionals"
+        subtitle="Access comprehensive data and intelligence services designed for serious analysis"
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map(service => (
+          <ServiceCard
+            href="#"
+            title={service.title}
+            description={service.description}
+            icon={service.icon}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-24 bg-off-white">
+    <div class="max-w-[1400px] mx-auto">
+      <SectionHeader
+        label="Why Choose Our Services"
+        title="Industry-Leading Data Quality"
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="text-4xl mb-4">✓</div>
+          <h3 class="text-xl font-bold text-deep-navy mb-3">Verified Data</h3>
+          <p class="text-charcoal">All data is thoroughly verified and cross-referenced from multiple authoritative sources.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold text-deep-navy mb-3">Real-Time Updates</h3>
+          <p class="text-charcoal">Stay current with continuously updated information and instant alerts on critical changes.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold text-deep-navy mb-3">Expert Support</h3>
+          <p class="text-charcoal">Access to experienced analysts who can help interpret data and provide context.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    label="Ready to Get Started?"
+    title="Experience the Difference"
+    description="Join thousands of energy professionals who rely on our platform for critical industry intelligence."
+    primaryButton="Start Free Trial"
+    secondaryButton="Schedule Demo"
+  />
+</BaseLayout>

@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import CompanyCard from '../components/CompanyCard.astro';
+
+const companies = [
+  {
+    rank: '01',
+    name: 'Canadian Natural Resources Ltd.',
+    type: 'Independent Producer',
+    stats: [
+      { label: 'Daily Production', value: '~1.2M BPD' },
+      { label: 'Market Capitalization', value: '$60B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'canadian-natural-resources',
+  },
+  {
+    rank: '02',
+    name: 'Suncor Energy Inc.',
+    type: 'Integrated Energy',
+    stats: [
+      { label: 'Daily Production', value: '~800,000 BPD' },
+      { label: 'Market Capitalization', value: '$45B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'suncor-energy',
+  },
+  {
+    rank: '03',
+    name: 'Imperial Oil Limited',
+    type: 'Integrated Energy',
+    stats: [
+      { label: 'Daily Production', value: '~400,000 BPD' },
+      { label: 'Market Capitalization', value: '$42B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'imperial-oil',
+  },
+  {
+    rank: '04',
+    name: 'Cenovus Energy Inc.',
+    type: 'Integrated Energy',
+    stats: [
+      { label: 'Daily Production', value: '~750,000 BPD' },
+      { label: 'Market Capitalization', value: '$35B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'cenovus-energy',
+  },
+  {
+    rank: '05',
+    name: 'Advantage Energy Ltd.',
+    type: 'Natural Gas Producer',
+    stats: [
+      { label: 'Focus Area', value: 'Montney Formation' },
+      { label: 'Drilling Locations', value: '~2,170 Sites' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'advantage-energy',
+  },
+];
+---
+
+<BaseLayout
+  title="Company Directory | Canadian Oil Companies"
+  description="Complete directory of major Canadian oil and gas companies with detailed profiles and operational data."
+>
+  <section class="px-8 py-20 bg-gradient-to-b from-off-white to-white">
+    <div class="max-w-[1400px] mx-auto">
+      <div class="mb-16 text-center">
+        <span class="inline-block text-petroleum-gold text-[0.85rem] font-bold tracking-[2px] uppercase mb-4">
+          Complete Directory
+        </span>
+        <h1 class="text-[3rem] md:text-[3.5rem] font-extrabold text-deep-navy leading-tight mb-6">
+          Canadian Oil & Gas Companies
+        </h1>
+        <p class="text-lg text-charcoal leading-relaxed max-w-[800px] mx-auto">
+          Comprehensive profiles of Canada's leading energy producers, including operational data, market positions, and strategic insights.
+        </p>
+      </div>
+
+      <div class="mb-12">
+        <div class="flex flex-wrap gap-4 justify-center">
+          <button class="bg-petroleum-gold text-white px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:bg-rich-amber">
+            All Companies
+          </button>
+          <button class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+            Integrated Producers
+          </button>
+          <button class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+            Independent Operators
+          </button>
+          <button class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+            Natural Gas Focused
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {companies.map(company => (
+          <a href={`/companies/${company.slug}/`} class="no-underline">
+            <CompanyCard
+              rank={company.rank}
+              name={company.name}
+              type={company.type}
+              stats={company.stats}
+            />
+          </a>
+        ))}
+      </div>
+
+      <div class="mt-16 text-center">
+        <div class="inline-flex items-center gap-3 bg-light-gold px-8 py-4 rounded-lg">
+          <span class="text-petroleum-gold text-xl">★</span>
+          <span class="text-deep-navy font-semibold">Showing 5 of 50+ companies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-20 bg-deep-navy">
+    <div class="max-w-[1000px] mx-auto text-center">
+      <h2 class="text-[2.5rem] font-extrabold text-white mb-6 leading-tight">
+        Access Complete Company Profiles
+      </h2>
+      <p class="text-lg text-white/90 leading-relaxed mb-10">
+        Get detailed insights, financial metrics, and operational data for all Canadian energy companies in our comprehensive database.
+      </p>
+      <button class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1">
+        Request Full Access
+      </button>
+    </div>
+  </section>
+</BaseLayout>

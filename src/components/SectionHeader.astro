@@ -1,0 +1,27 @@
+---
+interface Props {
+  label?: string;
+  title: string;
+  subtitle?: string;
+  centered?: boolean;
+}
+
+const { label, title, subtitle, centered = true } = Astro.props;
+const alignment = centered ? 'text-center' : 'text-left';
+---
+
+<div class={`mb-16 ${alignment}`}>
+  {label && (
+    <span class="inline-block text-petroleum-gold text-[0.85rem] font-bold tracking-[2px] uppercase mb-4">
+      {label}
+    </span>
+  )}
+  <h2 class="text-[2.8rem] font-extrabold text-deep-navy mt-2">
+    {title}
+  </h2>
+  {subtitle && (
+    <p class="text-lg text-charcoal font-normal mt-4">
+      {subtitle}
+    </p>
+  )}
+</div>

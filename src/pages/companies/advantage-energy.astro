@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const company = {
+  name: 'Advantage Energy Ltd.',
+  website: 'https://www.advantageog.com/',
+  description: 'Advantage Energy is a Canadian natural gas-focused energy company with operations in the Montney Formation in Alberta. The company emphasizes low-cost production and sustainable development with approximately 2,170 drilling locations. Advantage targets 10% annual production growth while maintaining environmental and operational excellence.',
+  address: 'Millennium Tower, Suite 2200, 440 2nd Avenue SW, Calgary, Alberta T2P 5E9, Canada',
+  type: 'Natural Gas Producer',
+  keyMetrics: [
+    { label: 'Primary Focus', value: 'Natural Gas Production' },
+    { label: 'Operating Region', value: 'Montney Formation, Alberta' },
+    { label: 'Drilling Locations', value: '~2,170 Sites' },
+    { label: 'Growth Target', value: '10% Annual Production' },
+  ],
+  operationalHighlights: [
+    'Low-cost production strategy',
+    'Sustainable development practices',
+    'Extensive drilling inventory in Montney Formation',
+    'Focus on environmental and operational excellence',
+    'Strategic position in Alberta energy sector',
+  ],
+};
+---
+
+<BaseLayout
+  title={`${company.name} | Canadian Oil Companies Directory`}
+  description={company.description}
+>
+  <section class="px-8 py-12 bg-gradient-to-b from-off-white to-white">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="mb-8">
+        <a href="/directory/" class="inline-flex items-center gap-2 text-petroleum-gold font-semibold text-[0.9rem] hover:text-rich-amber transition-colors duration-300">
+          <span>←</span>
+          <span>Back to Directory</span>
+        </a>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md border-t-4 border-petroleum-gold p-10">
+        <div class="mb-8">
+          <div class="flex items-start justify-between flex-wrap gap-6 mb-6">
+            <div>
+              <h1 class="text-[2.5rem] font-extrabold text-deep-navy mb-3 leading-tight">
+                {company.name}
+              </h1>
+              <p class="text-petroleum-gold font-bold text-[1rem] uppercase tracking-wide mb-4">
+                {company.type}
+              </p>
+              <a
+                href={company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 text-deep-navy font-semibold hover:text-petroleum-gold transition-colors duration-300"
+              >
+                <span>Visit Website</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="h-[2px] bg-gradient-to-r from-petroleum-gold to-transparent mb-8"></div>
+
+          <div class="mb-10">
+            <h2 class="text-[1.5rem] font-bold text-deep-navy mb-4">Company Overview</h2>
+            <p class="text-[1.05rem] text-charcoal leading-relaxed">
+              {company.description}
+            </p>
+          </div>
+
+          <div class="mb-10">
+            <h2 class="text-[1.5rem] font-bold text-deep-navy mb-6">Key Metrics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {company.keyMetrics.map(metric => (
+                <div class="bg-off-white p-6 rounded-lg border-l-4 border-petroleum-gold">
+                  <div class="text-[0.85rem] text-charcoal font-medium mb-2">
+                    {metric.label}
+                  </div>
+                  <div class="text-[1.3rem] font-bold text-deep-navy">
+                    {metric.value}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <h2 class="text-[1.5rem] font-bold text-deep-navy mb-6">Operational Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {company.operationalHighlights.map((highlight, index) => (
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-light-gold flex items-center justify-center">
+                    <span class="text-petroleum-gold font-bold text-[0.9rem]">✓</span>
+                  </div>
+                  <div class="text-[0.95rem] text-charcoal pt-1">
+                    {highlight}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="bg-light-gold p-8 rounded-lg">
+            <h2 class="text-[1.5rem] font-bold text-deep-navy mb-4">Corporate Address</h2>
+            <p class="text-[1rem] text-charcoal leading-relaxed">
+              {company.address}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-20 bg-deep-navy">
+    <div class="max-w-[1000px] mx-auto text-center">
+      <h2 class="text-[2.5rem] font-extrabold text-white mb-6 leading-tight">
+        Explore More Canadian Energy Companies
+      </h2>
+      <p class="text-lg text-white/90 leading-relaxed mb-10">
+        Access comprehensive profiles and operational data for all major Canadian oil and gas producers.
+      </p>
+      <div class="flex gap-6 justify-center flex-wrap">
+        <a href="/directory/" class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 no-underline">
+          View Directory
+        </a>
+        <button class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1">
+          Request More Information
+        </button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

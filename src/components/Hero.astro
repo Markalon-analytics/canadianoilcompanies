@@ -1,0 +1,65 @@
+---
+interface Props {
+  badge?: string;
+  title: string;
+  subtitle: string;
+  primaryCTA?: string;
+  secondaryCTA?: string;
+  metrics?: Array<{
+    number: string;
+    text: string;
+  }>;
+}
+
+const { badge, title, subtitle, primaryCTA, secondaryCTA, metrics } = Astro.props;
+---
+
+<section class="bg-gradient-to-b from-white to-off-white px-8 py-24 pb-20 text-center">
+  <div class="max-w-[1000px] mx-auto">
+    {badge && (
+      <div class="inline-flex items-center gap-2 bg-light-gold text-deep-navy px-6 py-2.5 rounded-full text-[0.85rem] font-semibold mb-8">
+        <span class="text-petroleum-gold text-base">★</span>
+        <span>{badge}</span>
+      </div>
+    )}
+
+    <h1 class="text-5xl md:text-[3.5rem] font-extrabold text-deep-navy leading-tight mb-6 tracking-tight">
+      {title}
+    </h1>
+
+    <p class="text-xl text-charcoal leading-relaxed mb-10 font-normal">
+      {subtitle}
+    </p>
+
+    {(primaryCTA || secondaryCTA) && (
+      <div class="flex gap-6 justify-center mb-16 flex-wrap">
+        {primaryCTA && (
+          <button class="bg-deep-navy text-white border-2 border-deep-navy px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-transparent hover:text-deep-navy hover:-translate-y-0.5 hover:shadow-lg hover:shadow-deep-navy/20">
+            {primaryCTA}
+          </button>
+        )}
+        {secondaryCTA && (
+          <button class="bg-transparent text-petroleum-gold border-2 border-petroleum-gold px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-petroleum-gold hover:text-white hover:-translate-y-0.5">
+            {secondaryCTA}
+          </button>
+        )}
+      </div>
+    )}
+
+    {metrics && metrics.length > 0 && (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[900px] mx-auto">
+        {metrics.map(metric => (
+          <div class="bg-white px-6 py-8 rounded-lg shadow-sm border-t-[3px] border-petroleum-gold">
+            <div class="text-[2.5rem] font-extrabold text-deep-navy mb-2 font-serif">
+              {metric.number}
+            </div>
+            <div class="w-10 h-0.5 bg-petroleum-gold mx-auto my-3"></div>
+            <div class="text-[0.9rem] text-charcoal font-medium">
+              {metric.text}
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</section>

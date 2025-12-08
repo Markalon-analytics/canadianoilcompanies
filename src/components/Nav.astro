@@ -1,0 +1,33 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/directory/', label: 'Directory' },
+  { href: '/services/', label: 'Services' },
+  { href: '/about/', label: 'About' },
+];
+
+const isActive = (path: string) => {
+  if (path === '/' && currentPath === '/') return true;
+  if (path !== '/' && currentPath.startsWith(path)) return true;
+  return false;
+};
+---
+
+<nav class="flex gap-10">
+  {navItems.map(item => (
+    <a
+      href={item.href}
+      class={`text-charcoal no-underline font-medium text-[0.95rem] transition-colors duration-300 relative pb-[0.3rem] hover:text-petroleum-gold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-petroleum-gold after:transition-all after:duration-300 hover:after:w-full ${
+        isActive(item.href) ? 'text-petroleum-gold after:w-full' : ''
+      }`}
+    >
+      {item.label}
+    </a>
+  ))}
+</nav>

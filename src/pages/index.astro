@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import ValueCard from '../components/ValueCard.astro';
+import CompanyCard from '../components/CompanyCard.astro';
+import CTASection from '../components/CTASection.astro';
+
+const metrics = [
+  { number: '50+', text: 'Major Companies' },
+  { number: '$180B', text: 'Combined Revenue' },
+  { number: '4.5M', text: 'Barrels Per Day' },
+  { number: '95%', text: 'Analyst Satisfaction' },
+];
+
+const valueProps = [
+  {
+    icon: '⭐',
+    title: 'Verified Excellence',
+    description: 'Every company profile is thoroughly verified and updated with the highest standards of accuracy and reliability.',
+  },
+  {
+    icon: '🔒',
+    title: 'Comprehensive Data',
+    description: 'Access complete financial metrics, production volumes, reserves data, and strategic insights across all major operators.',
+  },
+  {
+    icon: '⏱️',
+    title: 'Real-Time Updates',
+    description: 'Stay informed with continuously updated operational data, market positions, and industry developments.',
+  },
+  {
+    icon: '📈',
+    title: 'Professional Tools',
+    description: 'Utilize advanced filtering, comparison capabilities, and data export functions designed for serious analysts.',
+  },
+];
+
+const companies = [
+  {
+    rank: '01',
+    name: 'Suncor Energy Inc.',
+    type: 'Integrated Energy',
+    stats: [
+      { label: 'Daily Production', value: '~800,000 BPD' },
+      { label: 'Market Capitalization', value: '$45B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+  },
+  {
+    rank: '02',
+    name: 'Canadian Natural Resources Ltd.',
+    type: 'Independent Producer',
+    stats: [
+      { label: 'Daily Production', value: '~1.2M BPD' },
+      { label: 'Market Capitalization', value: '$60B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+  },
+  {
+    rank: '03',
+    name: 'Cenovus Energy Inc.',
+    type: 'Integrated Energy',
+    stats: [
+      { label: 'Daily Production', value: '~750,000 BPD' },
+      { label: 'Market Capitalization', value: '$35B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+  },
+  {
+    rank: '04',
+    name: 'Imperial Oil Limited',
+    type: 'Integrated Energy',
+    stats: [
+      { label: 'Daily Production', value: '~400,000 BPD' },
+      { label: 'Market Capitalization', value: '$42B CAD' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Canadian Oil Companies | Corporate Directory"
+  description="Comprehensive directory of Canada's largest oil companies - Professional resource for energy analysts."
+>
+  <Hero
+    badge="Trusted Industry Resource"
+    title="The Definitive Directory of Canada's Oil & Energy Leaders"
+    subtitle="Authoritative intelligence and comprehensive profiles for Canadian and international energy analysts"
+    primaryCTA="Access Directory"
+    secondaryCTA="Request Information"
+    metrics={metrics}
+  />
+
+  <section class="px-8 py-24 bg-white">
+    <div class="max-w-[1400px] mx-auto">
+      <SectionHeader
+        label="Why Choose Us"
+        title="The Industry Standard for Energy Intelligence"
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        {valueProps.map(prop => (
+          <ValueCard
+            icon={prop.icon}
+            title={prop.title}
+            description={prop.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-24 bg-off-white">
+    <div class="max-w-[1400px] mx-auto">
+      <SectionHeader
+        label="Industry Leaders"
+        title="Featured Canadian Energy Companies"
+        subtitle="Profiles of Canada's most significant oil and gas producers"
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {companies.map(company => (
+          <CompanyCard
+            rank={company.rank}
+            name={company.name}
+            type={company.type}
+            stats={company.stats}
+          />
+        ))}
+      </div>
+
+      <div class="text-center">
+        <button class="bg-transparent text-deep-navy border-2 border-deep-navy px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-deep-navy hover:text-white hover:-translate-y-0.5">
+          View Complete Directory
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    label="Get Started Today"
+    title="Join Leading Energy Analysts Worldwide"
+    description="Access the most comprehensive and trusted directory of Canadian oil companies. Trusted by analysts, investors, and industry professionals across the globe."
+    primaryButton="Access Full Directory"
+    secondaryButton="Schedule a Demo"
+  />
+</BaseLayout>
