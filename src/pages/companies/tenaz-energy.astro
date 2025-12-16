@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Tenaz Energy Corp.',
+  website: 'https://www.tenazenergy.com/',
+  description: 'Tenaz Energy Corp. is the largest operator of natural gas assets in the Dutch sector of the North Sea and develops crude oil and natural gas at Leduc-Woodbend in Alberta. The company focuses on low-risk, high-return energy assets. Tenaz operates internationally with operations in Canada and the Netherlands.',
+  address: 'Suite 700, 605 - 5th Avenue SW, Calgary, Alberta T2P 3H5, Canada',
+  stockSymbol: 'TNZ',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Largest operator of natural gas assets in Dutch sector of North Sea',
+    'Develops crude oil and natural gas at Leduc-Woodbend in Alberta',
+    'Focus on low-risk, high-return energy assets',
+    'International operations in Canada and the Netherlands',
+    'Diversified portfolio across multiple jurisdictions',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Canada and Netherlands',
+    locations: 'North Sea and Alberta',
+  },
+  capitalOutlook: 'Development of low-risk natural gas and oil assets',
+};
+---
+
+<CompanyPageLayout company={company} />

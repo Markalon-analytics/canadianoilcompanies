@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Surge Energy Inc.',
+  website: 'https://www.surgeenergy.ca/',
+  description: 'Surge Energy Inc. is an oil-focused exploration and production company with a high-quality crude oil reserve, production and cash flow base. The company operates premier oil assets in Western Canada focused on driving free cash flow generation. Surge emphasizes operational efficiency and sustainable development.',
+  address: 'Suite 1200, Centennial Place - East Tower, 520 - 3rd Avenue SW, Calgary, Alberta T2P 0R3, Canada',
+  stockSymbol: 'SGY',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Oil-focused exploration and production company',
+    'High-quality crude oil reserve, production and cash flow base',
+    'Operates premier oil assets in Western Canada',
+    'Focused on driving free cash flow generation',
+    'Emphasis on operational efficiency and sustainable development',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Western Canada',
+    locations: 'Premier oil assets across Western Canada',
+  },
+  capitalOutlook: 'Oil-focused development and cash flow optimization',
+};
+---
+
+<CompanyPageLayout company={company} />

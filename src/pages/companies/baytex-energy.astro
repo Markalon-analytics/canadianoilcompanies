@@ -1,0 +1,41 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Baytex Energy Corp.',
+  website: 'https://www.baytexenergy.com/',
+  description: 'Baytex Energy Corp. is a Canadian oil and gas company with operations in the Western Canadian Sedimentary Basin and the Eagle Ford formation in Texas. The company focuses on growing production, reserves and cash flow through exploitation and exploration activities. Baytex emphasizes safe, responsible operations and community engagement.',
+  address: 'Centennial Place, East Tower, 2800, 520 - 3rd Avenue SW, Calgary, Alberta T2P 0R3, Canada',
+  stockSymbol: 'BTE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Culture of commitment and shared accountability',
+    'Operations in Western Canadian Sedimentary Basin and Eagle Ford, Texas',
+    'Divesting U.S. Eagle Ford assets to focus on Canadian core portfolio',
+    'Record Pembina Duvernay production in Q3 2025',
+    'Strong free cash flow generation',
+    'Focus on safe, responsible operations',
+    'Active community engagement initiatives',
+    'Committed to environmental stewardship'
+  ],
+  stockInformation: {
+    symbol: 'BTE',
+    exchange: 'TSX',
+    listedOn: 'Toronto Stock Exchange'
+  },
+  operationalHighlights: [
+    'Q3 2025: Record Pembina Duvernay production',
+    'Strong free cash flow generation',
+    'Divesting U.S. Eagle Ford assets',
+    'Focus on Canadian core portfolio',
+    'Emphasis on operational excellence'
+  ],
+  recentNews: [
+    'Dec 2025: Announced cash tender offer for 2032 senior notes',
+    'Nov 2025: Divesting U.S. Eagle Ford assets',
+    'Oct 2025: Delivered solid Q3 2025 results'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

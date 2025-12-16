@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Falcon Oil & Gas Ltd.',
+  stockSymbol: 'FO',
+  exchange: 'TSX-V',
+  description: 'Falcon Oil & Gas Ltd. is an international oil and gas company engaged in the exploration and development of unconventional oil and gas assets. The Company\'s principal interests are located in two major underexplored basins in Australia and South Africa; with further interests in Hungary, covering approximately 12.3 million gross acres.',
+  address: '1200 Waterfront Centre, 200 Burrard Street, Vancouver, BC V7X 1T2, Canada',
+  website: 'https://falconoilandgas.com/',
+  keyHighlights: [
+    'Operates across three continents with interests in Australia, South Africa, and Hungary covering 12.3 million gross acres',
+    'Strategic position in the Beetaloo Sub-basin, Australia with ~2.9 million acres following Tamboran acquisition',
+    'Specialized in unconventional oil and gas exploration and development in major underexplored basins',
+    'Assets in Australia and Hungary are close to existing infrastructure enabling rapid market delivery',
+    'Declared Material Gas Resource in the Beetaloo Basin confirming substantial resource potential',
+    'Completed three-well batch drilling campaign in 2025 with continued development planned',
+    'Traded on both TSX-V (FO) and AIM (FOG) exchanges providing access to global capital markets',
+  ],
+  landHoldings: {
+    totalAcres: '12.3 million gross acres',
+    locations: 'Beetaloo Sub-basin - Australia, South African basins, Hungarian concessions',
+  },
+  capitalOutlook: 'Development of unconventional gas resources in Beetaloo Basin',
+};
+---
+
+<CompanyPageLayout company={company} />

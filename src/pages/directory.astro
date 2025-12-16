@@ -6,58 +6,1125 @@ import CompanyCard from '../components/CompanyCard.astro';
 const companies = [
   {
     rank: '01',
-    name: 'Canadian Natural Resources Ltd.',
-    type: 'Independent Producer',
+    name: 'Africa Energy Corp.',
+    type: 'International Exploration',
     stats: [
-      { label: 'Daily Production', value: '~1.2M BPD' },
-      { label: 'Market Capitalization', value: '$60B CAD' },
+      { label: 'Primary Asset', value: 'Block 11B/12B' },
+      { label: 'Stock Symbol', value: 'AFE.V' },
+      { label: 'Operations', value: 'South Africa' },
+    ],
+    slug: 'africa-energy',
+  },
+  {
+    rank: '02',
+    name: 'Altima Energy Inc.',
+    type: 'Natural Gas Producer',
+    stats: [
+      { label: 'Total Acreage', value: '10,560 acres' },
+      { label: 'Focus Area', value: 'Western Canada' },
+      { label: 'Headquarters', value: 'Vancouver, BC' },
+    ],
+    slug: 'altima-energy',
+  },
+  {
+    rank: '03',
+    name: 'Alvopetro Energy Ltd.',
+    type: 'International Gas',
+    stats: [
+      { label: 'Processing', value: '420,000 m³/d' },
+      { label: 'Operations', value: 'Brazil & Canada' },
+      { label: 'Stock Symbol', value: 'ALV.V' },
+    ],
+    slug: 'alvopetro-energy',
+  },
+  {
+    rank: '04',
+    name: 'ARC Resources Ltd.',
+    type: 'Montney Producer',
+    stats: [
+      { label: 'Production', value: '~410,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'ARX.TO' },
       { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'arc-resources',
+  },
+  {
+    rank: '05',
+    name: 'Argo Gold Inc.',
+    type: 'Mining & Oil',
+    stats: [
+      { label: 'Properties', value: '3 in Ontario' },
+      { label: 'Stock Symbol', value: 'ARQ.CN' },
+      { label: 'Operations', value: 'Ontario & Alberta' },
+    ],
+    slug: 'argo-gold',
+  },
+  {
+    rank: '06',
+    name: 'Arrow Exploration Corp.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Production', value: '~4,500 BOE/D' },
+      { label: 'Operations', value: 'Colombia' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'arrow-exploration',
+  },
+  {
+    rank: '07',
+    name: 'Athabasca Oil Corporation',
+    type: 'Thermal & Light Oil',
+    stats: [
+      { label: 'Production', value: '~40,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'ATH.TO' },
+      { label: 'Reserve Life', value: '~90 years' },
+    ],
+    slug: 'athabasca-oil',
+  },
+  {
+    rank: '08',
+    name: 'Atlas Energy Corp.',
+    type: 'Royalty Company',
+    stats: [
+      { label: 'Focus', value: 'International Royalties' },
+      { label: 'Stock Symbol', value: 'ATLE.V' },
+      { label: 'Headquarters', value: 'Calgary, AB' },
+    ],
+    slug: 'atlas-energy',
+  },
+  {
+    rank: '09',
+    name: 'Avanti Helium Corp.',
+    type: 'Helium Producer',
+    stats: [
+      { label: 'Projects', value: 'MT & SK' },
+      { label: 'Stock Symbol', value: 'AVN.V' },
+      { label: 'Helium Production', value: '~100 Mcf/d' },
+    ],
+    slug: 'avanti-helium',
+  },
+  {
+    rank: '10',
+    name: 'Avila Energy Corporation',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Focus', value: 'Western Canada' },
+      { label: 'Stock Symbol', value: 'VIK.CN' },
+      { label: 'Ownership', value: '100% Operated' },
+    ],
+    slug: 'avila-energy',
+  },
+  {
+    rank: '11',
+    name: 'Barnwell Industries Inc.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Operations', value: 'Canada & Hawaii' },
+      { label: 'Stock Symbol', value: 'BRN' },
+      { label: 'Experience', value: '65+ Years' },
+    ],
+    slug: 'barnwell-industries',
+  },
+  {
+    rank: '12',
+    name: 'Baytex Energy Corp.',
+    type: 'Integrated Producer',
+    stats: [
+      { label: 'Production', value: '~100,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'BTE.TO' },
+      { label: 'Operations', value: 'Canada & Texas' },
+    ],
+    slug: 'baytex-energy',
+  },
+  {
+    rank: '13',
+    name: 'Bengal Energy Ltd.',
+    type: 'International Exploration',
+    stats: [
+      { label: 'Operations', value: 'Australia' },
+      { label: 'Stock Symbol', value: 'BNG.V' },
+      { label: 'Focus', value: 'Conventional Oil & Gas' },
+    ],
+    slug: 'bengal-energy',
+  },
+  {
+    rank: '14',
+    name: 'Birchcliff Energy Ltd.',
+    type: 'Montney Producer',
+    stats: [
+      { label: 'Production', value: '~200,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'BIR.TO' },
+      { label: 'Asset Base', value: 'Montney/Doig' },
+    ],
+    slug: 'birchcliff-energy',
+  },
+  {
+    rank: '15',
+    name: 'Blacksteel Energy Inc.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Focus', value: 'Western Canada' },
+      { label: 'Operations', value: 'Acquisition & Dev' },
+      { label: 'Asset Type', value: 'Oil & Gas' },
+    ],
+    slug: 'blacksteel-energy',
+  },
+  {
+    rank: '16',
+    name: 'Bonterra Energy Corp.',
+    type: 'Oil Producer',
+    stats: [
+      { label: 'Production', value: '~15,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'BNE.TO' },
+      { label: 'Assets', value: 'Pembina & Charlie Lake' },
+    ],
+    slug: 'bonterra-energy',
+  },
+  {
+    rank: '17',
+    name: 'Canacol Energy Ltd.',
+    type: 'International Gas',
+    stats: [
+      { label: 'Production', value: '~17% of Colombia' },
+      { label: 'Stock Symbol', value: 'CNE.V' },
+      { label: 'Operations', value: 'Colombia' },
+    ],
+    slug: 'canacol-energy',
+  },
+  {
+    rank: '18',
+    name: 'Canadian Natural Resources',
+    type: 'Integrated Producer',
+    stats: [
+      { label: 'Production', value: '~1,200,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'CNQ.TO' },
+      { label: 'Operations', value: 'Global' },
     ],
     slug: 'canadian-natural-resources',
   },
   {
-    rank: '02',
-    name: 'Suncor Energy Inc.',
-    type: 'Integrated Energy',
+    rank: '19',
+    name: 'Canadian Spirit Resources',
+    type: 'Natural Gas Producer',
     stats: [
-      { label: 'Daily Production', value: '~800,000 BPD' },
-      { label: 'Market Capitalization', value: '$45B CAD' },
-      { label: 'Headquarters', value: 'Calgary, AB' },
+      { label: 'Focus', value: 'Montney Formation' },
+      { label: 'Stock Symbol', value: 'SPI.V' },
+      { label: 'Location', value: 'NE British Columbia' },
     ],
-    slug: 'suncor-energy',
+    slug: 'canadian-spirit-resources',
   },
   {
-    rank: '03',
-    name: 'Imperial Oil Limited',
-    type: 'Integrated Energy',
+    rank: '20',
+    name: 'CanAsia Energy Corp.',
+    type: 'Oil & Gas Producer',
     stats: [
-      { label: 'Daily Production', value: '~400,000 BPD' },
-      { label: 'Market Capitalization', value: '$42B CAD' },
-      { label: 'Headquarters', value: 'Calgary, AB' },
+      { label: 'Stock Symbol', value: 'CEC.V' },
+      { label: 'Exchange', value: 'TSX Venture' },
+      { label: 'Operations', value: 'Western Canada' },
     ],
-    slug: 'imperial-oil',
+    slug: 'canasia-energy',
   },
   {
-    rank: '04',
+    rank: '21',
+    name: 'Capitan Investment Ltd.',
+    type: 'Investment Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'CPI.V' },
+      { label: 'Focus', value: 'Oil & Gas Investments' },
+      { label: 'Operations', value: 'North America' },
+    ],
+    slug: 'capitan-investment',
+  },
+  {
+    rank: '22',
+    name: 'Cardinal Energy Ltd.',
+    type: 'Oil Producer',
+    stats: [
+      { label: 'Production', value: '~25,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'CJ.TO' },
+      { label: 'Focus', value: 'Light & Medium Oil' },
+    ],
+    slug: 'cardinal-energy',
+  },
+  {
+    rank: '23',
+    name: 'Cavvy Energy Ltd.',
+    type: 'Gas Producer',
+    stats: [
+      { label: 'Focus', value: 'Natural Gas Processing' },
+      { label: 'Operations', value: 'Alberta & BC' },
+      { label: 'Former Name', value: 'Pieridae Energy' },
+    ],
+    slug: 'cavvy-energy',
+  },
+  {
+    rank: '24',
     name: 'Cenovus Energy Inc.',
-    type: 'Integrated Energy',
+    type: 'Integrated Producer',
     stats: [
-      { label: 'Daily Production', value: '~750,000 BPD' },
-      { label: 'Market Capitalization', value: '$35B CAD' },
-      { label: 'Headquarters', value: 'Calgary, AB' },
+      { label: 'Production', value: '~800,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'CVE.TO' },
+      { label: 'Operations', value: 'Canada & US' },
     ],
     slug: 'cenovus-energy',
   },
   {
-    rank: '05',
-    name: 'Advantage Energy Ltd.',
-    type: 'Natural Gas Producer',
+    rank: '25',
+    name: 'Centaurus Energy Inc.',
+    type: 'Investment Company',
     stats: [
-      { label: 'Focus Area', value: 'Montney Formation' },
-      { label: 'Drilling Locations', value: '~2,170 Sites' },
+      { label: 'Stock Symbol', value: 'CTA.V' },
+      { label: 'Focus', value: 'Royalty Interests' },
+      { label: 'Former Name', value: 'Madalena Energy' },
+    ],
+    slug: 'centaurus-energy',
+  },
+  {
+    rank: '26',
+    name: 'Gran Tierra Energy Inc.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'GTE' },
+      { label: 'Operations', value: 'Colombia & Ecuador' },
       { label: 'Headquarters', value: 'Calgary, AB' },
     ],
-    slug: 'advantage-energy',
+    slug: 'gran-terra-energy',
+  },
+  {
+    rank: '27',
+    name: 'Greenfire Resources Ltd.',
+    type: 'Thermal Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'GFR' },
+      { label: 'Operations', value: 'Athabasca Oil Sands' },
+      { label: 'Technology', value: 'SAGD' },
+    ],
+    slug: 'greenfire-resources',
+  },
+  {
+    rank: '28',
+    name: 'Headwater Exploration Inc.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'HWX' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Focus', value: 'Western Canada' },
+    ],
+    slug: 'headwater-exploration',
+  },
+  {
+    rank: '29',
+    name: 'Hemisphere Energy Corporation',
+    type: 'Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'HME' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Saskatchewan' },
+    ],
+    slug: 'hemisphere-energy',
+  },
+  {
+    rank: '30',
+    name: 'Imperial Oil Limited',
+    type: 'Integrated Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'IMO' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Brands', value: 'Esso & Mobil' },
+    ],
+    slug: 'imperial-oil',
+  },
+  {
+    rank: '31',
+    name: 'InPlay Oil Corp.',
+    type: 'Light Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'IPO' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Focus', value: 'Alberta Deep Basin' },
+    ],
+    slug: 'inplay-oil',
+  },
+  {
+    rank: '32',
+    name: 'International Petroleum Corporation',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'IPCO' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Canada, Malaysia, France' },
+    ],
+    slug: 'international-petroleum',
+  },
+  {
+    rank: '33',
+    name: 'Jericho Energy Ventures Inc.',
+    type: 'Energy Technology',
+    stats: [
+      { label: 'Stock Symbol', value: 'JEV' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Focus', value: 'AI Infrastructure & Energy' },
+    ],
+    slug: 'jericho-energy-ventures',
+  },
+  {
+    rank: '34',
+    name: 'Journey Energy Inc.',
+    type: 'Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'JOY' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Alberta Conventional Oil' },
+    ],
+    slug: 'journey-energy',
+  },
+  {
+    rank: '35',
+    name: 'Jura Energy Corporation',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'JEC' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Operations', value: 'Pakistan' },
+    ],
+    slug: 'jura-energy',
+  },
+  {
+    rank: '36',
+    name: 'Kelt Exploration Ltd.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'KEL' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Western Canada' },
+    ],
+    slug: 'kelt-exploration',
+  },
+  {
+    rank: '37',
+    name: 'Kiwetinohk Energy Corp.',
+    type: 'Energy Transition',
+    stats: [
+      { label: 'Stock Symbol', value: 'KVE' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Low Carbon Energy' },
+    ],
+    slug: 'kiwetinohk-energy',
+  },
+  {
+    rank: '38',
+    name: 'Lycos Energy Inc.',
+    type: 'Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'LYC' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Focus', value: 'Clearwater Play' },
+    ],
+    slug: 'lycos-energy',
+  },
+  {
+    rank: '39',
+    name: 'NuVista Energy Ltd.',
+    type: 'Montney Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'NVA' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Alberta Deep Basin' },
+    ],
+    slug: 'nuvista-energy',
+  },
+  {
+    rank: '40',
+    name: 'Obsidian Energy Ltd.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'OBE' },
+      { label: 'Exchange', value: 'TSX & NYSE' },
+      { label: 'Focus', value: 'Alberta' },
+    ],
+    slug: 'obsidian-energy',
+  },
+  {
+    rank: '41',
+    name: 'Paramount Resources Ltd.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'POU' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Montney & Duvernay' },
+    ],
+    slug: 'paramount-resources',
+  },
+  {
+    rank: '42',
+    name: 'Parex Resources Inc.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'PXT' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Colombia' },
+    ],
+    slug: 'parex-resources',
+  },
+  {
+    rank: '43',
+    name: 'Petrus Resources Ltd.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'PRQ' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Alberta Deep Basin' },
+    ],
+    slug: 'petrus-resources',
+  },
+  {
+    rank: '44',
+    name: 'PetroTal Corp.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'PTAL' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Operations', value: 'Peru' },
+    ],
+    slug: 'petrotal-corp',
+  },
+  {
+    rank: '45',
+    name: 'Pine Cliff Energy Ltd.',
+    type: 'Natural Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'PNF' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Production', value: '~22,000 BOE/D' },
+    ],
+    slug: 'pine-cliff-energy',
+  },
+  {
+    rank: '46',
+    name: 'PrairieSky Royalty Ltd.',
+    type: 'Royalty Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'PSK' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Land Position', value: '9.8M acres' },
+    ],
+    slug: 'prairiesky-royalty',
+  },
+  {
+    rank: '47',
+    name: 'Saturn Oil & Gas Inc.',
+    type: 'Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'SOIL' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Operations', value: 'Saskatchewan & Alberta' },
+    ],
+    slug: 'saturn-oil-gas',
+  },
+  {
+    rank: '48',
+    name: 'Source Rock Royalties Ltd.',
+    type: 'Royalty Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'SRR' },
+      { label: 'Exchange', value: 'TSXV' },
+      { label: 'Focus', value: 'Western Canada Royalties' },
+    ],
+    slug: 'source-rock-royalties',
+  },
+  {
+    rank: '49',
+    name: 'Spartan Delta Corp.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'SDE' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Deep Basin & Montney' },
+    ],
+    slug: 'spartan-delta',
+  },
+  {
+    rank: '50',
+    name: 'Strathcona Resources Ltd.',
+    type: 'Heavy Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'SCR' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Cold Lake Thermal Oil' },
+    ],
+    slug: 'strathcona-resources',
+  },
+  {
+    rank: '51',
+    name: 'Suncor Energy Inc.',
+    type: 'Integrated Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'SU' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Oil Sands & Refineries' },
+    ],
+    slug: 'suncor-energy',
+  },
+  {
+    rank: '52',
+    name: 'Surge Energy Inc.',
+    type: 'Oil Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'SGY' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Free Cash Flow Generation' },
+    ],
+    slug: 'surge-energy',
+  },
+  {
+    rank: '53',
+    name: 'Tamarack Valley Energy Ltd.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'TVE' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Long-life Resource Plays' },
+    ],
+    slug: 'tamarack-valley-energy',
+  },
+  {
+    rank: '54',
+    name: 'Tenaz Energy Corp.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'TNZ' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Netherlands & Canada' },
+    ],
+    slug: 'tenaz-energy',
+  },
+  {
+    rank: '55',
+    name: 'Topaz Energy Corp.',
+    type: 'Royalty Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'TPZ' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Royalty & Infrastructure' },
+    ],
+    slug: 'topaz-energy',
+  },
+  {
+    rank: '56',
+    name: 'Touchstone Exploration Inc.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'TTX' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Trinidad and Tobago' },
+    ],
+    slug: 'touchstone-exploration',
+  },
+  {
+    rank: '57',
+    name: 'Tourmaline Oil Corp.',
+    type: 'Natural Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'TOU' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Production', value: 'Canada\'s Largest NG Producer' },
+    ],
+    slug: 'tourmaline-oil',
+  },
+  {
+    rank: '58',
+    name: 'Valeura Energy Inc.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'VLE' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Thailand' },
+    ],
+    slug: 'valeura-energy',
+  },
+  {
+    rank: '59',
+    name: 'Vermilion Energy Inc.',
+    type: 'International Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'VET' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Canada, Europe, US, Australia' },
+    ],
+    slug: 'vermilion-energy',
+  },
+  {
+    rank: '60',
+    name: 'Whitecap Resources Inc.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'WCP' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Western Canada' },
+    ],
+    slug: 'whitecap-resources',
+  },
+  {
+    rank: '61',
+    name: 'Yangarra Resources Ltd.',
+    type: 'Oil & Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'YGR' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Cardium Play' },
+    ],
+    slug: 'yangarra-resources',
+  },
+  {
+    rank: '62',
+    name: 'Zenith Energy Ltd.',
+    type: 'Energy Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'ZEN' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Focus', value: 'Electricity & Solar' },
+    ],
+    slug: 'zenith-energy',
+  },
+  {
+    rank: '63',
+    name: 'Peyto Exploration & Development Corp.',
+    type: 'Natural Gas Producer',
+    stats: [
+      { label: 'Stock Symbol', value: 'PEY' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Alberta Deep Basin' },
+    ],
+    slug: 'peyto-exploration',
+  },
+  {
+    rank: '64',
+    name: 'AltaGas Ltd.',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'ALA' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Gas Distribution & Processing' },
+    ],
+    slug: 'altagas',
+  },
+  {
+    rank: '65',
+    name: 'Gibson Energy Inc.',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'GEI' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Liquids Infrastructure' },
+    ],
+    slug: 'gibson-energy',
+  },
+  {
+    rank: '66',
+    name: 'Inter Pipeline Ltd.',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'IPL' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Pipelines & Processing' },
+    ],
+    slug: 'inter-pipeline',
+  },
+  {
+    rank: '67',
+    name: 'Keyera Corp.',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'KEY' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Midstream Services' },
+    ],
+    slug: 'keyera-corp',
+  },
+  {
+    rank: '68',
+    name: 'Pembina Pipeline Corporation',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'PPL' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Energy Transportation' },
+    ],
+    slug: 'pembina-pipeline',
+  },
+  {
+    rank: '69',
+    name: 'South Bow Corporation',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'SBO' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Crude Oil Pipelines' },
+    ],
+    slug: 'south-bow-corp',
+  },
+  {
+    rank: '70',
+    name: 'TC Energy Corporation',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'TRP' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Gas & Power Infrastructure' },
+    ],
+    slug: 'tc-energy',
+  },
+  {
+    rank: '71',
+    name: 'Tidewater Midstream and Infrastructure Ltd.',
+    type: 'Midstream Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'TWM' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Gas Processing & Storage' },
+    ],
+    slug: 'tidewater-midstream',
+  },
+  {
+    rank: '72',
+    name: 'Akita Drilling Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'AKT.A' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Drilling Services' },
+    ],
+    slug: 'akita-drilling',
+  },
+  {
+    rank: '73',
+    name: 'Calfrac Well Services Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'CFW' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Pressure Pumping' },
+    ],
+    slug: 'calfrac-well-services',
+  },
+  {
+    rank: '74',
+    name: 'CES Energy Solutions Corp.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'CEU' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Chemical Solutions' },
+    ],
+    slug: 'ces-energy-solutions',
+  },
+  {
+    rank: '75',
+    name: 'Enerflex Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'EFX' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Energy Infrastructure' },
+    ],
+    slug: 'enerflex',
+  },
+  {
+    rank: '76',
+    name: 'Ensign Energy Services Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'ESI' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Drilling & Well Servicing' },
+    ],
+    slug: 'ensign-energy-services',
+  },
+  {
+    rank: '77',
+    name: 'Precision Drilling Corporation',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'PD' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Drilling Services' },
+    ],
+    slug: 'precision-drilling',
+  },
+  {
+    rank: '78',
+    name: 'Pason Systems Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'PSI' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Data Management' },
+    ],
+    slug: 'pason-systems',
+  },
+  {
+    rank: '79',
+    name: 'PHX Energy Services Corp.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'PHX' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Directional Drilling' },
+    ],
+    slug: 'phx-energy-services',
+  },
+  {
+    rank: '80',
+    name: 'Trican Well Service Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'TCW' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Pressure Pumping' },
+    ],
+    slug: 'trican-well-service',
+  },
+  {
+    rank: '81',
+    name: 'STEP Energy Services Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'SES' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Coiled Tubing & Fracturing' },
+    ],
+    slug: 'step-energy-services',
+  },
+  {
+    rank: '82',
+    name: 'Badger Infrastructure Solutions Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'BAD' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Hydrovac Services' },
+    ],
+    slug: 'badger-infrastructure-solutions',
+  },
+  {
+    rank: '83',
+    name: 'Black Diamond Group Limited',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'BDI' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Modular & Workforce Solutions' },
+    ],
+    slug: 'black-diamond-group',
+  },
+  {
+    rank: '84',
+    name: 'Dexterra Group Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'DXT' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Facilities Management' },
+    ],
+    slug: 'dexterra-group',
+  },
+  {
+    rank: '85',
+    name: 'Total Energy Services Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'TOT' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Energy Services' },
+    ],
+    slug: 'total-energy-services',
+  },
+  {
+    rank: '86',
+    name: 'High Arctic Energy Services Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'HWO' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Well Completion Services' },
+    ],
+    slug: 'high-arctic-energy-services',
+  },
+  {
+    rank: '87',
+    name: 'Mullen Group Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'MTL' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Logistics & Transportation' },
+    ],
+    slug: 'mullen-group',
+  },
+  {
+    rank: '88',
+    name: 'North American Construction Group Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'NOA' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Heavy Construction' },
+    ],
+    slug: 'north-american-construction-group',
+  },
+  {
+    rank: '89',
+    name: 'McCoy Global Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'MCB' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Drill Pipe Systems' },
+    ],
+    slug: 'mccoy-global',
+  },
+  {
+    rank: '90',
+    name: 'Mattr Corp.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'MATR' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Environmental Solutions' },
+    ],
+    slug: 'mattr-corp',
+  },
+  {
+    rank: '91',
+    name: 'Foremost Industries Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'FMO' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Specialized Equipment' },
+    ],
+    slug: 'foremost-industries',
+  },
+  {
+    rank: '92',
+    name: 'Western Energy Services Corp.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'WRG' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Drilling & Well Servicing' },
+    ],
+    slug: 'western-energy-services',
+  },
+  {
+    rank: '93',
+    name: 'ACT Energy Technologies Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'AEC' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Coiled Tubing Technology' },
+    ],
+    slug: 'act-energy-technologies',
+  },
+  {
+    rank: '94',
+    name: 'Pulse Seismic Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'PSD' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Seismic Data' },
+    ],
+    slug: 'pulse-seismic',
+  },
+  {
+    rank: '95',
+    name: 'Questor Technology Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'QST' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Environmental Technology' },
+    ],
+    slug: 'questor-technology',
+  },
+  {
+    rank: '96',
+    name: 'SECURE Energy Services Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'SES' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Waste Management' },
+    ],
+    slug: 'secure-energy-services',
+  },
+  {
+    rank: '97',
+    name: 'Source Energy Services Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'SOI' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Completion Services' },
+    ],
+    slug: 'source-energy-services',
+  },
+  {
+    rank: '98',
+    name: 'Enterprise Group Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'E' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Energy Services' },
+    ],
+    slug: 'enterprise-group',
+  },
+  {
+    rank: '99',
+    name: 'Cleantek Industries Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'TEK' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Environmental Services' },
+    ],
+    slug: 'cleantek-industries',
+  },
+  {
+    rank: '100',
+    name: 'Angel Wing Metals Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'AW' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Mineral Exploration' },
+    ],
+    slug: 'angel-wing-metals',
+  },
+  {
+    rank: '101',
+    name: 'Peak Discovery Capital Ltd.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'PKK' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Resource Investment' },
+    ],
+    slug: 'peak-discovery-capital',
+  },
+  {
+    rank: '102',
+    name: 'Russel Metals Inc.',
+    type: 'Service Company',
+    stats: [
+      { label: 'Stock Symbol', value: 'RUS' },
+      { label: 'Exchange', value: 'TSX' },
+      { label: 'Operations', value: 'Metals Distribution' },
+    ],
+    slug: 'russel-metals',
   },
 ];
 ---
@@ -81,19 +1148,37 @@ const companies = [
       </div>
 
       <div class="mb-12">
-        <div class="flex flex-wrap gap-4 justify-center">
-          <button class="bg-petroleum-gold text-white px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:bg-rich-amber">
+        <div class="flex flex-wrap gap-4 justify-center mb-8">
+          <button id="allCompaniesBtn" class="bg-petroleum-gold text-white px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:bg-rich-amber">
             All Companies
           </button>
-          <button class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+          <button id="integratedProducersBtn" class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
             Integrated Producers
           </button>
-          <button class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+          <button id="independentOperatorsBtn" class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
             Independent Operators
           </button>
-          <button class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+          <button id="naturalGasFocusedBtn" class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
             Natural Gas Focused
           </button>
+          <button id="midstreamBtn" class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+            Midstream Companies
+          </button>
+          <button id="serviceCompaniesBtn" class="bg-white text-charcoal border-2 border-gray-300 px-6 py-3 rounded-md font-semibold text-[0.9rem] transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+            Service Companies
+          </button>
+        </div>
+
+        <!-- Alphabet Filter - Only visible when All Companies is selected -->
+        <div id="alphabetFilter" class="flex flex-wrap gap-2 justify-center">
+          <button data-letter="all" class="alphabet-btn bg-petroleum-gold text-white px-4 py-2 rounded-md font-semibold text-sm transition-all duration-300 hover:bg-rich-amber">
+            All
+          </button>
+          {['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'].map(letter => (
+            <button data-letter={letter} class="alphabet-btn bg-white text-charcoal border-2 border-gray-300 px-4 py-2 rounded-md font-semibold text-sm transition-all duration-300 hover:border-petroleum-gold hover:text-petroleum-gold">
+              {letter}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -132,4 +1217,1560 @@ const companies = [
       </button>
     </div>
   </section>
+
+  <script>
+    // Get all companies data for filtering
+    const allCompanies = [
+      {
+        rank: '01',
+        name: 'Africa Energy Corp.',
+        type: 'International Exploration',
+        stats: [
+          { label: 'Primary Asset', value: 'Block 11B/12B' },
+          { label: 'Stock Symbol', value: 'AFE.V' },
+          { label: 'Operations', value: 'South Africa' },
+        ],
+        slug: 'africa-energy',
+      },
+      {
+        rank: '02',
+        name: 'Altima Energy Inc.',
+        type: 'Natural Gas Producer',
+        stats: [
+          { label: 'Total Acreage', value: '10,560 acres' },
+          { label: 'Focus Area', value: 'Western Canada' },
+          { label: 'Headquarters', value: 'Vancouver, BC' },
+        ],
+        slug: 'altima-energy',
+      },
+      {
+        rank: '03',
+        name: 'Alvopetro Energy Ltd.',
+        type: 'International Gas',
+        stats: [
+          { label: 'Processing', value: '420,000 m³/d' },
+          { label: 'Operations', value: 'Brazil & Canada' },
+          { label: 'Stock Symbol', value: 'ALV.V' },
+        ],
+        slug: 'alvopetro-energy',
+      },
+      {
+        rank: '04',
+        name: 'ARC Resources Ltd.',
+        type: 'Montney Producer',
+        stats: [
+          { label: 'Production', value: '~410,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'ARX.TO' },
+          { label: 'Headquarters', value: 'Calgary, AB' },
+        ],
+        slug: 'arc-resources',
+      },
+      {
+        rank: '05',
+        name: 'Argo Gold Inc.',
+        type: 'Mining & Oil',
+        stats: [
+          { label: 'Properties', value: '3 in Ontario' },
+          { label: 'Stock Symbol', value: 'ARQ.CN' },
+          { label: 'Operations', value: 'Ontario & Alberta' },
+        ],
+        slug: 'argo-gold',
+      },
+      {
+        rank: '06',
+        name: 'Arrow Exploration Corp.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Production', value: '~4,500 BOE/D' },
+          { label: 'Operations', value: 'Colombia' },
+          { label: 'Headquarters', value: 'Calgary, AB' },
+        ],
+        slug: 'arrow-exploration',
+      },
+      {
+        rank: '07',
+        name: 'Athabasca Oil Corporation',
+        type: 'Thermal & Light Oil',
+        stats: [
+          { label: 'Production', value: '~40,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'ATH.TO' },
+          { label: 'Reserve Life', value: '~90 years' },
+        ],
+        slug: 'athabasca-oil',
+      },
+      {
+        rank: '08',
+        name: 'Atlas Energy Corp.',
+        type: 'Royalty Company',
+        stats: [
+          { label: 'Focus', value: 'International Royalties' },
+          { label: 'Stock Symbol', value: 'ATLE.V' },
+          { label: 'Headquarters', value: 'Calgary, AB' },
+        ],
+        slug: 'atlas-energy',
+      },
+      {
+        rank: '09',
+        name: 'Avanti Helium Corp.',
+        type: 'Helium Producer',
+        stats: [
+          { label: 'Projects', value: 'MT & SK' },
+          { label: 'Stock Symbol', value: 'AVN.V' },
+          { label: 'Helium Production', value: '~100 Mcf/d' },
+        ],
+        slug: 'avanti-helium',
+      },
+      {
+        rank: '10',
+        name: 'Avila Energy Corporation',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Focus', value: 'Western Canada' },
+          { label: 'Stock Symbol', value: 'VIK.CN' },
+          { label: 'Ownership', value: '100% Operated' },
+        ],
+        slug: 'avila-energy',
+      },
+      {
+        rank: '11',
+        name: 'Barnwell Industries Inc.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Operations', value: 'Canada & Hawaii' },
+          { label: 'Stock Symbol', value: 'BRN' },
+          { label: 'Experience', value: '65+ Years' },
+        ],
+        slug: 'barnwell-industries',
+      },
+      {
+        rank: '12',
+        name: 'Baytex Energy Corp.',
+        type: 'Integrated Producer',
+        stats: [
+          { label: 'Production', value: '~100,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'BTE.TO' },
+          { label: 'Operations', value: 'Canada & Texas' },
+        ],
+        slug: 'baytex-energy',
+      },
+      {
+        rank: '13',
+        name: 'Bengal Energy Ltd.',
+        type: 'International Exploration',
+        stats: [
+          { label: 'Operations', value: 'Australia' },
+          { label: 'Stock Symbol', value: 'BNG.V' },
+          { label: 'Focus', value: 'Conventional Oil & Gas' },
+        ],
+        slug: 'bengal-energy',
+      },
+      {
+        rank: '14',
+        name: 'Birchcliff Energy Ltd.',
+        type: 'Montney Producer',
+        stats: [
+          { label: 'Production', value: '~200,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'BIR.TO' },
+          { label: 'Asset Base', value: 'Montney/Doig' },
+        ],
+        slug: 'birchcliff-energy',
+      },
+      {
+        rank: '15',
+        name: 'Blacksteel Energy Inc.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Focus', value: 'Western Canada' },
+          { label: 'Operations', value: 'Acquisition & Dev' },
+          { label: 'Asset Type', value: 'Oil & Gas' },
+        ],
+        slug: 'blacksteel-energy',
+      },
+      {
+        rank: '16',
+        name: 'Bonterra Energy Corp.',
+        type: 'Oil Producer',
+        stats: [
+          { label: 'Production', value: '~15,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'BNE.TO' },
+          { label: 'Assets', value: 'Pembina & Charlie Lake' },
+        ],
+        slug: 'bonterra-energy',
+      },
+      {
+        rank: '17',
+        name: 'Canacol Energy Ltd.',
+        type: 'International Gas',
+        stats: [
+          { label: 'Production', value: '~17% of Colombia' },
+          { label: 'Stock Symbol', value: 'CNE.V' },
+          { label: 'Operations', value: 'Colombia' },
+        ],
+        slug: 'canacol-energy',
+      },
+      {
+        rank: '18',
+        name: 'Canadian Natural Resources',
+        type: 'Integrated Producer',
+        stats: [
+          { label: 'Production', value: '~1,200,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'CNQ.TO' },
+          { label: 'Operations', value: 'Global' },
+        ],
+        slug: 'canadian-natural-resources',
+      },
+      {
+        rank: '19',
+        name: 'Canadian Spirit Resources',
+        type: 'Natural Gas Producer',
+        stats: [
+          { label: 'Focus', value: 'Montney Formation' },
+          { label: 'Stock Symbol', value: 'SPI.V' },
+          { label: 'Location', value: 'NE British Columbia' },
+        ],
+        slug: 'canadian-spirit-resources',
+      },
+      {
+        rank: '20',
+        name: 'CanAsia Energy Corp.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CEC.V' },
+          { label: 'Exchange', value: 'TSX Venture' },
+          { label: 'Operations', value: 'Western Canada' },
+        ],
+        slug: 'canasia-energy',
+      },
+      {
+        rank: '21',
+        name: 'Capitan Investment Ltd.',
+        type: 'Investment Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'CPI.V' },
+          { label: 'Focus', value: 'Oil & Gas Investments' },
+          { label: 'Operations', value: 'North America' },
+        ],
+        slug: 'capitan-investment',
+      },
+      {
+        rank: '22',
+        name: 'Cardinal Energy Ltd.',
+        type: 'Oil Producer',
+        stats: [
+          { label: 'Production', value: '~25,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'CJ.TO' },
+          { label: 'Focus', value: 'Light & Medium Oil' },
+        ],
+        slug: 'cardinal-energy',
+      },
+      {
+        rank: '23',
+        name: 'Cavvy Energy Ltd.',
+        type: 'Gas Producer',
+        stats: [
+          { label: 'Focus', value: 'Natural Gas Processing' },
+          { label: 'Operations', value: 'Alberta & BC' },
+          { label: 'Former Name', value: 'Pieridae Energy' },
+        ],
+        slug: 'cavvy-energy',
+      },
+      {
+        rank: '24',
+        name: 'Cenovus Energy Inc.',
+        type: 'Integrated Producer',
+        stats: [
+          { label: 'Production', value: '~800,000 BOE/D' },
+          { label: 'Stock Symbol', value: 'CVE.TO' },
+          { label: 'Operations', value: 'Canada & US' },
+        ],
+        slug: 'cenovus-energy',
+      },
+      {
+        rank: '25',
+        name: 'Centaurus Energy Inc.',
+        type: 'Investment Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'CTA.V' },
+          { label: 'Focus', value: 'Royalty Interests' },
+          { label: 'Former Name', value: 'Madalena Energy' },
+        ],
+        slug: 'centaurus-energy',
+      },
+      {
+        rank: '26',
+        name: 'CGX Energy Inc.',
+        type: 'International Exploration',
+        stats: [
+          { label: 'Stock Symbol', value: 'OYL' },
+          { label: 'Exchange', value: 'TSX-V' },
+          { label: 'Focus', value: 'Guyana-Suriname Basin' },
+        ],
+        slug: 'cgx-energy',
+      },
+      {
+        rank: '27',
+        name: 'Claren Energy Corp.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CEA.V' },
+          { label: 'Exchange', value: 'TSX Venture' },
+          { label: 'Operations', value: 'Western Canada' },
+        ],
+        slug: 'claren-energy',
+      },
+      {
+        rank: '28',
+        name: 'Cobra Venture Corporation',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CBV' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'Conventional Oil' },
+        ],
+        slug: 'cobra-venture',
+      },
+      {
+        rank: '29',
+        name: 'Coelacanth Energy Inc.',
+        type: 'Montney Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CEI' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Location', value: 'NE British Columbia' },
+        ],
+        slug: 'coelacanth-energy',
+      },
+      {
+        rank: '30',
+        name: 'Condor Energies Inc.',
+        type: 'International Developer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CDR' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Central Asia' },
+        ],
+        slug: 'condor-energies',
+      },
+      {
+        rank: '31',
+        name: 'Criterium Energy Ltd.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CEQ' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Operations', value: 'Indonesia & Canada' },
+        ],
+        slug: 'criterium-energy',
+      },
+      {
+        rank: '32',
+        name: 'Crown Point Energy Inc.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CWV' },
+          { label: 'Exchange', value: 'TSX-V' },
+          { label: 'Operations', value: 'South America' },
+        ],
+        slug: 'crown-point-energy',
+      },
+      {
+        rank: '33',
+        name: 'Decimus Oil Corp.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'WCSB' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'Mannville Formation' },
+        ],
+        slug: 'decimus-oil',
+      },
+      {
+        rank: '34',
+        name: 'Eco (Atlantic) Oil & Gas Ltd.',
+        type: 'International Exploration',
+        stats: [
+          { label: 'Stock Symbol', value: 'EOG' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Operations', value: 'Namibia, Guyana, Ghana' },
+        ],
+        slug: 'eco-atlantic-oil-gas',
+      },
+      {
+        rank: '35',
+        name: 'Falcon Oil & Gas Ltd.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'FO' },
+          { label: 'Exchange', value: 'TSX-V' },
+          { label: 'Operations', value: 'Australia, South Africa, Hungary' },
+        ],
+        slug: 'falcon-oil-gas',
+      },
+      {
+        rank: '36',
+        name: 'Fiddlehead Resources Corp.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'FHR' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'Cardium Fairway' },
+        ],
+        slug: 'fiddlehead-resources',
+      },
+      {
+        rank: '37',
+        name: 'First Helium Inc.',
+        type: 'Helium Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'HELI' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Land Position', value: '53,000 acres' },
+        ],
+        slug: 'first-helium',
+      },
+      {
+        rank: '38',
+        name: 'Freehold Royalties Ltd.',
+        type: 'Royalty Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'FRU' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Land Position', value: '6.1M acres Canada' },
+        ],
+        slug: 'freehold-royalties',
+      },
+      {
+        rank: '39',
+        name: 'Frontera Energy Corporation',
+        type: 'International Producer',
+        stats: [
+          { label: 'Operations', value: 'South America' },
+          { label: 'Primary Focus', value: 'Colombia' },
+          { label: 'Operations', value: 'Colombia, Ecuador, Guyana' },
+        ],
+        slug: 'frontera-energy',
+      },
+      {
+        rank: '40',
+        name: 'Gran Tierra Energy Inc.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'GTE' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Colombia & Ecuador' },
+        ],
+        slug: 'gran-terra-energy',
+      },
+      {
+        rank: '41',
+        name: 'Greenfire Resources Ltd.',
+        type: 'Oil Sands Producer',
+        stats: [
+          { label: 'Technology', value: 'SAGD' },
+          { label: 'Location', value: 'Athabasca Region' },
+          { label: 'Focus', value: 'Thermal Oil Assets' },
+        ],
+        slug: 'greenfire-resources',
+      },
+      {
+        rank: '42',
+        name: 'Headwater Exploration Inc.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Operations', value: 'Western Canada' },
+          { label: 'Focus', value: 'Long-life Resource Plays' },
+          { label: 'Strategy', value: 'Value-driven Development' },
+        ],
+        slug: 'headwater-exploration',
+      },
+      {
+        rank: '43',
+        name: 'Hemisphere Energy Corporation',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'HME' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'Low-cost Operations' },
+        ],
+        slug: 'hemisphere-energy',
+      },
+      {
+        rank: '44',
+        name: 'Imperial Oil Limited',
+        type: 'Integrated Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'IMO' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Brands', value: 'Esso & Mobil' },
+        ],
+        slug: 'imperial-oil',
+      },
+      {
+        rank: '45',
+        name: 'InPlay Oil Corp.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'IPO' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Alberta Deep Basin' },
+        ],
+        slug: 'inplay-oil',
+      },
+      {
+        rank: '26',
+        name: 'CGX Energy Inc.',
+        type: 'International Exploration',
+        stats: [
+          { label: 'Stock Symbol', value: 'OYL' },
+          { label: 'Exchange', value: 'TSX-V' },
+          { label: 'Focus', value: 'Guyana-Suriname Basin' },
+        ],
+        slug: 'cgx-energy',
+      },
+      {
+        rank: '27',
+        name: 'Claren Energy Corp.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'CEA.V' },
+          { label: 'Exchange', value: 'TSX Venture' },
+          { label: 'Operations', value: 'Western Canada' },
+        ],
+        slug: 'claren-energy',
+      },
+      {
+        rank: '28',
+        name: 'Gran Tierra Energy Inc.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'GTE' },
+          { label: 'Operations', value: 'Colombia & Ecuador' },
+          { label: 'Headquarters', value: 'Calgary, AB' },
+        ],
+        slug: 'gran-terra-energy',
+      },
+      {
+        rank: '29',
+        name: 'Greenfire Resources Ltd.',
+        type: 'Thermal Oil Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'GFR' },
+          { label: 'Operations', value: 'Athabasca Oil Sands' },
+          { label: 'Technology', value: 'SAGD' },
+        ],
+        slug: 'greenfire-resources',
+      },
+      {
+        rank: '30',
+        name: 'Headwater Exploration Inc.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'HWX' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'Western Canada' },
+        ],
+        slug: 'headwater-exploration',
+      },
+      {
+        rank: '31',
+        name: 'Hemisphere Energy Corporation',
+        type: 'Oil Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'HME' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Saskatchewan' },
+        ],
+        slug: 'hemisphere-energy',
+      },
+      {
+        rank: '32',
+        name: 'Imperial Oil Limited',
+        type: 'Integrated Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'IMO' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Brands', value: 'Esso & Mobil' },
+        ],
+        slug: 'imperial-oil',
+      },
+      {
+        rank: '33',
+        name: 'International Petroleum Corporation',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'IPCO' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Canada, Malaysia, France' },
+        ],
+        slug: 'international-petroleum',
+      },
+      {
+        rank: '34',
+        name: 'Jericho Energy Ventures Inc.',
+        type: 'Energy Technology',
+        stats: [
+          { label: 'Stock Symbol', value: 'JEV' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'AI Infrastructure & Energy' },
+        ],
+        slug: 'jericho-energy-ventures',
+      },
+      {
+        rank: '35',
+        name: 'Journey Energy Inc.',
+        type: 'Oil Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'JOY' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Alberta Conventional Oil' },
+        ],
+        slug: 'journey-energy',
+      },
+      {
+        rank: '36',
+        name: 'Jura Energy Corporation',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'JEC' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Operations', value: 'Pakistan' },
+        ],
+        slug: 'jura-energy',
+      },
+      {
+        rank: '37',
+        name: 'Kelt Exploration Ltd.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'KEL' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Western Canada' },
+        ],
+        slug: 'kelt-exploration',
+      },
+      {
+        rank: '38',
+        name: 'Kiwetinohk Energy Corp.',
+        type: 'Energy Transition',
+        stats: [
+          { label: 'Stock Symbol', value: 'KVE' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Low Carbon Energy' },
+        ],
+        slug: 'kiwetinohk-energy',
+      },
+      {
+        rank: '39',
+        name: 'Lycos Energy Inc.',
+        type: 'Oil Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'LYC' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'Clearwater Play' },
+        ],
+        slug: 'lycos-energy',
+      },
+      {
+        rank: '40',
+        name: 'NuVista Energy Ltd.',
+        type: 'Montney Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'NVA' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Alberta Deep Basin' },
+        ],
+        slug: 'nuvista-energy',
+      },
+      {
+        rank: '41',
+        name: 'Obsidian Energy Ltd.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'OBE' },
+          { label: 'Exchange', value: 'TSX & NYSE' },
+          { label: 'Focus', value: 'Alberta' },
+        ],
+        slug: 'obsidian-energy',
+      },
+      {
+        rank: '42',
+        name: 'Paramount Resources Ltd.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'POU' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Montney & Duvernay' },
+        ],
+        slug: 'paramount-resources',
+      },
+      {
+        rank: '43',
+        name: 'Parex Resources Inc.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'PXT' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Colombia' },
+        ],
+        slug: 'parex-resources',
+      },
+      {
+        rank: '44',
+        name: 'Petrus Resources Ltd.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'PRQ' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Alberta Deep Basin' },
+        ],
+        slug: 'petrus-resources',
+      },
+      {
+        rank: '45',
+        name: 'PetroTal Corp.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'PTAL' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Operations', value: 'Peru' },
+        ],
+        slug: 'petrotal-corp',
+      },
+      {
+        rank: '46',
+        name: 'Pine Cliff Energy Ltd.',
+        type: 'Natural Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'PNF' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Production', value: '~22,000 BOE/D' },
+        ],
+        slug: 'pine-cliff-energy',
+      },
+      {
+        rank: '47',
+        name: 'PrairieSky Royalty Ltd.',
+        type: 'Royalty Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'PSK' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Land Position', value: '9.8M acres' },
+        ],
+        slug: 'prairiesky-royalty',
+      },
+      {
+        rank: '48',
+        name: 'Saturn Oil & Gas Inc.',
+        type: 'Oil Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'SOIL' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Operations', value: 'Saskatchewan & Alberta' },
+        ],
+        slug: 'saturn-oil-gas',
+      },
+      {
+        rank: '48',
+        name: 'Source Rock Royalties Ltd.',
+        type: 'Royalty Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'SRR' },
+          { label: 'Exchange', value: 'TSXV' },
+          { label: 'Focus', value: 'Western Canada Royalties' },
+        ],
+        slug: 'source-rock-royalties',
+      },
+      {
+        rank: '49',
+        name: 'Spartan Delta Corp.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'SDE' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Deep Basin & Montney' },
+        ],
+        slug: 'spartan-delta',
+      },
+      {
+        rank: '50',
+        name: 'Strathcona Resources Ltd.',
+        type: 'Heavy Oil Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'SCR' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Cold Lake Thermal Oil' },
+        ],
+        slug: 'strathcona-resources',
+      },
+      {
+        rank: '51',
+        name: 'Suncor Energy Inc.',
+        type: 'Integrated Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'SU' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Oil Sands & Refineries' },
+        ],
+        slug: 'suncor-energy',
+      },
+      {
+        rank: '52',
+        name: 'Surge Energy Inc.',
+        type: 'Oil Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'SGY' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Free Cash Flow Generation' },
+        ],
+        slug: 'surge-energy',
+      },
+      {
+        rank: '53',
+        name: 'Tamarack Valley Energy Ltd.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'TVE' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Long-life Resource Plays' },
+        ],
+        slug: 'tamarack-valley-energy',
+      },
+      {
+        rank: '54',
+        name: 'Tenaz Energy Corp.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'TNZ' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Netherlands & Canada' },
+        ],
+        slug: 'tenaz-energy',
+      },
+      {
+        rank: '55',
+        name: 'Topaz Energy Corp.',
+        type: 'Royalty Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'TPZ' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Royalty & Infrastructure' },
+        ],
+        slug: 'topaz-energy',
+      },
+      {
+        rank: '56',
+        name: 'Touchstone Exploration Inc.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'TTX' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Trinidad and Tobago' },
+        ],
+        slug: 'touchstone-exploration',
+      },
+      {
+        rank: '57',
+        name: 'Tourmaline Oil Corp.',
+        type: 'Natural Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'TOU' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Production', value: 'Canada\'s Largest NG Producer' },
+        ],
+        slug: 'tourmaline-oil',
+      },
+      {
+        rank: '58',
+        name: 'Valeura Energy Inc.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'VLE' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Thailand' },
+        ],
+        slug: 'valeura-energy',
+      },
+      {
+        rank: '59',
+        name: 'Vermilion Energy Inc.',
+        type: 'International Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'VET' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Canada, Europe, US, Australia' },
+        ],
+        slug: 'vermilion-energy',
+      },
+      {
+        rank: '60',
+        name: 'Whitecap Resources Inc.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'WCP' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Western Canada' },
+        ],
+        slug: 'whitecap-resources',
+      },
+      {
+        rank: '61',
+        name: 'Yangarra Resources Ltd.',
+        type: 'Oil & Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'YGR' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Cardium Play' },
+        ],
+        slug: 'yangarra-resources',
+      },
+      {
+        rank: '62',
+        name: 'Zenith Energy Ltd.',
+        type: 'Energy Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'ZEN' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Focus', value: 'Electricity & Solar' },
+        ],
+        slug: 'zenith-energy',
+      },
+      {
+        rank: '63',
+        name: 'Peyto Exploration & Development Corp.',
+        type: 'Natural Gas Producer',
+        stats: [
+          { label: 'Stock Symbol', value: 'PEY' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Alberta Deep Basin' },
+        ],
+        slug: 'peyto-exploration',
+      },
+      {
+        rank: '64',
+        name: 'AltaGas Ltd.',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'ALA' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Gas Distribution & Processing' },
+        ],
+        slug: 'altagas',
+      },
+      {
+        rank: '65',
+        name: 'Gibson Energy Inc.',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'GEI' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Liquids Infrastructure' },
+        ],
+        slug: 'gibson-energy',
+      },
+      {
+        rank: '66',
+        name: 'Inter Pipeline Ltd.',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'IPL' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Pipelines & Processing' },
+        ],
+        slug: 'inter-pipeline',
+      },
+      {
+        rank: '67',
+        name: 'Keyera Corp.',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'KEY' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Midstream Services' },
+        ],
+        slug: 'keyera-corp',
+      },
+      {
+        rank: '68',
+        name: 'Pembina Pipeline Corporation',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'PPL' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Energy Transportation' },
+        ],
+        slug: 'pembina-pipeline',
+      },
+      {
+        rank: '69',
+        name: 'South Bow Corporation',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'SBO' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Crude Oil Pipelines' },
+        ],
+        slug: 'south-bow-corp',
+      },
+      {
+        rank: '70',
+        name: 'TC Energy Corporation',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'TRP' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Gas & Power Infrastructure' },
+        ],
+        slug: 'tc-energy',
+      },
+      {
+        rank: '71',
+        name: 'Tidewater Midstream and Infrastructure Ltd.',
+        type: 'Midstream Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'TWM' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Gas Processing & Storage' },
+        ],
+        slug: 'tidewater-midstream',
+      },
+      {
+        rank: '72',
+        name: 'Akita Drilling Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'AKT.A' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Drilling Services' },
+        ],
+        slug: 'akita-drilling',
+      },
+      {
+        rank: '73',
+        name: 'Calfrac Well Services Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'CFW' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Pressure Pumping' },
+        ],
+        slug: 'calfrac-well-services',
+      },
+      {
+        rank: '74',
+        name: 'CES Energy Solutions Corp.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'CEU' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Chemical Solutions' },
+        ],
+        slug: 'ces-energy-solutions',
+      },
+      {
+        rank: '75',
+        name: 'Enerflex Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'EFX' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Energy Infrastructure' },
+        ],
+        slug: 'enerflex',
+      },
+      {
+        rank: '76',
+        name: 'Ensign Energy Services Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'ESI' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Drilling & Well Servicing' },
+        ],
+        slug: 'ensign-energy-services',
+      },
+      {
+        rank: '77',
+        name: 'Precision Drilling Corporation',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'PD' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Drilling Services' },
+        ],
+        slug: 'precision-drilling',
+      },
+      {
+        rank: '78',
+        name: 'Pason Systems Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'PSI' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Data Management' },
+        ],
+        slug: 'pason-systems',
+      },
+      {
+        rank: '79',
+        name: 'PHX Energy Services Corp.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'PHX' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Directional Drilling' },
+        ],
+        slug: 'phx-energy-services',
+      },
+      {
+        rank: '80',
+        name: 'Trican Well Service Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'TCW' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Pressure Pumping' },
+        ],
+        slug: 'trican-well-service',
+      },
+      {
+        rank: '81',
+        name: 'STEP Energy Services Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'SES' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Coiled Tubing & Fracturing' },
+        ],
+        slug: 'step-energy-services',
+      },
+      {
+        rank: '82',
+        name: 'Badger Infrastructure Solutions Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'BAD' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Hydrovac Services' },
+        ],
+        slug: 'badger-infrastructure-solutions',
+      },
+      {
+        rank: '83',
+        name: 'Black Diamond Group Limited',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'BDI' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Modular & Workforce Solutions' },
+        ],
+        slug: 'black-diamond-group',
+      },
+      {
+        rank: '84',
+        name: 'Dexterra Group Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'DXT' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Facilities Management' },
+        ],
+        slug: 'dexterra-group',
+      },
+      {
+        rank: '85',
+        name: 'Total Energy Services Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'TOT' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Energy Services' },
+        ],
+        slug: 'total-energy-services',
+      },
+      {
+        rank: '86',
+        name: 'High Arctic Energy Services Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'HWO' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Well Completion Services' },
+        ],
+        slug: 'high-arctic-energy-services',
+      },
+      {
+        rank: '87',
+        name: 'Mullen Group Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'MTL' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Logistics & Transportation' },
+        ],
+        slug: 'mullen-group',
+      },
+      {
+        rank: '88',
+        name: 'North American Construction Group Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'NOA' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Heavy Construction' },
+        ],
+        slug: 'north-american-construction-group',
+      },
+      {
+        rank: '89',
+        name: 'McCoy Global Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'MCB' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Drill Pipe Systems' },
+        ],
+        slug: 'mccoy-global',
+      },
+      {
+        rank: '90',
+        name: 'Mattr Corp.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'MATR' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Environmental Solutions' },
+        ],
+        slug: 'mattr-corp',
+      },
+      {
+        rank: '91',
+        name: 'Foremost Industries Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'FMO' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Specialized Equipment' },
+        ],
+        slug: 'foremost-industries',
+      },
+      {
+        rank: '92',
+        name: 'Western Energy Services Corp.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'WRG' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Drilling & Well Servicing' },
+        ],
+        slug: 'western-energy-services',
+      },
+      {
+        rank: '93',
+        name: 'ACT Energy Technologies Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'AEC' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Coiled Tubing Technology' },
+        ],
+        slug: 'act-energy-technologies',
+      },
+      {
+        rank: '94',
+        name: 'Pulse Seismic Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'PSD' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Seismic Data' },
+        ],
+        slug: 'pulse-seismic',
+      },
+      {
+        rank: '95',
+        name: 'Questor Technology Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'QST' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Environmental Technology' },
+        ],
+        slug: 'questor-technology',
+      },
+      {
+        rank: '96',
+        name: 'SECURE Energy Services Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'SES' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Waste Management' },
+        ],
+        slug: 'secure-energy-services',
+      },
+      {
+        rank: '97',
+        name: 'Source Energy Services Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'SOI' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Completion Services' },
+        ],
+        slug: 'source-energy-services',
+      },
+      {
+        rank: '98',
+        name: 'Enterprise Group Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'E' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Energy Services' },
+        ],
+        slug: 'enterprise-group',
+      },
+      {
+        rank: '99',
+        name: 'Cleantek Industries Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'TEK' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Environmental Services' },
+        ],
+        slug: 'cleantek-industries',
+      },
+      {
+        rank: '100',
+        name: 'Angel Wing Metals Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'AW' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Mineral Exploration' },
+        ],
+        slug: 'angel-wing-metals',
+      },
+      {
+        rank: '101',
+        name: 'Peak Discovery Capital Ltd.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'PKK' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Resource Investment' },
+        ],
+        slug: 'peak-discovery-capital',
+      },
+      {
+        rank: '102',
+        name: 'Russel Metals Inc.',
+        type: 'Service Company',
+        stats: [
+          { label: 'Stock Symbol', value: 'RUS' },
+          { label: 'Exchange', value: 'TSX' },
+          { label: 'Operations', value: 'Metals Distribution' },
+        ],
+        slug: 'russel-metals',
+      },
+    ];
+
+    // Category buttons
+    const allCompaniesBtn = document.getElementById('allCompaniesBtn');
+    const integratedProducersBtn = document.getElementById('integratedProducersBtn');
+    const independentOperatorsBtn = document.getElementById('independentOperatorsBtn');
+    const naturalGasFocusedBtn = document.getElementById('naturalGasFocusedBtn');
+    const midstreamBtn = document.getElementById('midstreamBtn');
+    const serviceCompaniesBtn = document.getElementById('serviceCompaniesBtn');
+    
+    // Alphabet filter
+    const alphabetFilter = document.getElementById('alphabetFilter');
+    const alphabetBtns = document.querySelectorAll('.alphabet-btn');
+    
+    // Grid container
+    const gridContainer = document.querySelector('.grid');
+    
+    let currentCategory: string = 'all';
+    let currentLetter: string = 'all';
+
+    // Category button handlers
+    allCompaniesBtn?.addEventListener('click', () => {
+      setActiveCategory('all');
+      if (alphabetFilter) alphabetFilter.style.display = 'flex';
+      filterCompanies();
+    });
+
+    integratedProducersBtn?.addEventListener('click', () => {
+      setActiveCategory('integrated');
+      if (alphabetFilter) alphabetFilter.style.display = 'flex';
+      filterCompanies();
+    });
+
+    independentOperatorsBtn?.addEventListener('click', () => {
+      setActiveCategory('independent');
+      if (alphabetFilter) alphabetFilter.style.display = 'flex';
+      filterCompanies();
+    });
+
+    naturalGasFocusedBtn?.addEventListener('click', () => {
+      setActiveCategory('gas');
+      if (alphabetFilter) alphabetFilter.style.display = 'flex';
+      filterCompanies();
+    });
+
+    midstreamBtn?.addEventListener('click', () => {
+      setActiveCategory('midstream');
+      if (alphabetFilter) alphabetFilter.style.display = 'flex';
+      filterCompanies();
+    });
+
+    serviceCompaniesBtn?.addEventListener('click', () => {
+      setActiveCategory('service');
+      if (alphabetFilter) alphabetFilter.style.display = 'flex';
+      filterCompanies();
+    });
+
+    // Alphabet button handlers
+    alphabetBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const letter = (btn as HTMLElement).dataset?.letter || 'all';
+        currentLetter = letter;
+        setActiveAlphabet(currentLetter);
+        filterCompanies();
+      });
+    });
+
+    function setActiveCategory(category: string): void {
+      currentCategory = category;
+      
+      // Reset all category buttons
+      [allCompaniesBtn, integratedProducersBtn, independentOperatorsBtn, naturalGasFocusedBtn].forEach(btn => {
+        if (btn) {
+          btn.classList.remove('bg-petroleum-gold', 'text-white');
+          btn.classList.add('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        }
+      });
+      
+      // Set active button
+      if (category === 'all' && allCompaniesBtn) {
+        allCompaniesBtn.classList.remove('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        allCompaniesBtn.classList.add('bg-petroleum-gold', 'text-white');
+      } else if (category === 'integrated' && integratedProducersBtn) {
+        integratedProducersBtn.classList.remove('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        integratedProducersBtn.classList.add('bg-petroleum-gold', 'text-white');
+      } else if (category === 'independent' && independentOperatorsBtn) {
+        independentOperatorsBtn.classList.remove('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        independentOperatorsBtn.classList.add('bg-petroleum-gold', 'text-white');
+      } else if (category === 'gas' && naturalGasFocusedBtn) {
+        naturalGasFocusedBtn.classList.remove('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        naturalGasFocusedBtn.classList.add('bg-petroleum-gold', 'text-white');
+      } else if (category === 'midstream' && midstreamBtn) {
+        midstreamBtn.classList.remove('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        midstreamBtn.classList.add('bg-petroleum-gold', 'text-white');
+      } else if (category === 'service' && serviceCompaniesBtn) {
+        serviceCompaniesBtn.classList.remove('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        serviceCompaniesBtn.classList.add('bg-petroleum-gold', 'text-white');
+      }
+    }
+
+    function setActiveAlphabet(letter: string): void {
+      // Reset all alphabet buttons
+      alphabetBtns.forEach(btn => {
+        btn.classList.remove('bg-petroleum-gold', 'text-white');
+        btn.classList.add('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+      });
+      
+      // Set active button
+      const activeBtn = document.querySelector(`[data-letter="${letter}"]`) as HTMLElement;
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white', 'text-charcoal', 'border-2', 'border-gray-300');
+        activeBtn.classList.add('bg-petroleum-gold', 'text-white');
+      }
+    }
+
+    function filterCompanies(): void {
+      let filteredCompanies = [...allCompanies];
+      
+      // Apply category filter
+      if (currentCategory === 'integrated') {
+        filteredCompanies = filteredCompanies.filter(c => 
+          c.type.includes('Integrated') || c.type.includes('Producer') || c.type.includes('Montney')
+        );
+      } else if (currentCategory === 'independent') {
+        filteredCompanies = filteredCompanies.filter(c => 
+          c.type.includes('Independent') || c.type.includes('Exploration') || c.type.includes('Mining')
+        );
+      } else if (currentCategory === 'gas') {
+        filteredCompanies = filteredCompanies.filter(c => 
+          c.type.includes('Gas') || c.type.includes('Natural') || c.type.includes('Helium')
+        );
+      } else if (currentCategory === 'midstream') {
+        filteredCompanies = filteredCompanies.filter(c => 
+          c.type === 'Midstream Company'
+        );
+      } else if (currentCategory === 'service') {
+        filteredCompanies = filteredCompanies.filter(c => 
+          c.type === 'Service Company'
+        );
+      }
+      
+      // Apply alphabet filter
+      if (currentLetter !== 'all') {
+        filteredCompanies = filteredCompanies.filter(c => 
+          c.name.toUpperCase().startsWith(currentLetter)
+        );
+      }
+      
+      // Render filtered companies
+      renderCompanies(filteredCompanies);
+    }
+
+    function renderCompanies(companies: any[]): void {
+      if (gridContainer) {
+        gridContainer.innerHTML = companies.map((company: any) => `
+          <a href="/companies/${company.slug}/" class="no-underline">
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-petroleum-gold p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div class="flex items-start justify-between mb-4">
+                <span class="text-petroleum-gold text-2xl font-bold">${company.rank}</span>
+                <span class="bg-light-gold text-deep-navy px-3 py-1 rounded-full text-sm font-semibold">
+                  ${company.type}
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-deep-navy mb-3">${company.name}</h3>
+              <div class="space-y-2">
+                ${company.stats.map((stat: any) => `
+                  <div class="flex justify-between items-center">
+                    <span class="text-charcoal text-sm">${stat.label}:</span>
+                    <span class="text-deep-navy font-semibold text-sm">${stat.value}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </a>
+        `).join('');
+        
+        // Update count
+        const countElement = document.querySelector('.inline-flex.items-center.gap-3 span.text-deep-navy');
+        if (countElement) {
+          countElement.textContent = `Showing ${companies.length} of ${allCompanies.length} companies`;
+        }
+      }
+    }
+
+    // Alphabet filter event listeners
+    alphabetBtns.forEach(btn => {
+      const letter = btn.getAttribute('data-letter');
+      if (letter) {
+        btn.addEventListener('click', () => {
+          currentLetter = letter;
+          setActiveAlphabet(letter);
+          filterCompanies();
+        });
+      }
+    });
+
+    // Initialize
+    filterCompanies();
+  </script>
 </BaseLayout>

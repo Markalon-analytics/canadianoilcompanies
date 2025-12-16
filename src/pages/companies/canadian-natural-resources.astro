@@ -1,0 +1,54 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Canadian Natural Resources Limited',
+  website: 'https://www.cnrl.com/',
+  description: 'Canadian Natural Resources Limited is one of the largest independent crude oil and natural gas producers in the world. The company develops and produces crude oil, natural gas liquids and natural gas across Western Canada, the UK North Sea and Offshore Africa. Canadian Natural is committed to operational excellence, environmental stewardship and providing energy that improves quality of life.',
+  address: '2100, 855 - 2nd Street SW, Calgary, Alberta T2P 4J8, Canada',
+  stockSymbol: 'CNQ',
+  exchange: 'TSX',
+  keyHighlights: [
+    'One of the largest independent crude oil and natural gas producers in the world',
+    'Operations across Western Canada, UK North Sea, and Offshore Africa',
+    '2025 Investor Open House completed',
+    'Strong Q3 2025 financial results',
+    'Building Futures Scholarship program',
+    'Oil sands tours for teachers program',
+    'Build Canada Now initiative',
+    '2024 Sustainability Highlights report published'
+  ],
+  stockInformation: {
+    symbol: 'CNQ',
+    exchange: 'TSX',
+    listedOn: 'Toronto Stock Exchange',
+    alsoListed: 'NYSE'
+  },
+  operationalHighlights: [
+    'Crude oil, natural gas liquids and natural gas production',
+    'Oil sands operations',
+    'Conventional oil and natural gas',
+    'Refining operations across Canada and the United States',
+    'Offshore operations in UK North Sea and Africa'
+  ],
+  geographicFocus: [
+    'Western Canada',
+    'United States',
+    'UK North Sea',
+    'Offshore Africa'
+  ],
+  recentNews: [
+    'Dec 2024: CAD Notes pricing announcement',
+    'Nov 2024: Q3 2025 results announced',
+    'Nov 2024: Quarterly dividend announcement'
+  ],
+  sustainability: [
+    '2024 Sustainability Highlights published',
+    'Community investment programs',
+    'Environmental stewardship initiatives',
+    'Indigenous partnerships'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

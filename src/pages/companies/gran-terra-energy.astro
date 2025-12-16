@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Gran Tierra Energy Inc.',
+  stockSymbol: 'GTE',
+  exchange: 'TSX',
+  description: 'Gran Tierra Energy Inc. is an international oil and gas exploration and production company with a focus on South America. The company is headquartered in Calgary, Canada, and operates in Colombia, Brazil, and Ecuador. Gran Tierra is committed to responsible energy development and creating value for stakeholders.',
+  address: 'Suite 3500, 400 - 4th Avenue SW, Calgary, Alberta T2P 0H9, Canada',
+  website: 'https://www.grantierraenergy.com/',
+  keyHighlights: [
+    'International oil and gas exploration and production company with operations in Colombia, Brazil, and Ecuador',
+    'Strategically headquartered in Calgary, Canada with operational focus on South American assets',
+    'Committed to responsible energy development and environmental stewardship',
+    'Focused on creating value for all stakeholders through operational excellence',
+    'Balanced portfolio of exploration opportunities and producing assets',
+    'Led by a team with extensive experience in South American oil and gas operations',
+    'Strategic focus on optimizing existing assets while pursuing high-impact exploration opportunities',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Colombia, Brazil, and Ecuador',
+    locations: 'Colombian exploration and production blocks, Brazilian concessions, Ecuadorian operations',
+  },
+  capitalOutlook: 'Optimization of South American assets',
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,45 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Birchcliff Energy Ltd.',
+  website: 'https://www.birchcliffenergy.com/',
+  description: 'Birchcliff Energy Ltd. is an intermediate oil and natural gas company focused on the Montney/Doig resource play in the Peace River Arch of Alberta. The company is engaged in exploring for, developing and producing natural gas, light crude oil, and natural gas liquids. Birchcliff is committed to creating long-term shareholder value through operational excellence and sustainable development.',
+  address: 'Suite 1000, 600 - 3rd Avenue SW, Calgary, Alberta T2P 0G5, Canada',
+  stockSymbol: 'BIR',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Intermediate oil and natural gas company',
+    'Focused on Montney/Doig Resource Play in Alberta',
+    'Listed on Toronto Stock Exchange under symbol BIR',
+    'Included in S&P/TSX Composite Index',
+    '100% owned and operated Pouce Coupe Gas Plant',
+    'Owns and controls significant facilities and infrastructure',
+    '20th anniversary celebration in 2025',
+    'Strong community involvement and donations'
+  ],
+  stockInformation: {
+    symbol: 'BIR',
+    exchange: 'TSX',
+    listedOn: 'Toronto Stock Exchange',
+    indexIncluded: 'S&P/TSX Composite Index'
+  },
+  operationalHighlights: [
+    'Exploring for, developing and producing natural gas, light oil, condensate and NGLs',
+    'Montney/Doig Resource Play - premier resource play in North America',
+    '100% owned and operated Pouce Coupe Gas Plant',
+    'Controls significant facilities and infrastructure',
+    'Long-life, low-decline assets'
+  ],
+  landHoldings: {
+    locations: 'Montney/Doig Resource Play in Alberta',
+    proximity: 'Controls significant facilities and infrastructure'
+  },
+  recentNews: [
+    'Nov 2025: TSX approval for renewal of Normal Course Issuer Bid',
+    'Jan 2026: 2026 Capital Budget and Updated Five-Year Outlook'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

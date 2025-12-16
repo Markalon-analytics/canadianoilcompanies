@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Topaz Energy Corp.',
+  website: 'https://www.topazenergy.ca/',
+  description: 'Topaz Energy Corp. is a Canadian royalty and infrastructure energy company focused on providing shareholders with a reliable, growing dividend and future option value. The company acquires royalty interests and infrastructure assets in the Canadian energy sector. Topaz emphasizes sustainable growth and consistent returns.',
+  address: '2900, 250 - 6th Avenue SW, Calgary, Alberta T2P 3H7, Canada',
+  stockSymbol: 'TPZ',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian royalty and infrastructure energy company',
+    'Focus on providing reliable, growing dividend and future option value',
+    'Acquires royalty interests and infrastructure assets',
+    'Operations in Canadian energy sector',
+    'Emphasis on sustainable growth and consistent returns',
+  ],
+  landHoldings: {
+    totalAcres: 'Royalty and infrastructure assets',
+    locations: 'Canadian energy sector',
+  },
+  capitalOutlook: 'Strategic royalty and infrastructure acquisitions',
+};
+---
+
+<CompanyPageLayout company={company} />

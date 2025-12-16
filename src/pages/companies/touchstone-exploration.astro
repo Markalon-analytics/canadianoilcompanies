@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Touchstone Exploration Inc.',
+  website: 'https://www.touchstoneexploration.com/',
+  description: 'Touchstone Exploration Inc. is an innovative and dynamic company engaged in the complete exploration, development, and production lifecycle of oil and gas resources. The company operates primarily in Trinidad and Tobago. Touchstone is headquartered in Calgary with a focus on international oil and gas development.',
+  address: 'Suite 4100, 350 - 7th Avenue SW, Calgary, Alberta T2P 3N9, Canada',
+  stockSymbol: 'TTX',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Innovative and dynamic oil and gas company',
+    'Engaged in complete exploration, development, and production lifecycle',
+    'Primary operations in Trinidad and Tobago',
+    'Headquartered in Calgary, Canada',
+    'Focus on international oil and gas development',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Trinidad and Tobago',
+    locations: 'International oil and gas assets',
+  },
+  capitalOutlook: 'International exploration and development',
+};
+---
+
+<CompanyPageLayout company={company} />

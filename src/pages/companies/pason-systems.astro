@@ -1,0 +1,29 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Pason Systems Inc.',
+  website: 'https://www.pason.com/',
+  description: 'Pason Systems Inc. is a leading provider of specialized data management systems and services to the drilling industry. The company delivers real-time data acquisition, wellsite reporting, remote communications and web-based information management. Pason serves the oil and gas industry globally with innovative technology solutions.',
+  address: '6130 Third Street SE, Calgary, Alberta T2H 1K4, Canada',
+  stockSymbol: 'PSI',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading provider of specialized data management systems',
+    'Services to the drilling industry',
+    'Real-time data acquisition',
+    'Wellsite reporting solutions',
+    'Remote communications',
+    'Web-based information management',
+    'Global oil and gas industry service',
+    'Innovative technology solutions',
+  ],
+  landHoldings: {
+    totalAcres: 'Global operations',
+    locations: 'Oil and gas drilling sites worldwide',
+  },
+  capitalOutlook: 'Data management technology expansion and innovation',
+};
+---
+
+<CompanyPageLayout company={company} />

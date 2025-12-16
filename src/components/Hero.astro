@@ -4,14 +4,16 @@ interface Props {
   title: string;
   subtitle: string;
   primaryCTA?: string;
+  primaryCTAHref?: string;
   secondaryCTA?: string;
+  secondaryCTAHref?: string;
   metrics?: Array<{
     number: string;
     text: string;
   }>;
 }
 
-const { badge, title, subtitle, primaryCTA, secondaryCTA, metrics } = Astro.props;
+const { badge, title, subtitle, primaryCTA, primaryCTAHref, secondaryCTA, secondaryCTAHref, metrics } = Astro.props;
 ---
 
 <section class="bg-gradient-to-b from-white to-off-white px-8 py-24 pb-20 text-center">
@@ -33,12 +35,20 @@ const { badge, title, subtitle, primaryCTA, secondaryCTA, metrics } = Astro.prop
 
     {(primaryCTA || secondaryCTA) && (
       <div class="flex gap-6 justify-center mb-16 flex-wrap">
-        {primaryCTA && (
+        {primaryCTA && primaryCTAHref ? (
+          <a href={primaryCTAHref} target="_blank" rel="noopener noreferrer" class="bg-deep-navy text-white border-2 border-deep-navy px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-transparent hover:text-deep-navy hover:-translate-y-0.5 hover:shadow-lg hover:shadow-deep-navy/20 inline-block">
+            {primaryCTA}
+          </a>
+        ) : primaryCTA && (
           <button class="bg-deep-navy text-white border-2 border-deep-navy px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-transparent hover:text-deep-navy hover:-translate-y-0.5 hover:shadow-lg hover:shadow-deep-navy/20">
             {primaryCTA}
           </button>
         )}
-        {secondaryCTA && (
+        {secondaryCTA && secondaryCTAHref ? (
+          <a href={secondaryCTAHref} target="_blank" rel="noopener noreferrer" class="bg-transparent text-petroleum-gold border-2 border-petroleum-gold px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-petroleum-gold hover:text-white hover:-translate-y-0.5 inline-block">
+            {secondaryCTA}
+          </a>
+        ) : secondaryCTA && (
           <button class="bg-transparent text-petroleum-gold border-2 border-petroleum-gold px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-petroleum-gold hover:text-white hover:-translate-y-0.5">
             {secondaryCTA}
           </button>

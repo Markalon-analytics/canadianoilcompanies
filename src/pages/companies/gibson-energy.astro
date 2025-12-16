@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Gibson Energy Inc.',
+  website: 'https://www.gibsonenergy.com/',
+  description: 'Gibson Energy Inc. is a leading North American liquids infrastructure company with principal businesses consisting of storage, optimization, processing, and gathering of liquids and refined products. The company operates 25.2 million barrels of storage capacity across Western Canada and the United States. Gibson connects customers to markets, employees to rewarding careers, and investors to long-term value creation.',
+  address: '1700, 440 - 2nd Avenue SW, Calgary, Alberta T2P 5E9, Canada',
+  stockSymbol: 'GEI',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading North American liquids infrastructure company',
+    'Storage, optimization, processing, and gathering operations',
+    '25.2 million barrels of storage capacity',
+    'Operations across Western Canada and the United States',
+    'Focus on connecting customers to markets',
+    'Commitment to long-term value creation',
+  ],
+  landHoldings: {
+    totalAcres: 'Infrastructure across North America',
+    locations: 'Western Canada and United States',
+  },
+  capitalOutlook: 'Liquids infrastructure expansion and optimization',
+};
+---
+
+<CompanyPageLayout company={company} />

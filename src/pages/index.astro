@@ -7,10 +7,10 @@ import CompanyCard from '../components/CompanyCard.astro';
 import CTASection from '../components/CTASection.astro';
 
 const metrics = [
-  { number: '50+', text: 'Major Companies' },
-  { number: '$180B', text: 'Combined Revenue' },
-  { number: '4.5M', text: 'Barrels Per Day' },
-  { number: '95%', text: 'Analyst Satisfaction' },
+  { number: '120+', text: 'Major Companies' },
+  { number: '$250B+', text: 'Combined Revenue' },
+  { number: '5.2M', text: 'Barrels Per Day' },
+  { number: '98%', text: 'Data Accuracy' },
 ];
 
 const valueProps = [
@@ -39,43 +39,47 @@ const valueProps = [
 const companies = [
   {
     rank: '01',
-    name: 'Suncor Energy Inc.',
-    type: 'Integrated Energy',
+    name: 'ARC Resources Ltd.',
+    type: 'Montney Producer',
     stats: [
-      { label: 'Daily Production', value: '~800,000 BPD' },
-      { label: 'Market Capitalization', value: '$45B CAD' },
-      { label: 'Headquarters', value: 'Calgary, AB' },
+      { label: 'Daily Production', value: '~410,000 BOE/D' },
+      { label: 'Stock Symbol', value: 'ARX (TSX)' },
+      { label: 'Land Holdings', value: '1M+ net acres' },
     ],
+    slug: 'arc-resources',
   },
   {
     rank: '02',
-    name: 'Canadian Natural Resources Ltd.',
-    type: 'Independent Producer',
+    name: 'Canadian Natural Resources Limited',
+    type: 'Integrated Producer',
     stats: [
-      { label: 'Daily Production', value: '~1.2M BPD' },
-      { label: 'Market Capitalization', value: '$60B CAD' },
-      { label: 'Headquarters', value: 'Calgary, AB' },
+      { label: 'Operations', value: 'Canada, UK North Sea, Africa' },
+      { label: 'Stock Symbol', value: 'CNQ (TSX/NYSE)' },
+      { label: 'Focus', value: 'Oil Sands & Conventional' },
     ],
+    slug: 'canadian-natural-resources',
   },
   {
     rank: '03',
     name: 'Cenovus Energy Inc.',
     type: 'Integrated Energy',
     stats: [
-      { label: 'Daily Production', value: '~750,000 BPD' },
-      { label: 'Market Capitalization', value: '$35B CAD' },
-      { label: 'Headquarters', value: 'Calgary, AB' },
+      { label: 'Operations', value: 'Canada, US, Asia Pacific' },
+      { label: 'Stock Symbol', value: 'CVE (TSX/NYSE)' },
+      { label: 'Focus', value: 'Oil Sands & Refining' },
     ],
+    slug: 'cenovus-energy',
   },
   {
     rank: '04',
-    name: 'Imperial Oil Limited',
+    name: 'Suncor Energy Inc.',
     type: 'Integrated Energy',
     stats: [
-      { label: 'Daily Production', value: '~400,000 BPD' },
-      { label: 'Market Capitalization', value: '$42B CAD' },
-      { label: 'Headquarters', value: 'Calgary, AB' },
+      { label: 'Operations', value: 'Oil Sands, Refining, Retail' },
+      { label: 'Stock Symbol', value: 'SU (TSX)' },
+      { label: 'Focus', value: 'Diverse Energy Sources' },
     ],
+    slug: 'suncor-energy',
   },
 ];
 ---

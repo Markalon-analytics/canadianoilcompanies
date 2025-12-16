@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Imperial Oil Limited',
+  stockSymbol: 'IMO',
+  exchange: 'TSX',
+  description: 'Imperial Oil Limited is one of Canada\'s largest integrated oil companies, focused on creating solutions that improve quality of life and meet society\'s evolving needs. The company produces high-quality fuels, lubricants and chemical products marketed under the Esso and Mobil brands.',
+  address: '237 - 4th Avenue SW, Calgary, Alberta T2P 0H6, Canada',
+  website: 'https://www.imperialoil.ca/',
+  keyHighlights: [
+    'One of Canada\'s largest integrated oil companies with extensive operations across the country',
+    'Produces and markets products under the trusted Esso and Mobil brands nationwide',
+    'Comprehensive operations spanning upstream, downstream, and petrochemical segments',
+    'Leading producer of high-quality fuels, lubricants, and chemical products',
+    'Advanced technology and innovation in oil sands and conventional operations',
+    'Strong commitment to environmental stewardship and sustainable development',
+    'Major contributor to Canadian energy security and economic development',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Canada',
+    locations: 'Oil sands operations, conventional fields, refineries, and distribution network',
+  },
+  capitalOutlook: 'Sustained investment in Canadian energy infrastructure',
+};
+---
+
+<CompanyPageLayout company={company} />

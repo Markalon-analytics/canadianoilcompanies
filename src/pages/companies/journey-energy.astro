@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Journey Energy Inc.',
+  website: 'https://www.journeyenergy.ca/',
+  description: 'Journey Energy Inc. is a Canadian exploration and production company focused on conventional, oil-weighted operations in Alberta, Canada. The company\'s strategy emphasizes creating long-term value through the development of undercapitalized assets. Journey focuses on operational efficiency and sustainable growth.',
+  stockSymbol: 'JOY',
+  exchange: 'TSX',
+  address: 'Suite 700, Centre 10, 517 - 10th Avenue SW, Calgary, Alberta T2R 0A8, Canada',
+  keyHighlights: [
+    'Oil exploration and production company focused on creating long-term value through development of undercapitalized assets',
+    'Transformational acquisition in fall 2022 significantly expanded asset base and development runway',
+    'Low decline, high free cash flow generating assets strengthening ability to drive shareholder returns',
+    'Ultimate goal of returning capital to shareholders over time',
+    'Listed on Toronto Stock Exchange under symbol JOY',
+    'Also trades on OTCQX market in the US under symbol JRNGF',
+    'Operations throughout the Western Canada Sedimentary Basin',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Alberta',
+    locations: 'Conventional oil-weighted assets in Alberta',
+  },
+  capitalOutlook: 'Development of undercapitalized assets in Alberta',
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Africa Energy Corp.',
+  website: 'https://africaenergycorp.com/',
+  description: 'Africa Energy Corp. is a Canadian oil and gas exploration company focused on exploration assets in South Africa and Namibia. The company holds approximately 49% of the common shares in offshore exploration blocks. Africa Energy is listed on the TSX Venture Exchange under the ticker symbol AFE.',
+  address: '885 West Georgia Street, Suite 2000, Vancouver, BC V6C 3E8, Canada',
+  stockSymbol: 'AFE',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Canadian oil and gas exploration company',
+    'Focus on South Africa and Namibia offshore exploration',
+    'Holds approximately 49% of common shares in offshore exploration blocks',
+    'Listed on TSX Venture Exchange under symbol AFE',
+    'Strategic positioning in proven petroleum basins',
+    'Committed to responsible exploration and development',
+  ],
+  landHoldings: {
+    totalAcres: 'Offshore exploration blocks in South Africa and Namibia',
+    locations: 'South Africa and Namibia offshore regions',
+  },
+  capitalOutlook: 'Offshore exploration and development in South Africa and Namibia',
+};
+---
+
+<CompanyPageLayout company={company} />

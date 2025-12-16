@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Yangarra Resources Ltd.',
+  website: 'https://www.yangarra.ca/',
+  description: 'Yangarra Resources Ltd. is a Canadian junior oil and gas company engaged in the exploration, development and production of clean natural gas and conventional oil. The company focuses on the Cardium play in central Alberta. Yangarra emphasizes maximizing shareholder returns while adhering to core values of integrity and environmental stewardship.',
+  address: 'Suite 1530, 715 - 5th Avenue SW, Calgary, Alberta T2P 2X6, Canada',
+  stockSymbol: 'YGR',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian junior oil and gas company',
+    'Engaged in exploration, development and production',
+    'Focus on clean natural gas and conventional oil',
+    'Primary focus on Cardium play in central Alberta',
+    'Emphasis on maximizing shareholder returns',
+    'Core values of integrity and environmental stewardship',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in central Alberta',
+    locations: 'Cardium play',
+  },
+  capitalOutlook: 'Cardium play development and production',
+};
+---
+
+<CompanyPageLayout company={company} />

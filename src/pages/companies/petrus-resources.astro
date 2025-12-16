@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Petrus Resources Ltd.',
+  website: 'https://www.petrusresources.com/',
+  description: 'Petrus Resources Ltd. is a Canadian energy company active in property exploitation, strategic acquisitions and risk-managed exploration in Alberta. The company focuses on high-quality assets in the Deep Basin and Foothills regions. Petrus emphasizes operational efficiency and creating value for shareholders.',
+  address: 'Suite 1110, 240 - 4th Avenue SW, Calgary, Alberta T2P 4H4, Canada',
+  stockSymbol: 'PRQ',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian energy company active in property exploitation, strategic acquisitions and risk-managed exploration',
+    'Extensive inventory of low risk oil and natural gas development assets',
+    'Operating areas: Ferrier, North Ferrier and Thorsby in Alberta',
+    'Experienced management team and board with strong track record of shareholder value creation',
+    'Return-driven company focused on delivering per share growth in cash flow, production and reserves',
+    'Assets. Execution. Results. approach to value creation',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Alberta',
+    locations: 'Deep Basin and Foothills regions',
+  },
+  capitalOutlook: 'Strategic acquisitions and exploration in Deep Basin and Foothills',
+};
+---
+
+<CompanyPageLayout company={company} />

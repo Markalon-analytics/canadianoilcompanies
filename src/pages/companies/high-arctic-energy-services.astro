@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'High Arctic Energy Services Inc.',
+  website: 'https://haes.ca/',
+  description: 'High Arctic Energy Services Inc. is a market leader in Canada providing specialized well completion services and rental equipment to the oil and gas industry. With over 30 years of experience, the company offers a wide range of equipment and services including nitrogen services and specialized rentals. High Arctic operates in Canada with regional offices supporting oil and gas operations.',
+  address: 'Suite 2350, 330 - 5th Avenue SW, Calgary, Alberta T2P 0L4, Canada',
+  stockSymbol: 'HWO',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Market leader in specialized well completion services',
+    'Rental equipment to oil and gas industry',
+    'Over 30 years of experience',
+    'Wide range of equipment and services',
+    'Nitrogen services',
+    'Specialized rentals',
+    'Regional offices supporting operations',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Canada',
+    locations: 'Oil and gas fields',
+  },
+  capitalOutlook: 'Well completion equipment and service expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

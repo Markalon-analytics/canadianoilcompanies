@@ -1,0 +1,183 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  company: {
+    name: string;
+    website: string;
+    description: string;
+    address: string;
+    stockSymbol?: string;
+    exchange?: string;
+    keyHighlights?: string[];
+    landHoldings?: {
+      totalAcres?: string;
+      netSections?: string;
+      locations?: string;
+      proximity?: string;
+    };
+    capitalOutlook?: string;
+  };
+}
+
+const { company } = Astro.props;
+---
+
+<BaseLayout
+  title={`${company.name} | Canadian Oil Companies Directory`}
+  description={company.description}
+>
+  <section class="px-8 py-12 bg-gradient-to-b from-off-white to-white">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="mb-8">
+        <a href="/directory/" class="inline-flex items-center gap-2 text-petroleum-gold font-semibold text-[0.9rem] hover:text-rich-amber transition-colors duration-300">
+          <span>←</span>
+          <span>Back to Directory</span>
+        </a>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md border-t-4 border-petroleum-gold p-10">
+        <div class="mb-8">
+          <div class="flex items-start justify-between flex-wrap gap-6 mb-6">
+            <div>
+              <h1 class="text-[2.5rem] font-extrabold text-deep-navy mb-3 leading-tight">
+                {company.name}
+              </h1>
+              <a
+                href={company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 text-deep-navy font-semibold hover:text-petroleum-gold transition-colors duration-300"
+              >
+                <span>Visit Website</span>
+                <span>→</span>
+              </a>
+            </div>
+            <div class="bg-gradient-to-br from-petroleum-gold to-rich-amber p-6 rounded-lg shadow-md min-w-[280px]">
+              <h3 class="text-[1.1rem] font-bold text-deep-navy mb-3">Compare Companies</h3>
+              <p class="text-[0.9rem] text-deep-navy mb-5 leading-relaxed">
+                See how {company.name} stacks up against other Canadian energy producers.
+              </p>
+              <a
+                href="https://info.evaluateenergy.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-deep-navy text-white font-semibold px-6 py-3 rounded-md hover:bg-rich-amber hover:text-deep-navy transition-all duration-300 no-underline"
+              >
+                <span>Compare Now</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="h-[2px] bg-gradient-to-r from-petroleum-gold to-transparent mb-8"></div>
+
+          <div class="mb-10">
+            <h2 class="text-[1.5rem] font-bold text-deep-navy mb-4">Company Overview</h2>
+            <p class="text-[1.05rem] text-charcoal leading-relaxed">
+              {company.description}
+            </p>
+          </div>
+
+          {company.keyHighlights && company.keyHighlights.length > 0 && (
+            <div class="mb-10">
+              <h2 class="text-[1.5rem] font-bold text-deep-navy mb-6">Key Highlights</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {company.keyHighlights.map((highlight) => (
+                  <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-light-gold flex items-center justify-center mt-1">
+                      <span class="text-petroleum-gold font-bold text-[0.75rem]">✓</span>
+                    </div>
+                    <div class="text-[0.95rem] text-charcoal">
+                      {highlight}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {company.landHoldings && (
+            <div class="mb-10">
+              <h2 class="text-[1.5rem] font-bold text-deep-navy mb-6">Land Holdings & Operations</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {company.landHoldings.totalAcres && (
+                  <div class="bg-off-white p-6 rounded-lg border-l-4 border-petroleum-gold">
+                    <div class="text-[0.85rem] text-charcoal font-medium mb-2">Total Land Position</div>
+                    <div class="text-[1.1rem] font-bold text-deep-navy mb-3">{company.landHoldings.totalAcres}</div>
+                    {company.landHoldings.netSections && (
+                      <div class="text-[0.85rem] text-charcoal mb-3">{company.landHoldings.netSections}</div>
+                    )}
+                  </div>
+                )}
+                {company.landHoldings.locations && (
+                  <div class="bg-off-white p-6 rounded-lg border-l-4 border-petroleum-gold">
+                    <div class="text-[0.85rem] text-charcoal font-medium mb-2">Geographic Focus</div>
+                    <div class="text-[0.95rem] text-charcoal leading-relaxed">{company.landHoldings.locations}</div>
+                  </div>
+                )}
+                {company.landHoldings.proximity && (
+                  <div class="bg-off-white p-6 rounded-lg border-l-4 border-petroleum-gold md:col-span-2">
+                    <div class="text-[0.85rem] text-charcoal font-medium mb-2">Location</div>
+                    <div class="text-[0.95rem] text-charcoal">{company.landHoldings.proximity}</div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {company.stockSymbol && company.exchange && (
+            <div class="mb-10 bg-light-gold p-8 rounded-lg">
+              <h2 class="text-[1.5rem] font-bold text-deep-navy mb-4">Stock Information</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <div class="text-[0.85rem] text-charcoal font-medium mb-2">Stock Symbol</div>
+                  <div class="text-[1.3rem] font-bold text-deep-navy">{company.stockSymbol}</div>
+                </div>
+                <div>
+                  <div class="text-[0.85rem] text-charcoal font-medium mb-2">Exchange</div>
+                  <div class="text-[1rem] text-charcoal">{company.exchange}</div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {company.capitalOutlook && (
+            <div class="mb-10 bg-off-white p-8 rounded-lg border-l-4 border-petroleum-gold">
+              <h2 class="text-[1.5rem] font-bold text-deep-navy mb-4">Capital Outlook</h2>
+              <p class="text-[1rem] text-charcoal leading-relaxed">
+                {company.capitalOutlook}
+              </p>
+            </div>
+          )}
+
+          <div class="bg-light-gold p-8 rounded-lg">
+            <h2 class="text-[1.5rem] font-bold text-deep-navy mb-4">Corporate Address</h2>
+            <p class="text-[1rem] text-charcoal leading-relaxed">
+              {company.address}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-20 bg-deep-navy">
+    <div class="max-w-[1000px] mx-auto text-center">
+      <h2 class="text-[2.5rem] font-extrabold text-white mb-6 leading-tight">
+        Explore More Canadian Energy Companies
+      </h2>
+      <p class="text-lg text-white/90 leading-relaxed mb-10">
+        Access comprehensive profiles and operational data for all major Canadian oil and gas producers.
+      </p>
+      <div class="flex gap-6 justify-center flex-wrap">
+        <a href="/directory/" class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 no-underline">
+          View Directory
+        </a>
+        <button class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1">
+          Request More Information
+        </button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from \'../../layouts/CompanyPageLayout.astro\';
+
+const company = {
+  name: \'Russel Metals Inc.\',
+  website: \'https://www.russelmetals.com/\',
+  description: \'Russel Metals Inc. is one of the largest metals distribution and processing companies in North America. The company serves the oil and gas industry with steel products including pipe, tubulars, and structural steel. Russel Metals operates an extensive network of service centers and processing facilities across North America supporting the energy sector.\',
+  address: \'6600 Financial Drive, Suite 100, Mississauga, Ontario L5N 7J6, Canada\',
+  stockSymbol: \'RUS\',
+  exchange: \'TSX\',
+  keyHighlights: [
+    \'One of the largest metals distribution companies in North America\',
+    \'Serves oil and gas industry with steel products\',
+    \'Pipe, tubulars, and structural steel\',
+    \'Extensive network of service centers\',
+    \'Processing facilities across North America\',
+    \'Supporting the energy sector\',
+  ],
+  landHoldings: {
+    totalAcres: \'Operations across North America\',
+    locations: \'Service centers and processing facilities\',
+  },
+  capitalOutlook: \'Metals distribution and processing expansion\',
+};
+---
+
+<CompanyPageLayout company={company} />

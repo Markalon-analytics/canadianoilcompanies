@@ -1,0 +1,43 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Canadian Spirit Resources Inc.',
+  website: 'https://www.csri.ca/',
+  description: 'Canadian Spirit Resources Inc. is a Canadian public company focused on the exploration and production of natural gas in the Montney Formation of northeast British Columbia. The company operates conventional oil and natural gas assets in Western Canada. CSRI is managed by Sproule Asset Management Limited.',
+  address: 'c/o Sproule Asset Management Limited, 900, 140 4th Avenue SW, Calgary, Alberta T2P 3N3, Canada',
+  stockSymbol: 'SPI',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Focus on natural gas exploration and production in Montney Formation',
+    'Northeast British Columbia operations',
+    'Access to responsible world class unconventional resource play',
+    'Strategic location along pipeline infrastructure to proposed LNG facilities',
+    'Significant land base in northeast BC',
+    'Managed by Sproule Asset Management Limited',
+    'Listed on TSX Venture Exchange under symbol SPI',
+    'Market access to West Coast of British Columbia LNG facilities'
+  ],
+  stockInformation: {
+    symbol: 'SPI',
+    exchange: 'TSXV',
+    listedOn: 'TSX Venture Exchange'
+  },
+  operationalHighlights: [
+    'Natural gas exploration and production',
+    'Montney Formation - leading oil and gas play in North America',
+    'Conventional oil and natural gas assets',
+    'Western Canada operations'
+  ],
+  landHoldings: {
+    locations: 'Montney Formation of northeast British Columbia',
+    proximity: 'Located along pipeline infrastructure to proposed LNG facilities'
+  },
+  geographicFocus: [
+    'Northeast British Columbia',
+    'Western Canada'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

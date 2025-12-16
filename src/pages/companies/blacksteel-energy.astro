@@ -1,0 +1,33 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Blacksteel Energy Inc.',
+  website: 'https://www.blacksteelenergy.com/',
+  description: 'Blacksteel Energy Inc. is a Canadian oil and gas exploration and production company. The company focuses on developing oil and gas assets in Western Canada. Blacksteel is engaged in acquisition, development, and production of petroleum and natural gas resources.',
+  address: '840 Sixth Avenue SW, Suite 220, Calgary, Alberta T2P 3E5, Canada',
+  keyHighlights: [
+    'Canadian oil and gas exploration and production company',
+    'Focus on developing oil and gas assets in Western Canada',
+    'Engaged in acquisition, development, and production',
+    'Petroleum and natural gas resource development',
+    'Headquartered in Calgary, Alberta',
+    'Strategic focus on Western Canadian Sedimentary Basin',
+    'Note: Official website currently unavailable (domain for sale)',
+    'Information based on CSV data and public records'
+  ],
+  operationalHighlights: [
+    'Oil and gas exploration and production',
+    'Asset acquisition and development',
+    'Western Canada focus',
+    'Petroleum and natural gas operations'
+  ],
+  geographicFocus: [
+    'Western Canada',
+    'Western Canadian Sedimentary Basin'
+  ],
+  researchNote: 'Official website (blacksteelenergy.com) is currently for sale. Information limited to CSV data and publicly available records.'
+};
+---
+
+<CompanyPageLayout company={company} />

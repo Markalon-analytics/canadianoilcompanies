@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Freehold Royalties Ltd.',
+  stockSymbol: 'FRU',
+  exchange: 'TSX',
+  description: 'Freehold Royalties manages one of the largest non-government portfolios of oil and natural gas royalties in Canada, with a sizeable land base in the U.S. The company is uniquely positioned as a leader in North American energy royalties, providing investors with lower-risk returns and sustainable dividends.',
+  address: 'Suite 2100, 400 - 4th Avenue SW, Calgary, Alberta T2P 0H9, Canada',
+  website: 'https://www.freeholdroyalties.com/',
+  keyHighlights: [
+    'One of the largest non-government portfolios of oil and natural gas royalties in Canada with significant U.S. land base',
+    'Controls 6.1 million gross acres in Canada and 1.2 million gross drilling acres in the U.S.',
+    'Portfolio weighted approximately 66% towards liquids, providing higher netbacks and cash flow',
+    'Focused on providing investors with lower-risk returns and growth over the long term through sustainable dividends',
+    'Pays dividends from a high-netback portfolio of mineral titles and royalties on oil and gas properties',
+    'Well-diversified royalty portfolio across multiple producing regions and operators',
+    'Regular financial reporting with quarterly results and investor presentations',
+  ],
+  landHoldings: {
+    totalAcres: '6.1 million gross acres in Canada, 1.2 million gross drilling acres in the U.S.',
+    locations: 'Canadian mineral titles and royalties, U.S. drilling acreage',
+  },
+  capitalOutlook: 'Strategic royalty acquisitions and portfolio optimization',
+};
+---
+
+<CompanyPageLayout company={company} />

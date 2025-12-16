@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Kiwetinohk Energy Corp.',
+  website: 'https://kiwetinohk.com/',
+  description: 'Kiwetinohk Energy Corp. is an integrated energy transition company focused on production of low carbon/carbon free energy. The company\'s vertically integrated business model pairs natural gas production with power generation, both natural gas-fired and renewable. Kiwetinohk operates in Alberta with a focus on sustainable energy development.',
+  address: '1700, 250 - 2nd Street SW, Calgary, Alberta T2P 0C1, Canada',
+  stockSymbol: 'KVE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Integrated energy transition company focused on low carbon/carbon free energy',
+    'Vertically integrated business model pairs natural gas production with power generation',
+    'Both natural gas-fired and renewable power generation capabilities',
+    'Operations in Alberta with focus on sustainable energy development',
+    'Name means "north" or "northward" in Cree, Indigenous language of Canada',
+    'Committed to advancing reconciliation and ensuring welcoming communities',
+    'Diverse leadership team with energy industry experience across operations and sustainability',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Alberta',
+    locations: 'Natural gas and power generation assets in Alberta',
+  },
+  capitalOutlook: 'Development of low carbon and carbon free energy projects',
+};
+---
+
+<CompanyPageLayout company={company} />

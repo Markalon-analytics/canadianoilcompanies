@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Pulse Seismic Inc.',
+  website: 'https://www.pulseseismic.com/',
+  description: 'Pulse Seismic Inc. is a market leader in the acquisition, marketing and licensing of seismic data to the western Canadian energy sector. The company maintains one of the largest seismic data libraries in Canada. Pulse provides essential subsurface imaging data to support exploration and development activities.',
+  address: 'Suite 1100, 250 - 2nd Street SW, Calgary, Alberta T2P 0C1, Canada',
+  stockSymbol: 'PSD',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Market leader in seismic data acquisition',
+    'Marketing and licensing of seismic data',
+    'Western Canadian energy sector service',
+    'One of the largest seismic data libraries in Canada',
+    'Essential subsurface imaging data',
+    'Supports exploration and development activities',
+  ],
+  landHoldings: {
+    totalAcres: 'Seismic data coverage across Western Canada',
+    locations: 'Western Canadian sedimentary basin',
+  },
+  capitalOutlook: 'Seismic data acquisition and library expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

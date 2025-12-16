@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'CES Energy Solutions Corp.',
+  website: 'https://www.cesenergysolutions.com/',
+  description: 'CES Energy Solutions Corp. is a leading provider of technically advanced consumable chemical solutions throughout the life-cycle of the oilfield. The company services the North American oil and natural gas industry with a vertically integrated business model. CES has evolved into an industry leader through organic growth and strategic acquisitions.',
+  address: 'Suite 1400, 332 - 6th Avenue SW, Calgary, Alberta T2P 0B2, Canada',
+  stockSymbol: 'CEU',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading provider of technically advanced chemical solutions',
+    'Services throughout oilfield life-cycle',
+    'North American oil and natural gas industry',
+    'Vertically integrated business model',
+    'Industry leader through organic growth',
+    'Strategic acquisitions for expansion',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North America',
+    locations: 'Oil and gas fields',
+  },
+  capitalOutlook: 'Chemical solutions and service expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

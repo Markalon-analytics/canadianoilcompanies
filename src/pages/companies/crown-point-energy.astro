@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Crown Point Energy Inc.',
+  stockSymbol: 'CWV',
+  exchange: 'TSX-V',
+  description: 'Crown Point Energy Inc. is a Calgary-based junior international oil and gas company with cash flow from production and a portfolio of additional opportunities in three producing basins in Argentina: the Austral basin in the province of Tierra del Fuego, and the Neuquén and Cuyano Basins in the province of Mendoza.',
+  address: 'PO Box 1562, Station M, Calgary, Alberta T2P 3B9, Canada',
+  website: 'https://crownpointenergy.com/',
+  keyHighlights: [
+    'Strategic focus on Argentina with operations in three producing basins: Austral, Neuquén, and Cuyano',
+    'Generating cash flow from existing production while developing additional opportunities',
+    'Operates across multiple productive basins providing geological and operational diversity',
+    'Active in the Austral basin in Tierra del Fuego province, a proven hydrocarbon region',
+    'Holds interests in the Neuquén and Cuyano basins in Mendoza province',
+    'Positioned as a junior international oil and gas company with growth potential',
+    'Dedicated to conventional oil and gas development in Argentina\'s established producing regions',
+  ],
+  landHoldings: {
+    totalAcres: 'Multiple producing basins in Argentina',
+    locations: 'Austral basin - Tierra del Fuego province, Neuquén basin - Mendoza province, Cuyano basin - Mendoza province',
+  },
+  capitalOutlook: 'Development of conventional oil and gas assets in Argentina',
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from \'../../layouts/CompanyPageLayout.astro\';
+
+const company = {
+  name: \'PetroTal Corp.\',
+  website: \'https://petrotalcorp.com/\',
+  description: \'PetroTal Corp. is a publicly traded, tri-quoted oil and gas development and production company domiciled in Calgary, Alberta, Canada. The company operates in Peru with a focus on conventional oil development in the Maranon Basin. PetroTal is committed to responsible operations and community engagement.\',
+  address: \'4300 Bankers Hall West, 888 - 3rd Street SW, Calgary, Alberta T2P 5C5, Canada\',
+  stockSymbol: \'PTAL\',
+  exchange: \'TSXV\',
+  keyHighlights: [
+    \'Publicly traded, tri-quoted oil and gas company listed on TSX, AIM London and OTCQX\',
+    \'Development and production operations in Peru with focus on conventional oil development\',
+    \'Operations in Maranon Basin with commitment to responsible development\',
+    \'Working to make Peru stronger economically, socially and environmentally\',
+    \'2.5% of oil sales invested back into community infrastructure\',
+    \'Protecting over 1000 animal species in Pacaya Samiria National Reserve\',
+    \'Strong focus on environmental protection and biodiversity\',
+  ],
+  landHoldings: {
+    totalAcres: \'Operations in Peru\',
+    locations: \'Maranon Basin, Peru\',
+  },
+  capitalOutlook: \'Development of conventional oil assets in Maranon Basin\',
+};
+---
+
+<CompanyPageLayout company={company} />

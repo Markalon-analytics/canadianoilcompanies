@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Valeura Energy Inc.',
+  website: 'https://www.valeuraenergy.com/',
+  description: 'Valeura Energy Inc. is a Canadian company engaged in the exploration, development and production of petroleum and natural gas in Thailand. The company focuses on conventional oil and gas development in Southeast Asia. Valeura was ranked No. 1 of Canada\'s Top Growing Companies and maintains offices in Calgary and Singapore.',
+  address: 'Suite 685, 404 - 6th Avenue SW, Calgary, Alberta T2P 0R9, Canada',
+  stockSymbol: 'VLE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian company engaged in petroleum and natural gas exploration, development and production',
+    'Operations in Thailand, Southeast Asia',
+    'Focus on conventional oil and gas development',
+    'Ranked No. 1 of Canada\'s Top Growing Companies',
+    'Maintains offices in Calgary and Singapore',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Thailand',
+    locations: 'Southeast Asia',
+  },
+  capitalOutlook: 'Conventional oil and gas development in Thailand',
+};
+---
+
+<CompanyPageLayout company={company} />

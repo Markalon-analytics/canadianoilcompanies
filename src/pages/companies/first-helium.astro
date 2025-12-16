@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'First Helium Inc.',
+  stockSymbol: 'HELI',
+  exchange: 'TSXV',
+  description: 'First Helium Inc. is a Canadian company exploring and developing a premier helium project in Alberta, Canada. This high-value, low-risk to high-impact exploration project is among the most advanced helium assets held by junior companies in North America.',
+  address: 'Suite 800, 639 - 5th Avenue SW, Calgary, Alberta T2P 0M9, Canada',
+  website: 'https://www.firsthelium.com/',
+  keyHighlights: [
+    'Advanced-stage project covering 53,000 acres in northwestern Alberta with multi-commodity exposure to helium, oil, NGLs and natural gas',
+    'Company boasts a helium discovery well (15-25) and two successful oil discovery wells (1-30 and 4-29)',
+    'Engineering firm Sproule Associates Ltd. estimated helium resources of approximately 323 million cubic feet in the discovery well',
+    'Helium-enriched natural gas can garner premium pricing with netbacks ranging from 3-4 times conventional natural gas',
+    'Plans to test substantial structure in Leduc Formation identified on proprietary 3D seismic',
+    'Successfully drilled first horizontal helium-enriched natural gas target, cased for future completion and testing',
+    'Assets located in proven helium-rich area with exposure to multiple productive horizons',
+  ],
+  landHoldings: {
+    totalAcres: '53,000 acres',
+    locations: 'Worsley Helium Project - Northwestern Alberta',
+  },
+  capitalOutlook: 'Continued drilling and development of helium resources',
+};
+---
+
+<CompanyPageLayout company={company} />

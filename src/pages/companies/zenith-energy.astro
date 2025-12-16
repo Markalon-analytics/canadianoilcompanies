@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Zenith Energy Ltd.',
+  website: 'https://zenithenergy.ca/',
+  description: 'Zenith Energy Ltd. is a forward-looking energy production company with a strategic focus on electricity production and other critical energy sources. The company has operations in North Africa and the United States with a focus on renewable energy, especially solar. Zenith is engaged in arbitration proceedings regarding assets in Tunisia.',
+  address: 'Suite 1500, 15th Floor, Bankers Court, 850 - 2nd Street SW, Calgary, Alberta T2P 0R8, Canada',
+  stockSymbol: 'ZEN',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Forward-looking energy production company',
+    'Strategic focus on electricity production and critical energy sources',
+    'Operations in North Africa and the United States',
+    'Focus on renewable energy, especially solar',
+    'Engaged in arbitration proceedings regarding assets in Tunisia',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in North Africa and US',
+    locations: 'Renewable energy projects',
+  },
+  capitalOutlook: 'Electricity production and renewable energy development',
+};
+---
+
+<CompanyPageLayout company={company} />

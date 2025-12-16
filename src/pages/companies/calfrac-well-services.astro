@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Calfrac Well Services Ltd.',
+  website: 'https://calfrac.com/',
+  description: 'Calfrac Well Services Ltd. is the largest Canadian-headquartered pressure pumping company providing hydraulic fracturing, coiled tubing, cementing and other well stimulation services. The company deploys over 1.2 million horsepower across its operating areas in Canada, the United States and Latin America. Calfrac is committed to safety, quality and service excellence.',
+  address: 'Suite 500, 407 - 8th Avenue SW, Calgary, Alberta T2P 1E5, Canada',
+  stockSymbol: 'CFW',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Largest Canadian-headquartered pressure pumping company',
+    'Hydraulic fracturing, coiled tubing, cementing services',
+    'Well stimulation services',
+    'Over 1.2 million horsepower deployed',
+    'Operations in Canada, US and Latin America',
+    'Commitment to safety, quality and service excellence',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North and Latin America',
+    locations: 'Canada, United States and Latin America',
+  },
+  capitalOutlook: 'Pressure pumping equipment and service expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

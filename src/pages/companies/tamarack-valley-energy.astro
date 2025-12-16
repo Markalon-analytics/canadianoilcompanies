@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Tamarack Valley Energy Ltd.',
+  website: 'https://www.tamarackvalley.ca/',
+  description: 'Tamarack Valley Energy Ltd. is a Canadian oil and gas company with a long-term strategic focus on responsible, value-driven energy development. The company develops repeatable, predictable and economic long-life resource plays. Tamarack emphasizes free funds flow generation, shareholder returns and environmental responsibility.',
+  address: 'Suite 2100, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada',
+  stockSymbol: 'TVE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian oil and gas company',
+    'Long-term strategic focus on responsible, value-driven energy development',
+    'Develops repeatable, predictable and economic long-life resource plays',
+    'Emphasis on free funds flow generation',
+    'Focus on shareholder returns and environmental responsibility',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Western Canada',
+    locations: 'Long-life resource plays',
+  },
+  capitalOutlook: 'Development of long-life resource plays',
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from \'../../layouts/CompanyPageLayout.astro\';
+
+const company = {
+  name: \'Peak Discovery Capital Ltd.\',
+  website: \'https://www.peakdiscoverycapital.com/\',
+  description: \'Peak Discovery Capital Ltd. is an investment company focused on the resource sector including energy services and exploration companies. The company provides capital and strategic support to emerging and established companies in the energy and natural resources industries. Peak Discovery operates from its base in Calgary serving the Canadian resource sector.\',
+  address: \'Suite 1020, 250 - 6th Avenue SW, Calgary, Alberta T2P 3H7, Canada\',
+  stockSymbol: \'PKK\',
+  exchange: \'TSX\',
+  keyHighlights: [
+    \'Investment company focused on resource sector\',
+    \'Energy services and exploration companies\',
+    \'Provides capital and strategic support\',
+    \'Emerging and established companies\',
+    \'Energy and natural resources industries\',
+    \'Operates from Calgary serving Canadian resource sector\',
+  ],
+  landHoldings: {
+    totalAcres: \'Investments across Canada\',
+    locations: \'Resource sector investments\',
+  },
+  capitalOutlook: \'Resource sector investment opportunities\',
+};
+---
+
+<CompanyPageLayout company={company} />

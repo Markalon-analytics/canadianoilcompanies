@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Kelt Exploration Ltd.',
+  website: 'https://keltexploration.com/',
+  description: 'Kelt Exploration Ltd. is a Calgary-based oil and gas exploration and production company focused on multi-zone hydrocarbon potential in Western Canada. The company\'s aim is to achieve profitable growth by generating exploration and development plays. Kelt operates primarily in the Peace River Arch and Wembley areas of Alberta.',
+  address: 'Suite 300, East Tower, 311 - 6th Avenue SW, Calgary, Alberta T2P 3H2, Canada',
+  stockSymbol: 'KEL',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Calgary-based oil and gas exploration and production company',
+    'Focused on multi-zone hydrocarbon potential in Western Canada',
+    'Aim to achieve profitable growth through exploration and development plays',
+    'Primary operations in Peace River Arch and Wembley areas of Alberta',
+    'Market capitalization of $1.45 billion',
+    'Stock trading on TSX under symbol KEL',
+    'Commitment to environmental, social & governance reporting',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Western Canada',
+    locations: 'Peace River Arch and Wembley areas of Alberta',
+  },
+  capitalOutlook: 'Exploration and development plays in Western Canada',
+};
+---
+
+<CompanyPageLayout company={company} />

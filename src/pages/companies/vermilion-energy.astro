@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Vermilion Energy Inc.',
+  website: 'https://www.vermilionenergy.com/',
+  description: 'Vermilion Energy Inc. is a global gas producer that seeks to create value through the acquisition, exploration and development of liquids-rich natural gas in Canada and Europe. The company operates in Canada, the United States, France, the Netherlands, Germany and Australia. Vermilion is headquartered in Calgary with a focus on sustainable energy development.',
+  address: '3500, 520 - 3rd Avenue SW, Calgary, Alberta T2P 0R3, Canada',
+  stockSymbol: 'VET',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Global gas producer creating value through acquisition, exploration and development',
+    'Focus on liquids-rich natural gas',
+    'International operations in Canada, United States, France, Netherlands, Germany and Australia',
+    'Headquartered in Calgary, Alberta',
+    'Focus on sustainable energy development',
+  ],
+  landHoldings: {
+    totalAcres: 'International operations',
+    locations: 'Canada, US, France, Netherlands, Germany, Australia',
+  },
+  capitalOutlook: 'Liquids-rich natural gas development',
+};
+---
+
+<CompanyPageLayout company={company} />

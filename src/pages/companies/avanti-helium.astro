@@ -1,0 +1,52 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Avanti Helium Corp.',
+  website: 'https://avantihelium.com/',
+  description: 'Avanti Helium Corp. is a gas exploration company specializing in helium extraction across western Canada and the United States. The company focuses on the exploration, development and production of helium across western Canada and United States, with operations in Montana and Saskatchewan.',
+  address: '1810 840 7th Avenue SW, Calgary, Alberta T2P 3G2, Canada',
+  stockSymbol: 'AVN',
+  exchange: 'TSX Venture Exchange',
+  keyHighlights: [
+    'Listed on TSX Venture Exchange under ticker AVN',
+    'Focused on exploration, development and production of helium across western Canada and United States',
+    'Principal project: Greater Knappen in Montana with ~74,000 acres of helium prospective land',
+    'Saskatchewan project: Leader area with ~91,000 acres of helium prospective land',
+    '100% operatorship on all projects',
+    'Building Helium Recovery Unit (HRU) at Sweetgrass pool in Greater Knappen, Montana',
+    'Secured foundational offtake agreement marking major milestone toward production',
+    'Strategic partnership with IACX Resources Montana LLC for helium recovery plant',
+  ],
+  projects: [
+    {
+      name: 'Greater Knappen (Montana)',
+      acres: '~74,000',
+      operatorship: '100%',
+      gasContent: '<1% helium / ~98% nitrogen',
+      facility: 'Helium Recovery Unit processing 10 MMcf/d total gas (100 Mcf/d helium)',
+      expansionPotential: 'Ability to increase to 15 MMcf/d (150 Mcf/d helium)',
+    },
+    {
+      name: 'Leader (Saskatchewan)',
+      acres: '~91,000',
+      operatorship: '100%',
+      gasContent: '<1% helium / ~90% nitrogen',
+      permits: '7 helium permits acquired in 2022',
+      governmentSupport: 'Saskatchewan Helium Action Plan and SPII incentives',
+    },
+  ],
+  heliumMarkets: {
+    aerospace: '$487 billion private space exploration industry using helium for rocket production and launches',
+    technology: '$600 billion semiconductor industry relying on helium for manufacturing',
+    demand: 'Ever-growing need for helium in critical industries',
+  },
+  recentMilestones: [
+    'Strategic non-binding term sheet to fast-track Sweetgrass helium recovery plant (September 2025)',
+    'Foundational offtake agreement secured (August 2025)',
+    'Private placement financing closed (January 2025)',
+  ],
+};
+---
+
+<CompanyPageLayout company={company} />

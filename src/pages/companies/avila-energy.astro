@@ -1,0 +1,22 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Avila Energy Corporation',
+  website: 'https://avilaenergy.com/',
+  description: 'Avila Energy Corporation is an emerging oil and gas producer, explorer and developer with operations in Western Canada. The company operates 100% owned and operated conventional oil and gas assets primarily in Alberta. Avila is listed on the Canadian Securities Exchange under the symbol VIK.',
+  address: '500 4th Avenue SW, Suite 2500, Calgary, Alberta T2P 3K2, Canada',
+  stockSymbol: 'VIK',
+  exchange: 'Canadian Securities Exchange',
+  keyHighlights: [
+    'Emerging oil and gas producer, explorer and developer',
+    'Operations focused in Western Canada, primarily in Alberta',
+    '100% owned and operated conventional oil and gas assets',
+    'Listed on the Canadian Securities Exchange under symbol VIK',
+    'Headquartered in Calgary, Alberta',
+  ],
+  researchNote: 'Official website (avilaenergy.com) was inaccessible at the time of research. Information based on CSV data and public exchange listings.',
+};
+---
+
+<CompanyPageLayout company={company} />

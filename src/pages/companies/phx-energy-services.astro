@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from \'../../layouts/CompanyPageLayout.astro\';
+
+const company = {
+  name: \'PHX Energy Services Corp.\',
+  website: \'https://www.phxtech.com/\',
+  description: \'PHX Energy Services Corp. provides horizontal and directional drilling technology and services to oil and natural gas producing companies. The company operates in Canada, the United States and internationally with a focus on performance drilling technologies. PHX Energy emphasizes innovation and precision in directional drilling services.\',
+  address: \'Suite 1600, 250 - 2nd Street SW, Calgary, Alberta T2P 0C1, Canada\',
+  stockSymbol: \'PHX\',
+  exchange: \'TSX\',
+  keyHighlights: [
+    \'Horizontal and directional drilling technology\',
+    \'Services to oil and natural gas companies\',
+    \'Operations in Canada, US and internationally\',
+    \'Focus on performance drilling technologies\',
+    \'Emphasis on innovation\',
+    \'Precision in directional drilling services\',
+  ],
+  landHoldings: {
+    totalAcres: \'Operations across North America and internationally\',
+    locations: \'Drilling sites worldwide\',
+  },
+  capitalOutlook: \'Drilling technology expansion and innovation\',
+};
+---
+
+<CompanyPageLayout company={company} />

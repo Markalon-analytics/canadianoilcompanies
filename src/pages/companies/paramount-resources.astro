@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Paramount Resources Ltd.',
+  website: 'https://www.paramountres.com/',
+  description: 'Paramount Resources Ltd. is an independent, publicly traded Canadian energy company that explores for and develops both conventional and unconventional petroleum and natural gas reserves in Western Canada. The company is focused on the Montney and Duvernay formations in Alberta and British Columbia. Paramount emphasizes long-term value creation and operational excellence.',
+  address: 'Suite 2800, 421 - 7th Avenue SW, Calgary, Alberta T2P 4K9, Canada',
+  stockSymbol: 'POU',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Independent, publicly traded Canadian energy company for over 45 years',
+    'Explores and develops conventional and unconventional petroleum and natural gas reserves',
+    'Focused on Montney and Duvernay formations in Alberta and British Columbia',
+    'Production of approximately 100,000 Boe/d from Edmonton and Calgary areas',
+    'Market capitalization of $3.6 billion',
+    'Strong operational performance with Q3 2025 production of 34,705 Boe/d',
+    'Commitment to corporate responsibility and ESG reporting',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Western Canada',
+    locations: 'Montney and Duvernay formations in Alberta and British Columbia',
+  },
+  capitalOutlook: 'Development of Montney and Duvernay formation assets',
+};
+---
+
+<CompanyPageLayout company={company} />

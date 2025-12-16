@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Cobra Venture Corporation',
+  stockSymbol: 'CBV',
+  exchange: 'TSXV',
+  description: 'Cobra Venture Corporation is an oil and gas development company focused on conventional crude oil exploration, development and production, with two current projects located at Gull Lake, S.W. Saskatchewan, Canada and San Joaquin Basin, California, USA.',
+  address: 'Suite 1920, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada',
+  website: 'https://www.cobraventure.com/',
+  keyHighlights: [
+    'Operates two strategic projects in North America: Gull Lake in Saskatchewan and San Joaquin Basin in California',
+    'Specializes in conventional crude oil exploration, development and production with established infrastructure',
+    'Currently negotiating a proposed reverse takeover with Robinson Energy Limited to expand operations',
+    'Approved special one-time cash dividend of $0.027 per common share in April 2024',
+    'Publicly traded on the TSX Venture Exchange providing liquidity and access to capital markets',
+    'Led by a team with extensive experience in oil and gas development and production',
+    'Focused on strategic acquisitions and efficient operations to drive shareholder value',
+  ],
+  landHoldings: {
+    totalAcres: 'Projects in Saskatchewan, Canada and California, USA',
+    locations: 'Gull Lake Project - Southwest Saskatchewan, San Joaquin Basin Project - California, USA',
+  },
+  capitalOutlook: 'Strategic acquisitions and development of conventional oil assets',
+};
+---
+
+<CompanyPageLayout company={company} />

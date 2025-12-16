@@ -1,0 +1,55 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Cenovus Energy Inc.',
+  website: 'https://www.cenovus.com/',
+  description: 'Cenovus Energy Inc. is a Canadian integrated oil and natural gas company headquartered in Calgary. The company is engaged in oil sands production, conventional oil and natural gas production, and refining operations across Canada and the United States. Cenovus is committed to operational excellence, innovation, and environmental stewardship.',
+  address: '225 - 6th Avenue SW, P.O. Box 766, Calgary, Alberta T2P 0M5, Canada',
+  stockSymbol: 'CVE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian-based integrated energy company',
+    'Operations span Canada, United States, and Asia Pacific',
+    '2026 capital budget and corporate guidance released',
+    'Helping Canada run smoothly through energy production',
+    'MEG Energy acquisition completed in November 2025',
+    'Empowering women and girls in rural China through partnerships',
+    'Build Canada Now initiative for economic sovereignty',
+    'Festive community celebrations across assets'
+  ],
+  stockInformation: {
+    symbol: 'CVE',
+    exchange: 'TSX',
+    listedOn: 'Toronto Stock Exchange',
+    alsoListed: 'NYSE'
+  },
+  operationalHighlights: [
+    'Oil sands production',
+    'Conventional oil and natural gas production',
+    'Refining operations',
+    'West White Rose project',
+    'Christina Lake operations'
+  ],
+  geographicFocus: [
+    'Canada',
+    'United States',
+    'Asia Pacific',
+    'Newfoundland (West White Rose)'
+  ],
+  recentNews: [
+    'Dec 2025: 2026 capital budget announced',
+    'Nov 2025: MEG Energy acquisition closing',
+    'Nov 2025: $2.6 billion senior notes offering',
+    'Nov 2025: Share buyback program renewal'
+  ],
+  sustainability: [
+    'Community investment programs',
+    'Indigenous partnerships',
+    'Environmental stewardship',
+    'Social impact initiatives'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

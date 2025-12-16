@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Western Energy Services Corp.',
+  website: 'https://www.wesc.ca/',
+  description: 'Western Energy Services Corp. is a land-based drilling and well servicing contractor operating in Canada and the United States. The company provides oilfield services including drilling, well servicing, and equipment rentals. Western Energy focuses on operational excellence, safety, and delivering value to customers in the energy sector.',
+  address: 'Suite 1000, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada',
+  stockSymbol: 'WRG',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Land-based drilling and well servicing contractor',
+    'Operations in Canada and the United States',
+    'Oilfield services including drilling and well servicing',
+    'Equipment rentals',
+    'Focus on operational excellence',
+    'Commitment to safety',
+    'Delivering value to energy sector customers',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Canada and US',
+    locations: 'Drilling and well service sites',
+  },
+  capitalOutlook: 'Drilling and service equipment expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

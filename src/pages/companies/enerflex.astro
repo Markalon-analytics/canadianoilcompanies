@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Enerflex Ltd.',
+  website: 'https://www.enerflex.com/',
+  description: 'Enerflex Ltd. provides sustainable energy infrastructure solutions globally, from gas processing to electric power generation. The company offers flexible and scalable investments including retrofits, replacement units, and Build-Own-Operate-Maintain projects. Enerflex is committed to delivering efficient and reliable energy solutions worldwide.',
+  address: '904, 1331 Macleod Trail SE, Calgary, Alberta T2G 0K3, Canada',
+  stockSymbol: 'EFX',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Sustainable energy infrastructure solutions globally',
+    'Gas processing to electric power generation',
+    'Flexible and scalable investments',
+    'Retrofits and replacement units',
+    'Build-Own-Operate-Maintain projects',
+    'Efficient and reliable energy solutions',
+    'Worldwide operations',
+  ],
+  landHoldings: {
+    totalAcres: 'Global infrastructure operations',
+    locations: 'International energy facilities',
+  },
+  capitalOutlook: 'Energy infrastructure development and expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

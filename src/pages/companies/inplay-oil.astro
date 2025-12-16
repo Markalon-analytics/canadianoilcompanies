@@ -1,0 +1,29 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'InPlay Oil Corp.',
+  stockSymbol: 'IPO',
+  exchange: 'TSX',
+  description: 'InPlay Oil Corp. is a growth-oriented light oil development and production company based in Calgary, Alberta. The company\'s activity is focused on large oil in place resource plays in the Alberta Deep Basin. InPlay emphasizes operational excellence and creating shareholder value through strategic development.',
+  address: 'Suite 2500, 715 - 5th Avenue SW, Calgary, Alberta T2P 2X6, Canada',
+  website: 'https://www.inplayoil.com/',
+  keyHighlights: [
+    'Focused on large oil in place resource plays in the Alberta Deep Basin with high-quality assets',
+    'Technical team combines operational expertise with focused assets positioned to grow',
+    'Strong operational focus on light oil development and production',
+    'Strategic asset base with significant drilling inventory',
+    'Commitment to creating shareholder value through operational excellence',
+    'Experienced management team with deep basin expertise',
+    'Focus on cost-effective development and production optimization',
+  ],
+  landHoldings: {
+    totalAcres: 'Alberta Deep Basin',
+    locations: 'Large oil in place resource plays',
+  },
+  capitalOutlook: 'Strategic development of Deep Basin assets',
+};
+
+---
+
+<CompanyPageLayout company={company} />

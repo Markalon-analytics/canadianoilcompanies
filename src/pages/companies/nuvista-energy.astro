@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'NuVista Energy Ltd.',
+  website: 'https://nvaenergy.com/',
+  description: 'NuVista Energy Ltd. is an intermediate oil and natural gas company focused on the condensate-rich Montney formation in the Alberta Deep Basin. The company is engaged in the business of exploring for, developing and producing oil and natural gas reserves. NuVista emphasizes delivering maximum shareholder value through operational excellence.',
+  address: '2500, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada',
+  stockSymbol: 'NVA',
+  exchange: 'TSX',
+  keyHighlights: [
+    '2024 TSX30 winner recognizing top performance on Toronto Stock Exchange',
+    'Third consecutive year making the TSX30 list',
+    'Primary focus on scalable and repeatable condensate-rich Montney formation in Alberta Deep Basin',
+    'Wapiti Montney area provides world-class development opportunities',
+    'Returns-focused growth strategy with top quality assets and operational execution',
+    'Financial strength and optimal growth profile',
+    'Ongoing commitment to sustainability and ESG performance',
+  ],
+  landHoldings: {
+    totalAcres: 'Montney formation assets',
+    locations: 'Alberta Deep Basin',
+  },
+  capitalOutlook: 'Development of condensate-rich Montney formation assets',
+};
+---
+
+<CompanyPageLayout company={company} />

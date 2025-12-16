@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Obsidian Energy Ltd.',
+  website: 'https://obsidianenergy.com/',
+  description: 'Obsidian Energy Ltd. is an intermediate-sized oil and gas producer with a well-balanced portfolio of high-quality assets focused in Alberta, Canada. The company operates primarily in the Peace River, Willesden Green, Pembina and Cardium areas. Obsidian focuses on operational excellence, financial discipline and sustainable growth.',
+  address: 'Suite 200, 207 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada',
+  stockSymbol: 'OBE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Intermediate-sized oil and gas producer with well-balanced portfolio of high-quality assets',
+    'Operations focused in Alberta: Peace River, Willesden Green, Pembina and Cardium areas',
+    'Listed on TSX (OBE) and NYSE American (OBE)',
+    'Recognized as Canada\'s Top Employer for Small and Medium Enterprises for second consecutive year',
+    '2024 TSX30 winner with 148% 3-year market cap increase and 142% dividend-adjusted share price performance',
+    'Focus on operational excellence, financial discipline and sustainable growth',
+    'Third quarter 2025 results show strong operational performance',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Alberta',
+    locations: 'Peace River, Willesden Green, Pembina and Cardium areas',
+  },
+  capitalOutlook: 'Sustainable development of high-quality assets in Alberta',
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Coelacanth Energy Inc.',
+  stockSymbol: 'CEI',
+  exchange: 'TSXV',
+  description: 'Coelacanth Energy Inc. is a Montney-focused oil and natural gas exploration and development company, with mineral acreage located in the Two Rivers area of northeastern British Columbia. Coelacanth owns a large oil and gas resource across this acreage of approximately 150 (net) Montney sections.',
+  address: '2110, 530 - 8th Avenue SW, Calgary, Alberta T2P 3S8, Canada',
+  website: 'https://www.coelacanth.ca/',
+  keyHighlights: [
+    'Strategically positioned in the Two Rivers area of northeastern British Columbia with extensive Montney formation assets',
+    'Owns approximately 150 net Montney sections representing a substantial oil and gas resource across the acreage',
+    'Already initiated development of the Montney resource with plans to accelerate development in coming years',
+    'Listed on the TSX Venture Exchange under symbol CEI, providing access to capital markets',
+    'Led by a team with extensive experience in Montney development and operations',
+    'Located in one of Canada\'s premier natural gas plays with established infrastructure',
+    'Emphasizes responsible social and environmental stewardship while pursuing profitable returns',
+  ],
+  landHoldings: {
+    totalAcres: '150 net Montney sections',
+    locations: 'Two Rivers area of northeastern British Columbia',
+  },
+  capitalOutlook: 'Development of Montney formation assets',
+};
+---
+
+<CompanyPageLayout company={company} />

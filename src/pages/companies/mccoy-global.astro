@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'McCoy Global Inc.',
+  website: 'https://www.mccoyglobal.com/',
+  description: 'McCoy Global Inc. is a global leader in the design, manufacture and supply of premium drill pipe connection systems and services. The company provides torque and testing equipment, tubular management services, and connection technologies to the global energy industry. McCoy Global serves customers worldwide from its operations in Canada, the United States and internationally.',
+  address: 'Suite 900, 333 - 96th Avenue NE, Calgary, Alberta T3K 0S3, Canada',
+  stockSymbol: 'MCB',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Global leader in drill pipe connection systems',
+    'Design, manufacture and supply of premium products',
+    'Torque and testing equipment',
+    'Tubular management services',
+    'Connection technologies',
+    'Serves global energy industry',
+    'Operations in Canada, US and internationally',
+  ],
+  landHoldings: {
+    totalAcres: 'Global operations',
+    locations: 'Canada, United States and international',
+  },
+  capitalOutlook: 'Drill pipe technology and service expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

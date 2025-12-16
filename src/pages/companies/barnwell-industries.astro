@@ -1,0 +1,35 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Barnwell Industries Inc.',
+  website: 'https://brninc.com/',
+  description: 'Barnwell Industries Inc. is a diversified company engaged in oil and gas exploration, development, production and sales in Canada. The company\'s Canadian operations are handled exclusively through its subsidiaries Barnwell of Canada Limited and Octavian Oil Limited. Barnwell has operated in the energy sector for over 65 years with a focus on innovation and excellence.',
+  address: '500 4th Avenue S.W., Suite 2410, Calgary, Alberta T2P 2V6, Canada',
+  stockSymbol: 'BRN',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Over 65 years of operation in the energy sector',
+    'Diversified portfolio of energy and land businesses',
+    'Engages in oil and natural gas exploration, development, production and sales in Canada',
+    'Invests in leasehold interests in real estate in Hawaii',
+    'Embraces innovation and excellence across all operations',
+    'Headquartered in Calgary with operations in Canada',
+    'Canadian operations managed through Barnwell of Canada Limited and Octavian Oil Limited',
+    'Commitment to long-term sustainable development'
+  ],
+  stockInformation: {
+    symbol: 'BRN',
+    exchange: 'TSX',
+    listedOn: 'Toronto Stock Exchange'
+  },
+  operationalHighlights: [
+    'Oil and natural gas exploration, development, production and sales',
+    'Land investment operations in Hawaii',
+    'Focus on innovation and operational excellence',
+    '65+ years of industry experience'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

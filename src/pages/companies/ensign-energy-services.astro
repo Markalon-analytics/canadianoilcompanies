@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Ensign Energy Services Inc.',
+  website: 'https://www.ensignenergy.com/',
+  description: 'Ensign Energy Services Inc. is a global leader in oilfield services, providing drilling and well servicing capabilities. The company is headquartered in Calgary with operations in Canada, the United States and Australia. Ensign operates one of the world\'s largest and most technologically advanced oilfield services fleets.',
+  address: '1000, 400 - 5th Avenue SW, Calgary, Alberta T2P 0L6, Canada',
+  stockSymbol: 'ESI',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Global leader in oilfield services',
+    'Drilling and well servicing capabilities',
+    'Headquartered in Calgary, Alberta',
+    'Operations in Canada, US and Australia',
+    'One of the world\'s largest oilfield services fleets',
+    'Technologically advanced fleet',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across 3 countries',
+    locations: 'Canada, United States and Australia',
+  },
+  capitalOutlook: 'Oilfield services fleet expansion and technology upgrades',
+};
+---
+
+<CompanyPageLayout company={company} />

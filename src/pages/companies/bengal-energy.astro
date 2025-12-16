@@ -1,0 +1,39 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Bengal Energy Ltd.',
+  website: 'https://bengalenergy.ca/',
+  description: 'Bengal Energy Ltd. is an international junior oil and gas exploration company with operations in Australia. The company focuses on conventional oil and gas exploration and development projects. Bengal maintains offices in both Calgary, Canada and Brisbane, Australia.',
+  address: 'Suite 640, 630 6th Avenue SW, Calgary, Alberta T2P 0S8, Canada',
+  stockSymbol: 'BNG',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'International junior oil and gas exploration company',
+    'Focus on conventional oil and gas exploration and development',
+    'Operations in Australia',
+    'Dual headquarters in Calgary, Canada and Brisbane, Australia',
+    'High potential impact exploration projects',
+    'TSX Venture Exchange listed under symbol CEC',
+    'Experienced management team',
+    'Strategic focus on international opportunities'
+  ],
+  stockInformation: {
+    symbol: 'BNG',
+    exchange: 'TSXV',
+    listedOn: 'TSX Venture Exchange'
+  },
+  operationalHighlights: [
+    'Conventional oil and gas exploration',
+    'Development projects in Australia',
+    'International exploration focus',
+    'Strategic asset acquisition'
+  ],
+  geographicFocus: [
+    'Australia',
+    'Canada (corporate office)'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

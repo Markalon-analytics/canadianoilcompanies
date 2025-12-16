@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Tourmaline Oil Corp.',
+  website: 'https://www.tourmalineoil.com/',
+  description: 'Tourmaline Oil Corp. is Canada\'s largest natural gas producer focused on long-term growth through an active exploration, development, production and acquisition program. The company is a senior oil and natural gas exploration and production company with operations primarily in the Alberta Deep Basin and Peace River High areas. Tourmaline emphasizes operational excellence and value creation.',
+  address: '2900, 250 - 6th Avenue SW, Calgary, Alberta T2P 3H7, Canada',
+  stockSymbol: 'TOU',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canada\'s largest natural gas producer',
+    'Focus on long-term growth through active exploration, development, production and acquisition',
+    'Senior oil and natural gas exploration and production company',
+    'Primary operations in Alberta Deep Basin and Peace River High areas',
+    'Emphasis on operational excellence and value creation',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Alberta Deep Basin and Peace River High',
+    locations: 'Western Canada natural gas assets',
+  },
+  capitalOutlook: 'Natural gas exploration and development program',
+};
+---
+
+<CompanyPageLayout company={company} />

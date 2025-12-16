@@ -1,0 +1,29 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Cavvy Energy Ltd.',
+  website: 'https://www.cavvyenergy.com/',
+  description: 'Cavvy Energy Ltd. (formerly Pieridae Energy) is a major producer and custom processor of natural gas from Alberta Foothills and northeast British Columbia. The company has a strong base of hydrocarbon assets with long-life and low-decline thermal oil assets. Cavvy focuses on responsible energy development and processing operations.',
+  address: 'Suite 1100, 411 - 1st Street SE, Calgary, Alberta T2G 4Y5, Canada',
+  stockSymbol: 'CVY',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Major producer and custom processor of natural gas',
+    'Operations in Alberta Foothills and northeast British Columbia',
+    'Strong base of hydrocarbon assets',
+    'Long-life and low-decline thermal oil assets',
+    'One of the largest Foothills producers in North America',
+    'Abundant third-party processing opportunities',
+    'Proudly headquartered in Western Canada',
+    '2026 Guidance and Capital Program announced'
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Alberta and British Columbia',
+    locations: 'Alberta Foothills and northeast British Columbia including Waterton, Jumping Pound, Caroline, Sierra/Ekwan',
+  },
+  capitalOutlook: '2026 Guidance and Capital Program focused on natural gas production and processing',
+};
+---
+
+<CompanyPageLayout company={company} />

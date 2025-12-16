@@ -1,0 +1,50 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Capitan Investment Ltd.',
+  website: 'https://www.capitaninvestment.com/',
+  description: 'Capitan Investment Ltd. (formerly Sahara Energy Ltd.) is a publicly traded investment company headquartered in Calgary, Canada, with offices in New York, USA. Listed on the TSX Venture Exchange under the symbol CAI (Canada) and SAHRF (US), Capitan has strategically expanded beyond energy to invest across finance, real estate, and other dynamic sectors worldwide.',
+  address: '444 - 7th Avenue SW, Calgary, Alberta T2P 0X8, Canada',
+  stockSymbol: 'CAI',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Publicly traded investment company',
+    'Headquartered in Calgary with New York office',
+    'Formerly Sahara Energy Ltd.',
+    'Listed on TSX Venture Exchange (CAI) and US (SAHRF)',
+    '289,684,072 common shares issued and outstanding',
+    'Strategic expansion beyond energy sector',
+    'Invests across finance, real estate, and other sectors',
+    'New York office established in 2021'
+  ],
+  stockInformation: {
+    symbol: 'CAI',
+    exchange: 'TSXV',
+    listedOn: 'TSX Venture Exchange',
+    usSymbol: 'SAHRF',
+    sharesOutstanding: '289,684,072'
+  },
+  operationalHighlights: [
+    'Investment company with diversified portfolio',
+    'Strong foundation in energy exploration in Western Canada',
+    'Strategic investments in finance and real estate',
+    'Global investment opportunities across North America',
+    'U.S. capital markets presence'
+  ],
+  investmentFocus: [
+    'Finance',
+    'Real Estate',
+    'Energy',
+    'Dynamic sectors worldwide'
+  ],
+  geographicPresence: [
+    'Calgary, Canada (headquarters)',
+    'New York, USA (office)',
+    'North America'
+  ]
+};
+
+---
+
+<CompanyPageLayout company={company} />

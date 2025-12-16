@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Spartan Delta Corp.',
+  website: 'https://www.spartandeltacorp.com/',
+  description: 'Spartan Delta Corp. is a Canadian oil and gas exploration and production company focused on high-quality assets in Western Canada. The company emphasizes operational excellence and sustainable development. Spartan Delta operates primarily in the Deep Basin and Montney formations with a focus on natural gas and liquids production.',
+  address: 'Suite 1400, First Canadian Centre, 350 - 7th Avenue SW, Calgary, Alberta T2P 3N9, Canada',
+  stockSymbol: 'SDE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian oil and gas exploration and production company',
+    'Focus on high-quality assets in Western Canada',
+    'Operational excellence and sustainable development',
+    'Primary operations in Deep Basin and Montney formations',
+    'Focus on natural gas and liquids production',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Western Canada',
+    locations: 'Deep Basin and Montney formations',
+  },
+  capitalOutlook: 'Development of natural gas and liquids assets',
+};
+---
+
+<CompanyPageLayout company={company} />

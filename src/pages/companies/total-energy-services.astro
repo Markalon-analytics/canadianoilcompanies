@@ -1,0 +1,29 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Total Energy Services Inc.',
+  website: 'https://www.totalenergy.ca/',
+  description: 'Total Energy Services Inc. is a growth-oriented, diversified energy services supplier to the Canadian and international marketplace. The company operates through multiple business units including contract drilling, well servicing, oilfield rentals, and compression services. Total Energy was founded in 1996 and is based in Calgary, Alberta.',
+  address: 'Suite 1000, 734 - 7th Avenue SW, Calgary, Alberta T2P 3P8, Canada',
+  stockSymbol: 'TOT',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Growth-oriented diversified energy services supplier',
+    'Canadian and international marketplace',
+    'Multiple business units',
+    'Contract drilling services',
+    'Well servicing operations',
+    'Oilfield rentals',
+    'Compression services',
+    'Founded in 1996',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Canada and internationally',
+    locations: 'Energy service locations',
+  },
+  capitalOutlook: 'Energy services expansion and diversification',
+};
+---
+
+<CompanyPageLayout company={company} />

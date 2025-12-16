@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Badger Infrastructure Solutions Ltd.',
+  website: 'https://www.badgerinc.com/',
+  description: 'Badger Infrastructure Solutions Ltd. is the largest provider of non-destructive excavating and related services in North America. The company specializes in hydrovac (hydro-excavation) services that safely expose underground infrastructure without damage. Badger has been an industry leader since 1992, operating across Canada and the United States with a focus on safety and innovation.',
+  address: 'Suite 1000, 635 - 8th Avenue SW, Calgary, Alberta T2P 3M3, Canada',
+  stockSymbol: 'BAD',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Largest provider of non-destructive excavating in North America',
+    'Specializes in hydrovac (hydro-excavation) services',
+    'Safely exposes underground infrastructure without damage',
+    'Industry leader since 1992',
+    'Operations across Canada and the United States',
+    'Focus on safety and innovation',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North America',
+    locations: 'Canada and United States',
+  },
+  capitalOutlook: 'Hydrovac fleet expansion and service area growth',
+};
+---
+
+<CompanyPageLayout company={company} />

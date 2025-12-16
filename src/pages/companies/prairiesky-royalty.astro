@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'PrairieSky Royalty Ltd.',
+  website: 'https://www.prairiesky.com/',
+  description: 'PrairieSky Royalty Ltd. is a pure-play royalty company and the largest fee simple mineral title land owner in Western Canada with approximately 9.8 million acres. The company generates royalty revenues as petroleum and natural gas are produced from its lands. PrairieSky provides investors with oil and gas production exposure without operational responsibilities or capital requirements.',
+  address: 'Suite 1700, 350 - 7th Avenue SW, Calgary, Alberta T2P 3N9, Canada',
+  stockSymbol: 'PSK',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Pure-play royalty company and largest fee simple mineral title land owner in Western Canada',
+    'Approximately 9.8 million acres of land providing royalty revenue base',
+    'Generates royalty revenues as petroleum and natural gas are produced from lands',
+    'Investors get production exposure without operational responsibilities or capital requirements',
+    'Provides oil and gas production exposure without drilling, operating or abandonment costs',
+    'Land opportunities and compliance management services',
+    'Strong ESG reporting and environmental stewardship',
+  ],
+  landHoldings: {
+    totalAcres: '9.8 million acres',
+    locations: 'Western Canada mineral title lands',
+  },
+  capitalOutlook: 'Strategic royalty acquisitions and portfolio management',
+};
+---
+
+<CompanyPageLayout company={company} />

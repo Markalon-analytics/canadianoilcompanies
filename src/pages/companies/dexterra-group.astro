@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Dexterra Group Inc.',
+  website: 'https://dexterra.com/',
+  description: 'Dexterra Group Inc. is a fast-growing, publicly listed company providing facilities management and operations, remote hospitality, access solutions, and forestry services. The company has been serving Canada for over 70 years with an outstanding record of supporting infrastructure and built assets. Dexterra has a far-reaching presence across North America.',
+  address: 'Suite 320, 240 - 4th Avenue SW, Calgary, Alberta T2P 4H4, Canada',
+  stockSymbol: 'DXT',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Fast-growing publicly listed company',
+    'Facilities management and operations',
+    'Remote hospitality services',
+    'Access solutions',
+    'Forestry services',
+    'Serving Canada for over 70 years',
+    'Far-reaching presence across North America',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North America',
+    locations: 'Canada and United States',
+  },
+  capitalOutlook: 'Facilities and services expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

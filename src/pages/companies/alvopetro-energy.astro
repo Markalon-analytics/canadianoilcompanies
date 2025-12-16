@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Alvopetro Energy Ltd.',
+  website: 'https://alvopetro.com/',
+  description: 'Alvopetro Energy Ltd. is a Canadian energy company operating in Brazil and Canada, developing natural gas resources. The company focuses on the best combinations of geologic prospectivity and fiscal regime, balancing capital investment opportunities in Canada and Brazil.',
+  address: 'Suite 401, 255 17th Avenue SW, Calgary, Alberta T2S 2T8, Canada',
+  keyHighlights: [
+    'Balanced capital allocation model - reinvesting roughly half of cash flows into organic growth',
+    'Returning approximately half of cash flows to stakeholders',
+    'Organic growth strategy focused on optimal geologic prospectivity and fiscal regimes',
+    'Building off strength of Caburé and Murucututu natural gas fields in Brazil',
+    'Strategic midstream infrastructure ownership including UPGN Caburé processing facility',
+    'Expanding operations into the Western Canadian Sedimentary Basin',
+    'Regular dividend payments to shareholders (US$0.10 per share in Q3 2025)',
+    '65% increase in 1P reserves reported in 2024 year-end',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Brazil and Canada',
+    locations: 'Caburé and Murucututu natural gas fields in Brazil\'s Recôncavo Basin, Western Canadian Sedimentary Basin',
+  },
+  capitalOutlook: 'Balanced capital allocation with reinvestment in organic growth and returns to stakeholders',
+};
+---
+
+<CompanyPageLayout company={company} />

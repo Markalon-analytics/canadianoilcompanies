@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'AltaGas Ltd.',
+  website: 'https://www.altagas.ca/',
+  description: 'AltaGas Ltd. is a leading North American infrastructure company that connects customers and markets to affordable and reliable sources of energy. The company operates natural gas distribution utilities, gas gathering and processing facilities, and exports Canadian liquid petroleum gas (LPG) to overseas markets. AltaGas is headquartered in Calgary with operations across Canada and the United States.',
+  address: '707 - 5th Street SW, Suite 1300, Calgary, Alberta T2P 1V8, Canada',
+  stockSymbol: 'ALA',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading North American infrastructure company',
+    'Operates natural gas distribution utilities',
+    'Gas gathering and processing facilities',
+    'Exports Canadian LPG to overseas markets',
+    'Operations across Canada and the United States',
+    'Headquartered in Calgary, Alberta',
+  ],
+  landHoldings: {
+    totalAcres: 'Infrastructure across North America',
+    locations: 'Canada and United States',
+  },
+  capitalOutlook: 'Energy infrastructure development and expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

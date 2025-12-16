@@ -1,0 +1,45 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Argo Gold Inc.',
+  website: 'https://argogold.com/',
+  description: 'Argo Gold Inc. is a Canadian mineral exploration company focused on gold exploration in Ontario, west of the Abitibi Greenstone Belt. The company has high quality gold exploration projects in Northern Ontario and is also involved in oil production in Alberta.',
+  address: '25 Adelaide Street East, Suite 1400, Toronto, ON M5C 3A1, Canada',
+  stockSymbol: 'ARQ',
+  exchange: 'Canadian Securities Exchange',
+  keyHighlights: [
+    'Listed on the Canadian Securities Exchange under ticker ARQ',
+    'Portfolio of three 100%-owned properties in northwestern Ontario',
+    'Focus on gold exploration west of the Abitibi Greenstone Belt',
+    'Diversified into oil and gas production in Alberta',
+    'World-class portfolio with potential for enormous gold resources',
+    'Active in both mining exploration and oil production sectors',
+    'Projects located in regions with high economic viability potential',
+    'LEI active: 984500KE8DC9QA8F4T39',
+  ],
+  projects: {
+    ontarioGold: [
+      'Uchi Gold Project',
+      'Northwestern Ontario Gold Exploration',
+      'Properties located west of the Abitibi Greenstone Belt',
+    ],
+    albertaOilGas: [
+      'Oil production projects in Alberta',
+      'Focus on economically attractive projects in Western Canada',
+      'Projects located near Lloydminster (Sparky area)',
+    ],
+  },
+  marketContext: {
+    canadianOilGas: 'Canada produces 5% of the world\'s oil & gas with highest environmental standards',
+    globalDemand: 'Oil fuels 90% of world transportation, natural gas provides significant heat and electricity',
+  },
+  investorInfo: {
+    latestPresentation: 'September 2025 Corporate Presentation available',
+    updates: 'Summer 2025 update available for investors',
+    subscription: 'Investor news and updates subscription available',
+  },
+};
+---
+
+<CompanyPageLayout company={company} />

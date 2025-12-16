@@ -1,0 +1,41 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Atlas Energy Corp.',
+  website: 'https://atlas-corp.ca/',
+  description: 'Atlas Energy Corp. is the world\'s first publicly-listed international upstream royalty and streaming vehicle. We are focused on investment into top-tier international upstream oil & gas assets in exchange for a percentage of revenue or production from the projects during their life cycle.',
+  address: '3200, Dome Tower, 333 7th Avenue SW, Calgary, Alberta T2P 2Z1, Canada',
+  stockSymbol: 'ATLE',
+  exchange: 'TSX Venture Exchange (TSXV)',
+  keyHighlights: [
+    'World\'s first publicly-listed international upstream royalty and streaming vehicle',
+    'Listed on TSXV under TSXV Sandbox program',
+    'Provides flexible, non-dilutive, and accretive financing to oil & gas companies',
+    'Management team with decades of international experience across 70+ countries',
+    'Team has completed over US$19 billion of M&A + finance transactions globally',
+    'Based in Calgary, Canada - center of excellence for international upstream development',
+    'Offers lower-risk, diversified exposure to global oil and gas without capital intensity',
+    'Provides covenant-light structure leaving decision making with counterparties',
+  ],
+  businessModel: {
+    focus: 'Investment in revenue-based royalties and streaming agreements',
+    structure: 'Upfront capital for percentage of future revenue or production',
+    financingUse: ['Field development', 'Infrastructure build-out', 'Acquisitions', 'Appraisal and exploration', 'Balance sheet strengthening'],
+  },
+  expertise: {
+    technical: 'Deep in-house knowledge based on decades of geoscience and engineering experience',
+    operational: 'Team members have been country managers across multiple jurisdictions',
+    commercial: 'Evaluations carried out in 70+ countries with experience managing commercial, legal and political challenges',
+    transactional: 'Over US$19 billion of M&A + finance transactions completed globally',
+  },
+  recentNews: [
+    'Atlas Q3 2025 Results (November 13, 2025)',
+    'Atlas Q2 2025 Results (August 28, 2025)',
+    'Appointment of Andy Duncan as Senior Executive (August 1, 2025)',
+    'Completion of transformative recapitalization transactions (June 19, 2025)',
+  ],
+};
+---
+
+<CompanyPageLayout company={company} />

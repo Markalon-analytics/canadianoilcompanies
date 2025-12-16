@@ -1,0 +1,29 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Athabasca Oil Corporation',
+  website: 'https://www.atha.com/',
+  description: 'Athabasca Oil Corporation is a differentiated Canadian energy company focused on sustainable resource development of thermal and light oil assets. We offer investors excellent exposure to oil prices and are focused on maximizing profitability through prudent capital activity across a diversified asset base.',
+  address: 'Suite 1200, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada',
+  stockSymbol: 'ATH',
+  exchange: 'Toronto Stock Exchange (TSX)',
+  keyHighlights: [
+    'Liquids-weighted intermediate producer with ~40,000 boe/d production (~85% liquids)',
+    'Diversified asset base exclusively located within Alberta',
+    'Approximately 90-year reserve life across all assets',
+    'Two operating divisions: Thermal Oil and Light Oil',
+    'Thermal Oil Division provides low decline production base with significant free cash flow',
+    'Light Oil Division drives high margin returns in liquids-rich plays',
+    'Top decile netbacks relative to Canadian peers',
+    'Strategic ownership of regional infrastructure providing direct market access',
+  ],
+  landHoldings: {
+    totalAcres: '~155,000 gross perspective acres in Duvernay, plus oil sands leases',
+    locations: 'Leismer and Hangingstone SAGD projects in Athabasca region, Duvernay at Greater Kaybob',
+  },
+  capitalOutlook: 'Sustainable development of thermal and light oil assets with net zero aspirations',
+};
+---
+
+<CompanyPageLayout company={company} />

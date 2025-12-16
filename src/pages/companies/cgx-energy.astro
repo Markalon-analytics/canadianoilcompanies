@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'CGX Energy Inc.',
+  stockSymbol: 'OYL',
+  exchange: 'TSX-V',
+  description: 'CGX Energy Inc. is an oil and gas exploration company with three licenses in the Guyana-Suriname Basin. The company is based in Toronto, Ontario and focuses on deep water exploration opportunities offshore Guyana. CGX is committed to responsible exploration and development in the region.',
+  address: '333 Bay Street, Suite 2400, Toronto, Ontario M5H 2T6, Canada',
+  website: 'https://cgxenergy.com/',
+  keyHighlights: [
+    'Operates in the Guyana-Suriname Basin, a proven petroleum basin with over 11 billion barrels of recoverable oil equivalent discovered to date',
+    'Holds interest in the Corentyne block with successful Kawa-1 discovery verifying 228 feet of condensate and light oil pay across multiple intervals',
+    'Focused on drilling the operated Wei-1 exploration well adjacent to major commercial discoveries including Pluma and Haimara',
+    'Currently constructing the Berbice Deep Water Port through subsidiary Grand Canal Industrial Estates on 30 acres with 400m river frontage',
+    'Active explorer in Guyana since 1997 with both onshore and offshore operations',
+    'Partnering with Frontera Energy Corporation on exploration activities',
+    'Operating in Guyana, recognized as the Number 1 Best Ecotourism Destination in 2020',
+  ],
+  landHoldings: {
+    totalAcres: 'Multiple licenses in Guyana-Suriname Basin',
+    locations: 'Corentyne Block - Northern region, Wei-1 prospect location, Kawa-1 discovery well',
+  },
+  capitalOutlook: 'Exploration and development of high-impact offshore prospects',
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Decimus Oil Corp.',
+  stockSymbol: 'WCSB',
+  exchange: 'TSXV',
+  description: 'Decimus Oil Corp. is a Canadian oil and gas exploration company, focused on unlocking the hydrocarbon potential in the Mannville formation located in Southern Alberta. Targeting this geologically complex and economically significant Lower Cretaceous formation within the Western Canada Sedimentary Basin.',
+  address: '639 - 5th Avenue SW, Suite 1250, Calgary, Alberta T2P 0M9, Canada',
+  website: 'https://decimusoil.com/',
+  keyHighlights: [
+    'Strategic focus on unlocking hydrocarbon potential in the Mannville formation in Southern Alberta',
+    'Controls over 16,000 net acres in one of Canada\'s newest emerging oil plays',
+    'Achieved production growth of 384% (CAGR) since 2021 through successful development',
+    'Operates in the Palliser block which contains the best W4 Mannville play in the WCSB',
+    'Leverages high-intensity completion techniques to unlock significant resources previously overlooked',
+    '27% insider ownership aligns management with shareholders to drive maximum returns',
+    'Over 100 years of combined experience with successful acquisitions, optimizations and drilling programs',
+  ],
+  landHoldings: {
+    totalAcres: '16,000 net acres',
+    locations: 'Palliser block - Southern Alberta, W4 Mannville play, Multiple drilling locations',
+  },
+  capitalOutlook: 'Continued development and consolidation in Southern Alberta',
+};
+---
+
+<CompanyPageLayout company={company} />

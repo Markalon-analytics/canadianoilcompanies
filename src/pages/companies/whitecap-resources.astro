@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Whitecap Resources Inc.',
+  website: 'https://www.wcap.ca/',
+  description: 'Whitecap Resources Inc. is a leading Canadian energy company committed to delivering reliable returns to shareholders through the responsible development of oil and gas assets. The company focuses on sustainable free funds flow generation and operational excellence. Whitecap operates primarily in Western Canada with assets in Alberta, Saskatchewan and British Columbia.',
+  address: '3800, 525 - 8th Avenue SW, Eighth Avenue Place East Tower, Calgary, Alberta T2P 1G1, Canada',
+  stockSymbol: 'WCP',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading Canadian energy company',
+    'Committed to delivering reliable returns to shareholders',
+    'Responsible development of oil and gas assets',
+    'Focus on sustainable free funds flow generation',
+    'Emphasis on operational excellence',
+    'Operations in Alberta, Saskatchewan and British Columbia',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Western Canada',
+    locations: 'Alberta, Saskatchewan and British Columbia',
+  },
+  capitalOutlook: 'Responsible oil and gas development',
+};
+---
+
+<CompanyPageLayout company={company} />

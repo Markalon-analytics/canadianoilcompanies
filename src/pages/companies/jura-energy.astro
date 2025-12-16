@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Jura Energy Corporation',
+  website: 'https://juraenergy.com/',
+  description: 'Jura Energy Corporation is an international independent upstream oil and gas company listed on the TSX Venture Exchange under the symbol JEC. The company operates in Pakistan with a focus on exploration, development and production activities. Jura Energy is headquartered in Calgary with operations in Islamabad.',
+  address: 'Suite 2100, 144 - 4th Avenue SW, Calgary, Alberta T2P 3N4, Canada',
+  stockSymbol: 'JEC',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Independent oil & gas company listed on TSX Venture Exchange under symbol JEC',
+    'Headquartered in Calgary with operations in Islamabad, Pakistan',
+    'Focus on exploration, development and production activities in Pakistan',
+    'International upstream operations with diverse asset portfolio',
+    'Regular financial reporting and transparency with shareholders',
+    'Strategic focus on international oil and gas development',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Pakistan',
+    locations: 'Exploration and production assets in Pakistan',
+  },
+  capitalOutlook: 'Exploration and development activities in Pakistan',
+};
+---
+
+<CompanyPageLayout company={company} />

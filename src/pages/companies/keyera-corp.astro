@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Keyera Corp.',
+  website: 'https://www.keyera.com/',
+  description: 'Keyera Corp. operates an integrated Canadian-based midstream business with extensive interconnected assets and depth of expertise in delivering responsible energy solutions. The company provides gathering and processing services, NGL marketing, storage and transportation infrastructure. Keyera\'s mission is connecting energy for life through safe, reliable operations and strategic investments.',
+  address: 'The Ampersand, West Tower 200, 144 - 4th Avenue SW, Calgary, Alberta T2P 3N4, Canada',
+  stockSymbol: 'KEY',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Integrated Canadian-based midstream business',
+    'Extensive interconnected assets',
+    'Gathering and processing services',
+    'NGL marketing, storage and transportation',
+    'Mission: connecting energy for life',
+    'Focus on safe, reliable operations',
+    'Strategic investments in energy infrastructure',
+  ],
+  landHoldings: {
+    totalAcres: 'Infrastructure across Canada',
+    locations: 'Midstream facilities and pipeline networks',
+  },
+  capitalOutlook: 'Midstream infrastructure development and expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

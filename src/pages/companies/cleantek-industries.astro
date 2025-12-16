@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Cleantek Industries Inc.',
+  website: 'https://www.cleantekgroup.com/',
+  description: 'Cleantek Industries Inc. specializes in industrial cleaning, waste management, and environmental services for the energy sector. The company provides facility decommissioning, decontamination, and remediation services. Cleantek operates across Western Canada with a commitment to environmental responsibility and safety.',
+  address: '9655 - 41st Avenue, Edmonton, Alberta T6E 6R7, Canada',
+  stockSymbol: 'TEK',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Specializes in industrial cleaning services',
+    'Waste management and environmental services',
+    'Energy sector focus',
+    'Facility decommissioning',
+    'Decontamination and remediation services',
+    'Operations across Western Canada',
+    'Commitment to environmental responsibility and safety',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Western Canada',
+    locations: 'Industrial and environmental sites',
+  },
+  capitalOutlook: 'Environmental services expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

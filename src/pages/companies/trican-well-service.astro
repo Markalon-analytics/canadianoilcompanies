@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Trican Well Service Ltd.',
+  website: 'https://www.tricanwellservice.com/',
+  description: 'Trican Well Service Ltd. is a leading provider of pressure pumping services in Canada, including hydraulic fracturing and cementing. The company operates across Western Canada with a focus on providing safe, efficient and cost-effective well completion services. Trican is committed to operational excellence and environmental stewardship.',
+  address: 'Suite 2900, 645 - 7th Avenue SW, Calgary, Alberta T2P 4G8, Canada',
+  stockSymbol: 'TCW',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading provider of pressure pumping services in Canada',
+    'Hydraulic fracturing and cementing services',
+    'Operations across Western Canada',
+    'Focus on safe, efficient and cost-effective services',
+    'Well completion services',
+    'Commitment to operational excellence',
+    'Environmental stewardship',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Western Canada',
+    locations: 'Well sites across Western Canada',
+  },
+  capitalOutlook: 'Pressure pumping equipment and service expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

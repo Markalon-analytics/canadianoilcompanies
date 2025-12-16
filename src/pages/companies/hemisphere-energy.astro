@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Hemisphere Energy Corporation',
+  stockSymbol: 'HME',
+  exchange: 'TSXV',
+  description: 'Hemisphere Energy Corporation is a Canadian oil and gas company focused on production growth with low-cost operations. The company emphasizes resource recovery and return on investment through strategic development of its assets.',
+  address: 'Suite 400, 237 - 8th Avenue SW, Calgary, Alberta T2P 1B5, Canada',
+  website: 'https://www.hemisphereenergy.ca/',
+  keyHighlights: [
+    'Focused on achieving production growth while maintaining low-cost operations',
+    'Emphasizes maximizing resource recovery from existing assets through advanced techniques',
+    'Strategic focus on return on investment through efficient asset development',
+    'Technical team combines operational expertise with focused assets',
+    'Committed to sustainable development and operational excellence',
+    'Strong focus on capital discipline and efficient operations',
+    'Targets strategic acquisitions to complement existing asset base',
+  ],
+  landHoldings: {
+    totalAcres: 'Canadian assets',
+    locations: 'Western Canada operations',
+  },
+  capitalOutlook: 'Strategic development of Canadian assets',
+};
+---
+
+<CompanyPageLayout company={company} />

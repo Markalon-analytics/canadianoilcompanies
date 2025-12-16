@@ -1,0 +1,52 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Centaurus Energy Inc.',
+  website: 'https://ctaurus.com/',
+  description: 'Centaurus Energy Inc. (formerly Madalena Energy Inc.) is a Canadian exploration and development company. The company has transitioned from oil and gas exploration to focus on managing proceeds from overriding royalty interests. Centaurus is listed on the TSX Venture Exchange under the symbol CTA.',
+  address: '333 - 7th Avenue SW, Suite 1600, Dome Tower, Calgary, Alberta T2P 2Z1, Canada',
+  stockSymbol: 'CTA',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Proposed Change of Business to strategic investment in commodities',
+    'Transition from oil & gas exploration following 2023 sale of Argentine assets',
+    'Focus on physical and digital commodities including Ether (ETH) and Solana (SOL)',
+    'Adopted Ether as primary treasury reserve asset in March 2024',
+    'Listed on TSX Venture Exchange under symbol CTA',
+    'Normal Course Issuer Bid programs implemented',
+    'Headquartered in Calgary with New York presence',
+    'Shareholder meetings and corporate governance maintained'
+  ],
+  stockInformation: {
+    symbol: 'CTA',
+    exchange: 'TSXV',
+    listedOn: 'TSX Venture Exchange'
+  },
+  operationalHighlights: [
+    'Managing proceeds from overriding royalty interests',
+    'Strategic investments in physical and digital commodities',
+    'Corporate transactions and equity acquisitions',
+    'Change of Business proposal under consideration'
+  ],
+  investmentFocus: [
+    'Physical commodities',
+    'Digital commodities (Ether, Solana)',
+    'Corporate transactions',
+    'Strategic equity positions'
+  ],
+  recentNews: [
+    'Jan 2025: Focus on investing in physical and digital commodities',
+    'Dec 2024: Re-filing of 2024 Annual MD&A',
+    'Mar 2024: Adopted Ether as Primary Treasury Reserve Asset',
+    '2023: Sale of Madalena Energy Argentina S.R.L.'
+  ],
+  corporateInfo: {
+    formerName: 'Madalena Energy Inc.',
+    transitionYear: '2023',
+    newDirection: 'Strategic investment in physical and digital commodities'
+  }
+};
+---
+
+<CompanyPageLayout company={company} />

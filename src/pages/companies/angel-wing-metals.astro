@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Angel Wing Metals Inc.',
+  website: 'https://www.angelwingmetals.com/',
+  description: 'Angel Wing Metals Inc. is engaged in the acquisition and exploration of mineral properties with a focus on precious and base metals. While primarily a mineral exploration company, it operates within the broader natural resources sector in Canada. The company explores various properties across North America seeking to develop economic mineral deposits.',
+  address: 'Suite 410, 325 Howe Street, Vancouver, BC V6C 1Z7, Canada',
+  stockSymbol: 'AW',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Acquisition and exploration of mineral properties',
+    'Focus on precious and base metals',
+    'Operates in broader natural resources sector',
+    'Exploration across North America',
+    'Seeking to develop economic mineral deposits',
+  ],
+  landHoldings: {
+    totalAcres: 'Exploration properties across North America',
+    locations: 'Mineral exploration sites',
+  },
+  capitalOutlook: 'Mineral exploration and property development',
+};
+---
+
+<CompanyPageLayout company={company} />

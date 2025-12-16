@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Lycos Energy Inc.',
+  website: 'https://lycosenergy.com/',
+  description: 'Lycos Energy Inc. is an exploration, development and production company taking a bold and disruptive approach to acquisition and development of overlooked, oil-weighted assets. The company focuses on the Clearwater play in Alberta and Saskatchewan. Lycos is committed to operational excellence and responsible resource development.',
+  address: 'Suite 1900, 215 - 2nd Street SW, Calgary, Alberta T2P 1M4, Canada',
+  stockSymbol: 'LYC',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Proven multi-lateral driller with bold and disruptive approach',
+    'Focus on acquisition and development of overlooked, oil-weighted assets',
+    'Primary focus on Clearwater play in Alberta and Saskatchewan',
+    'Track record of value creation and long-term expansion strategy',
+    'Targeting return-of-capital model for shareholders',
+    'Commitment to corporate responsibility centered on sustainability and environment',
+    'Headquartered in Centennial Place, Calgary',
+  ],
+  landHoldings: {
+    totalAcres: 'Clearwater play assets',
+    locations: 'Alberta and Saskatchewan',
+  },
+  capitalOutlook: 'Development of overlooked oil-weighted assets in Clearwater play',
+};
+---
+
+<CompanyPageLayout company={company} />

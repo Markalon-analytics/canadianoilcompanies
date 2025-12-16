@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Precision Drilling Corporation',
+  website: 'https://www.precisiondrilling.com/',
+  description: 'Precision Drilling Corporation is the largest drilling rig contractor in Canada, providing onshore oil and gas drilling technology and services. The company operates a fleet of high-performance drilling rigs across North America. Precision Drilling is committed to innovation, safety and operational excellence in drilling services.',
+  address: 'Suite 800, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada',
+  stockSymbol: 'PD',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Largest drilling rig contractor in Canada',
+    'Onshore oil and gas drilling technology',
+    'Fleet of high-performance drilling rigs',
+    'Operations across North America',
+    'Commitment to innovation',
+    'Focus on safety and operational excellence',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North America',
+    locations: 'Drilling sites across Canada and US',
+  },
+  capitalOutlook: 'Drilling rig fleet expansion and technology upgrades',
+};
+---
+
+<CompanyPageLayout company={company} />

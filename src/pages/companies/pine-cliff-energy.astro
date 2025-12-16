@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Pine Cliff Energy Ltd.',
+  website: 'https://www.pinecliffenergy.com/',
+  description: 'Pine Cliff Energy Ltd. is a Canadian natural gas and oil producing company that has grown from 100 barrels of oil equivalent per day in 2012 to become a significant producer (79% natural gas weighted). The company focuses on consistent and long-term energy production. Pine Cliff is actively engaged in exploration, development and production of natural gas, crude oil and natural gas liquids.',
+  address: 'Suite 850, 1015 - 4th Street SW, Calgary, Alberta T2R 1J4, Canada',
+  stockSymbol: 'PNF',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Canadian natural gas and oil producing company (79% natural gas weighted)',
+    'Grown from 100 BOED in 2012 to over 22,000 BOED primarily through acquisitions',
+    'Industry-low production decline rate providing stable and predictable revenue',
+    'High insider ownership and strong balance sheet',
+    'Primary goal: create shareholder value through disciplined, low-risk operations',
+    'Accretive acquisitions and sustainable dividend policy',
+    'Q3 2025 adjusted funds flow of $5.7 million',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Western Canada',
+    locations: 'Natural gas and oil assets in Western Canada',
+  },
+  capitalOutlook: 'Development of natural gas and oil assets',
+};
+---
+
+<CompanyPageLayout company={company} />

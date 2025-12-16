@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Source Rock Royalties Ltd.',
+  website: 'https://www.sourcerockroyalties.com/',
+  description: 'Source Rock Royalties Ltd. is a pure-play oil and gas royalty company with an existing portfolio of oil royalties in southeast Saskatchewan, central Alberta and west-central Saskatchewan. The company receives top-line oil and gas revenue without exposure to drilling, operating or abandonment costs. Source Rock focuses on prudent, repeatable, scalable and sustainable royalty acquisitions.',
+  address: '30th Floor, 421 - 7th Avenue SW, Calgary, Alberta T2P 4K9, Canada',
+  stockSymbol: 'SRR',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Pure play on oil & gas royalties in Western Canada',
+    'Prudent, repeatable, scalable & sustainable business model',
+    'Receive top-line oil & gas revenue without exposure to drilling, operating or abandonment costs',
+    'Balance royalty production & revenue growth with sustainable yield',
+    'Strategic and focused growth via acquisition targeting core lands of successful operators',
+    'Offer disposition platform as a partner, not simply a buyer',
+    'Monthly dividend declarations and consistent shareholder returns',
+  ],
+  landHoldings: {
+    totalAcres: 'Royalty interests in Saskatchewan and Alberta',
+    locations: 'Southeast Saskatchewan, central Alberta and west-central Saskatchewan',
+  },
+  capitalOutlook: 'Strategic royalty acquisitions and portfolio growth',
+};
+---
+
+<CompanyPageLayout company={company} />

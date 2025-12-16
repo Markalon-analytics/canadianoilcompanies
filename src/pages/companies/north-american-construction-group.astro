@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'North American Construction Group Ltd.',
+  website: 'https://www.nacg.ca/',
+  description: 'North American Construction Group Ltd. is a premier provider of heavy civil construction and mining services in Canada and the United States. The company provides services including site preparation, overburden removal, and heavy equipment operations to the oil sands, mining and infrastructure sectors. NACG is committed to safety, operational excellence and environmental stewardship.',
+  address: '27287 - 100th Avenue, Acheson, Alberta T7X 6H8, Canada',
+  stockSymbol: 'NOA',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Premier provider of heavy civil construction and mining services',
+    'Operations in Canada and the United States',
+    'Site preparation services',
+    'Overburden removal',
+    'Heavy equipment operations',
+    'Services to oil sands, mining and infrastructure sectors',
+    'Commitment to safety and environmental stewardship',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Canada and US',
+    locations: 'Construction and mining sites',
+  },
+  capitalOutlook: 'Heavy equipment and construction services expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

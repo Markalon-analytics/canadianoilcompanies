@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'ACT Energy Technologies Ltd.',
+  website: 'https://www.actenergy.com/',
+  description: 'ACT Energy Technologies Ltd. specializes in advanced coiled tubing drilling and production enhancement technologies. The company provides innovative solutions for horizontal drilling, well intervention, and production optimization. ACT Energy serves the oil and gas industry with cutting-edge technology and expertise.',
+  address: 'Suite 100, 2816 - 11th Street NE, Calgary, Alberta T2E 7S7, Canada',
+  stockSymbol: 'AEC',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Specializes in advanced coiled tubing drilling',
+    'Production enhancement technologies',
+    'Innovative solutions for horizontal drilling',
+    'Well intervention services',
+    'Production optimization',
+    'Cutting-edge technology and expertise',
+    'Serves oil and gas industry',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North America',
+    locations: 'Oil and gas drilling sites',
+  },
+  capitalOutlook: 'Coiled tubing technology expansion and innovation',
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Eco (Atlantic) Oil & Gas Ltd.',
+  stockSymbol: 'EOG',
+  exchange: 'TSXV',
+  description: 'Eco (Atlantic) Oil & Gas Ltd. is an oil and gas exploration company focused on the acquisition and development of unique upstream petroleum opportunities. The company operates in Namibia, Guyana, and Ghana with a focus on high-impact exploration prospects.',
+  address: '7 Coulson Avenue, Toronto, Ontario M4V 1Y3, Canada',
+  website: 'https://www.ecooilandgas.com/',
+  keyHighlights: [
+    'Strategic focus on three Atlantic margin basins: Namibia, Guyana, and Ghana',
+    'Publicly traded on both TSXV (EOG) and LON (ECO) exchanges providing access to multiple capital markets',
+    'Focused on high-impact offshore exploration prospects in prolific petroleum basins',
+    'Actively involved in the global energy transition, exploring for low carbon-consuming oil and gas',
+    'Targeting stable emerging markets near existing infrastructure for rapid market access',
+    'Regular financial reporting with Q2 2026 financial statements filed in November 2025',
+    'Maintains updated corporate deck and Competent Persons Report for all operating assets',
+  ],
+  landHoldings: {
+    totalAcres: 'Offshore licenses in Namibia, Guyana, and Ghana',
+    locations: 'Offshore Namibia blocks, Offshore Guyana licenses, Offshore Ghana concessions',
+  },
+  capitalOutlook: 'High-impact offshore exploration and development',
+};
+---
+
+<CompanyPageLayout company={company} />

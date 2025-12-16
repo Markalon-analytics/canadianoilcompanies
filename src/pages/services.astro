@@ -5,69 +5,110 @@ import SectionHeader from '../components/SectionHeader.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import CTASection from '../components/CTASection.astro';
 
+const evaluateEnergyUrl = 'https://info.evaluateenergy.com/';
+
 const services = [
   {
-    title: 'Company Profiles',
-    description: 'Detailed profiles of major Canadian oil and gas companies including financials, production data, and strategic analysis.',
+    title: 'Corporate Financial & Operating Data',
+    description: 'Deep analysis of financial, operating and ESG data with customizable workflows. Seamless data integration to power your models and drive better decisions.',
     icon: '📊',
+    href: 'https://info.evaluateenergy.com/corporate-financial-operating-data/',
   },
   {
-    title: 'Market Intelligence',
-    description: 'Real-time market data, industry trends, and competitive analysis for informed decision making.',
-    icon: '💡',
+    title: 'M&A Deal Metrics',
+    description: 'Comprehensive merger and acquisition data for the energy sector. Track deal valuations, transaction trends, and market consolidation patterns.',
+    icon: '🤝',
+    href: 'https://info.evaluateenergy.com/ma-deal-metrics/',
   },
   {
-    title: 'Production Analytics',
-    description: 'Comprehensive production volumes, reserves data, and operational metrics across all major operators.',
-    icon: '⚡',
+    title: 'Corporate ESG Performance Metrics',
+    description: 'Track environmental, social, and governance performance across Canadian energy companies. Compare sustainability initiatives and emissions data.',
+    icon: '🌿',
+    href: 'https://info.evaluateenergy.com/corporate-esg-performance-metrics/',
   },
   {
-    title: 'Financial Data',
-    description: 'Access to complete financial statements, market capitalization, and valuation metrics.',
-    icon: '💰',
+    title: 'ESG Learning Courses',
+    description: 'Interactive energy education programs that develop next-generation sustainability skills. Perfect for teams looking to enhance their ESG knowledge.',
+    icon: '🎓',
+    href: 'https://info.evaluateenergy.com/esg-learning-courses/',
   },
   {
-    title: 'Industry Reports',
-    description: 'In-depth reports on sector performance, regulatory changes, and market forecasts.',
-    icon: '📈',
-  },
-  {
-    title: 'Custom Research',
-    description: 'Tailored research and analysis to meet your specific information needs.',
+    title: 'Searchable Documents Library',
+    description: 'Instant discovery of vital information buried within oil and gas documents. Search across filings, reports, and presentations with ease.',
     icon: '🔍',
+    href: 'https://info.evaluateenergy.com/searchable-documents-library/',
+  },
+  {
+    title: 'Free Market Insights',
+    description: 'Stay informed with expert analysis on capital spending, hedging strategies, and industry trends. Sign up for complimentary market intelligence.',
+    icon: '💡',
+    href: 'https://info.evaluateenergy.com/contact/#sign-up',
+  },
+];
+
+const benefits = [
+  {
+    icon: '⚡',
+    title: 'Customizable Workflows',
+    description: 'Deep analysis of financial, operating and ESG data tailored to your specific needs.',
+  },
+  {
+    icon: '🔗',
+    title: 'Seamless Data Integration',
+    description: 'Power your models with clean, structured data that integrates with your existing systems.',
+  },
+  {
+    icon: '📄',
+    title: 'Document Discovery',
+    description: 'Instantly find vital information buried within thousands of oil and gas documents.',
+  },
+  {
+    icon: '👥',
+    title: 'Unlimited Expert Support',
+    description: 'Direct access to a team of industry experts who understand the Canadian energy sector.',
   },
 ];
 ---
 
 <BaseLayout
-  title="Services | Canadian Oil Companies Directory"
-  description="Professional services for energy analysts including company profiles, market intelligence, and custom research."
+  title="Energy Intelligence Services | Canadian Oil Companies"
+  description="Access trusted oil and gas data, ESG metrics, M&A insights, and professional training designed for Canadian energy professionals."
 >
   <Hero
-    badge="Professional Services"
-    title="Comprehensive Energy Intelligence Services"
-    subtitle="Everything you need to analyze and understand the Canadian energy sector"
-    primaryCTA="Get Started"
-    secondaryCTA="Contact Sales"
+    badge="Energy Intelligence"
+    title="Fast-Track Your Energy Intelligence"
+    subtitle="Trusted data and professional training designed for Canadian energy professionals. Spend less time gathering data and more time making decisions."
+    primaryCTA="Explore Solutions"
+    primaryCTAHref={evaluateEnergyUrl}
+    secondaryCTA="Get Free Insights"
+    secondaryCTAHref="https://info.evaluateenergy.com/contact/#sign-up"
   />
 
   <section class="px-8 py-24 bg-white">
     <div class="max-w-[1400px] mx-auto">
       <SectionHeader
-        label="Our Services"
-        title="Tools & Resources for Energy Professionals"
-        subtitle="Access comprehensive data and intelligence services designed for serious analysis"
+        label="Energy Intelligence Solutions"
+        title="Gain an Efficiency Advantage Over Your Competitors"
+        subtitle="Comprehensive data and intelligence services trusted by leading energy organizations worldwide"
       />
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map(service => (
-          <ServiceCard
-            href="#"
-            title={service.title}
-            description={service.description}
-            icon={service.icon}
-          />
+          <a href={service.href} target="_blank" rel="noopener noreferrer" class="block">
+            <ServiceCard
+              href={service.href}
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+            />
+          </a>
         ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <a href={evaluateEnergyUrl} target="_blank" rel="noopener noreferrer" class="bg-deep-navy text-white border-2 border-deep-navy px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-transparent hover:text-deep-navy hover:-translate-y-0.5 hover:shadow-lg hover:shadow-deep-navy/20 inline-block">
+          Explore All Solutions
+        </a>
       </div>
     </div>
   </section>
@@ -75,37 +116,58 @@ const services = [
   <section class="px-8 py-24 bg-off-white">
     <div class="max-w-[1400px] mx-auto">
       <SectionHeader
-        label="Why Choose Our Services"
-        title="Industry-Leading Data Quality"
+        label="Why Energy Professionals Choose Us"
+        title="Empower Your Decision-Making"
+        subtitle="Spend less time gathering data and more time taking action"
       />
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-lg shadow-sm">
-          <div class="text-4xl mb-4">✓</div>
-          <h3 class="text-xl font-bold text-deep-navy mb-3">Verified Data</h3>
-          <p class="text-charcoal">All data is thoroughly verified and cross-referenced from multiple authoritative sources.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-lg shadow-sm">
-          <div class="text-4xl mb-4">⚡</div>
-          <h3 class="text-xl font-bold text-deep-navy mb-3">Real-Time Updates</h3>
-          <p class="text-charcoal">Stay current with continuously updated information and instant alerts on critical changes.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-lg shadow-sm">
-          <div class="text-4xl mb-4">🎯</div>
-          <h3 class="text-xl font-bold text-deep-navy mb-3">Expert Support</h3>
-          <p class="text-charcoal">Access to experienced analysts who can help interpret data and provide context.</p>
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {benefits.map(benefit => (
+          <div class="bg-white p-8 rounded-lg shadow-sm border-t-[3px] border-petroleum-gold">
+            <div class="text-4xl mb-4">{benefit.icon}</div>
+            <h3 class="text-xl font-bold text-deep-navy mb-3">{benefit.title}</h3>
+            <p class="text-charcoal">{benefit.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
 
-  <CTASection
-    label="Ready to Get Started?"
-    title="Experience the Difference"
-    description="Join thousands of energy professionals who rely on our platform for critical industry intelligence."
-    primaryButton="Start Free Trial"
-    secondaryButton="Schedule Demo"
-  />
+  <section class="px-8 py-24 bg-white">
+    <div class="max-w-[1400px] mx-auto text-center">
+      <SectionHeader
+        label="Trusted by Industry Leaders"
+        title="Join Leading Energy Organizations"
+        subtitle="Used by government agencies, major energy companies, and financial institutions worldwide"
+      />
+
+      <div class="flex flex-wrap justify-center items-center gap-12 mt-8 opacity-70">
+        <span class="text-2xl font-bold text-charcoal">EIA</span>
+        <span class="text-2xl font-bold text-charcoal">JOGMEC</span>
+        <span class="text-2xl font-bold text-charcoal">OMV</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-24 bg-gradient-to-r from-deep-navy to-deep-navy/90">
+    <div class="max-w-[900px] mx-auto text-center">
+      <span class="inline-block text-petroleum-gold text-[0.85rem] font-bold tracking-[2px] uppercase mb-4">
+        Ready to Get Started?
+      </span>
+      <h2 class="text-[2.5rem] font-extrabold text-white mt-2 mb-6">
+        Fast-Track Your Energy Intelligence Today
+      </h2>
+      <p class="text-lg text-white/80 font-normal mb-10">
+        Join thousands of energy professionals who rely on trusted data and expert insights for critical industry intelligence. Sign up for free market insights or explore our full suite of solutions.
+      </p>
+      <div class="flex gap-6 justify-center flex-wrap">
+        <a href={evaluateEnergyUrl} target="_blank" rel="noopener noreferrer" class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-0.5 inline-block">
+          Explore Solutions
+        </a>
+        <a href="https://info.evaluateenergy.com/contact/#sign-up" target="_blank" rel="noopener noreferrer" class="bg-transparent text-white border-2 border-white px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-0.5 inline-block">
+          Get Free Insights
+        </a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

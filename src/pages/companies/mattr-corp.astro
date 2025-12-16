@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Mattr Corp.',
+  website: 'https://mattr.com/',
+  description: 'Mattr Corp. (formerly Secure Energy Services Inc.) is a leading provider of environmentally responsible solutions for the energy industry. The company offers waste management, recycling, and processing services including drilling fluids, production chemicals, and completion chemicals. Mattr operates across North America with a focus on sustainability and innovation.',
+  address: 'Suite 100, 3308 Hillview Drive SW, Calgary, Alberta T2T 6H7, Canada',
+  stockSymbol: 'MATR',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading provider of environmentally responsible solutions',
+    'Formerly Secure Energy Services Inc.',
+    'Waste management and recycling services',
+    'Processing services for drilling fluids',
+    'Production and completion chemicals',
+    'Operations across North America',
+    'Focus on sustainability and innovation',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North America',
+    locations: 'Processing and waste facilities',
+  },
+  capitalOutlook: 'Environmental solutions expansion and innovation',
+};
+---
+
+<CompanyPageLayout company={company} />

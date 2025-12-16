@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Enterprise Group Inc.',
+  website: 'https://www.enterprisegrp.ca/',
+  description: 'Enterprise Group Inc. is a diversified energy services company providing drilling and production services, including well servicing, swabbing, and equipment rentals. The company serves the oil and gas industry in Western Canada with a focus on operational excellence and safety. Enterprise Group maintains a modern fleet of equipment and experienced crews.',
+  address: 'Suite 600, 1331 Macleod Trail SE, Calgary, Alberta T2G 0K3, Canada',
+  stockSymbol: 'E',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Diversified energy services company',
+    'Drilling and production services',
+    'Well servicing and swabbing',
+    'Equipment rentals',
+    'Serves oil and gas industry in Western Canada',
+    'Focus on operational excellence and safety',
+    'Modern fleet of equipment and experienced crews',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across Western Canada',
+    locations: 'Oil and gas service sites',
+  },
+  capitalOutlook: 'Service equipment and fleet expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

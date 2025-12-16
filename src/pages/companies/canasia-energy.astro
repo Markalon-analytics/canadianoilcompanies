@@ -1,0 +1,44 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'CanAsia Energy Corp.',
+  website: 'https://canasiacorp.com/',
+  description: 'CanAsia Energy Corp. is a Canadian publicly listed junior oil and gas company based in Calgary, Alberta. The company focuses on oil and gas exploration and production operations in Western Canada. CanAsia is listed on the TSX Venture Exchange under the ticker symbol CEC.',
+  address: 'Suite 1505, 505 - 3rd Street SW, Calgary, Alberta T2P 3E6, Canada',
+  stockSymbol: 'CEC',
+  exchange: 'TSXV',
+  keyHighlights: [
+    'Canadian publicly listed junior oil and gas company',
+    'Headquartered in Calgary, Alberta',
+    'Listed on TSX Venture Exchange under symbol CEC',
+    'Focus on oil and gas exploration and production',
+    'Operations in Western Canada',
+    'Corporate information and governance structure in place',
+    'Financial reports and ESTMA reporting available',
+    'Corporate presentations and investor information provided'
+  ],
+  stockInformation: {
+    symbol: 'CEC',
+    exchange: 'TSXV',
+    listedOn: 'TSX Venture Exchange'
+  },
+  operationalHighlights: [
+    'Oil and gas exploration and production',
+    'Western Canada operations',
+    'Junior producer status',
+    'Strategic asset development'
+  ],
+  geographicFocus: [
+    'Western Canada'
+  ],
+  investorResources: [
+    'Financial reports available',
+    'Corporate presentations',
+    'ESTMA reports',
+    'Annual General Meeting information'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Akita Drilling Ltd.',
+  website: 'https://www.akita-drilling.com/',
+  description: 'Akita Drilling Ltd. is a leading intermediate North American land drilling contractor with a fleet of 32 high-spec drilling rigs. The company operates in major resource plays across Canada and the United States. Akita provides advanced drilling services with a focus on safety, operational excellence and technological innovation.',
+  address: '1000, 333 - 7th Avenue SW, Calgary, Alberta T2P 2Z1, Canada',
+  stockSymbol: 'AKT.A',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading intermediate North American land drilling contractor',
+    'Fleet of 32 high-spec drilling rigs',
+    'Operations in major resource plays',
+    'Across Canada and the United States',
+    'Advanced drilling services',
+    'Focus on safety and operational excellence',
+    'Technological innovation in drilling',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations across North America',
+    locations: 'Major resource plays in Canada and US',
+  },
+  capitalOutlook: 'Drilling fleet expansion and technology upgrades',
+};
+---
+
+<CompanyPageLayout company={company} />

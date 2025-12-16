@@ -1,0 +1,52 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Canacol Energy Ltd.',
+  website: 'https://canacolenergy.com/',
+  description: 'Canacol Energy Ltd. is a leading natural gas exploration and production company focused on Colombia. The company is one of the largest suppliers of natural gas to the Colombian market, producing approximately 17% of the country\'s domestic natural gas supply. Canacol is headquartered in Calgary with operations based in Bogota, Colombia.',
+  address: 'Suite 2000, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada',
+  stockSymbol: 'CNE',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Leading natural gas exploration and production company in Colombia',
+    'Produces approximately 17% of Colombia\'s domestic natural gas supply',
+    'Headquartered in Calgary with operations in Bogota, Colombia',
+    'Committed to sustainability and ESG initiatives',
+    'Corporate recovery procedures initiated',
+    'Delisted from Toronto Stock Exchange as of December 2025',
+    'Strong focus on cleaner energy future',
+    'Comprehensive sustainability reporting'
+  ],
+  stockInformation: {
+    symbol: 'CNE',
+    exchange: 'Delisted from TSX',
+    status: 'Delisted December 2025',
+    note: 'Company undergoing corporate recovery proceedings'
+  },
+  operationalHighlights: [
+    'Natural gas exploration and production in Colombia',
+    'One of Colombia\'s largest natural gas suppliers',
+    'Corporate recovery proceedings in Colombia',
+    'Debtor in possession (DIP) financing secured'
+  ],
+  geographicFocus: [
+    'Colombia',
+    'Canada (corporate headquarters)'
+  ],
+  recentNews: [
+    'Dec 2025: Delisted from Toronto Stock Exchange',
+    'Dec 2025: Agreement for Debtor in Possession (DIP) Financing',
+    'Nov 2025: Results of DeGolyer and MacNaughton audit'
+  ],
+  sustainability: [
+    'Comprehensive ESG reporting',
+    'Climate action initiatives',
+    'Water management programs',
+    'Biodiversity protection',
+    'Community relations programs'
+  ]
+};
+---
+
+<CompanyPageLayout company={company} />

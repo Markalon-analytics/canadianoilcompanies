@@ -1,0 +1,29 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Criterium Energy Ltd.',
+  stockSymbol: 'CEQ',
+  exchange: 'TSXV',
+  description: 'Criterium Energy Ltd. is an independent upstream energy company focused on building a high-quality, self-funding portfolio of undercapitalized energy assets in the world\'s fastest-growing economies. The company targets opportunities in Indonesia and Canada.',
+  address: '1120, 202 - 6th Avenue SW, Bow Valley Square Tower 1, Calgary, Alberta T2P 2R9, Canada',
+  website: 'https://criteriumenergy.com/',
+  keyHighlights: [
+    'Building a high-quality, self-funding portfolio of undercapitalized energy assets in fast-growing economies',
+    'Strategic oil and gas focus in Indonesia\'s South Sumatra and West Papua Regions',
+    'Achieved successful re-entry and test of SEM-01 well with positive preliminary gas test results at North Mengoepeh',
+    'Announced 160% reserve replacement ratio and increased gas resource at year-end 2024',
+    'Continuing infill drilling and workover programs to increase production and reduce operating costs',
+    'Confirmed spud of first operated well, MGH-43, as part of ongoing development program',
+    'Successfully completed sale of Bulu PSC interest for C$10.5 Million, demonstrating value realization',
+  ],
+  landHoldings: {
+    totalAcres: 'Assets in Indonesia and Canada',
+    locations: 'South Sumatra and West Papua Regions in Indonesia, Canadian assets',
+  },
+  capitalOutlook: 'Development of undercapitalized energy assets in fast-growing economies',
+};
+
+---
+
+<CompanyPageLayout company={company} />

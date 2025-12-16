@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Arrow Exploration Corp.',
+  website: 'https://arrowexploration.ca/',
+  description: 'Arrow Exploration Corp. is a Canadian oil and gas exploration company with a high quality, self-funded portfolio of underexplored, high growth Colombian oil assets. The company has a multi-basin oil portfolio with focused, high working interest assets.',
+  address: '203, 2303 4th Street SW, Calgary, Alberta T2S 2S7, Canada',
+  keyHighlights: [
+    'High quality, self-funded portfolio of Colombian oil assets',
+    'Multi-basin operations across Llanos, Middle Magdalena Valley (MMV), and Putumayo Basins',
+    'Total net production of 4,500+ boe/d',
+    'Strategic focus on high working interest assets',
+    'Beneficiary of favorable Colombian fiscal regime (8-14% royalties)',
+    'Access to excellent infrastructure with spare pipeline capacity',
+    'Operates in pro-business environment with supportive government',
+    'Recent successful exploration and appraisal wells',
+  ],
+  landHoldings: {
+    totalAcres: 'Multi-basin operations in Colombia and Canada',
+    locations: 'Tapir Block (Llanos), Santa Isabel (Middle Magdalena Valley), Ombu (Putumayo), Alberta assets',
+  },
+  capitalOutlook: 'Development of high-potential Colombian oil assets',
+};
+---
+
+<CompanyPageLayout company={company} />

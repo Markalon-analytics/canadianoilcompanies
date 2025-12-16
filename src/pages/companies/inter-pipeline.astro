@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Inter Pipeline Ltd.',
+  website: 'https://interpipeline.com/',
+  description: 'Inter Pipeline Ltd. is a world-scale energy infrastructure company engaged in the transportation, processing and storage of energy products across Western Canada and Europe. The company operates oil sands transportation pipelines, conventional oil pipelines, NGL processing facilities, and Canada\'s only polypropylene production facility (Heartland Petrochemical Complex). Inter Pipeline focuses on delivering safe, reliable operations and sustainable value creation.',
+  address: 'Suite 3200, 215 - 2nd Street SW, Calgary, Alberta T2P 1M4, Canada',
+  stockSymbol: 'IPL',
+  exchange: 'TSX',
+  keyHighlights: [
+    'World-scale energy infrastructure company',
+    'Operations across Western Canada and Europe',
+    'Oil sands transportation pipelines',
+    'Conventional oil pipelines',
+    'NGL processing facilities',
+    'Canada\'s only polypropylene production facility',
+    'Focus on safe, reliable operations',
+  ],
+  landHoldings: {
+    totalAcres: 'Infrastructure across Western Canada and Europe',
+    locations: 'Pipeline networks and processing facilities',
+  },
+  capitalOutlook: 'Energy infrastructure development and expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

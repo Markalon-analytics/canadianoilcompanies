@@ -1,0 +1,27 @@
+---
+import CompanyPageLayout from \'../../layouts/CompanyPageLayout.astro\';
+
+const company = {
+  name: \'STEP Energy Services Ltd.\',
+  website: \'https://www.stepenergyservices.com/\',
+  description: \'STEP Energy Services Ltd. is a leading Canadian provider of integrated coiled tubing and fracturing services. The company offers comprehensive well completion and production enhancement solutions across Western Canada and the United States. STEP emphasizes safety, technology and operational efficiency.\',
+  address: \'Suite 2000, 215 - 2nd Street SW, Calgary, Alberta T2P 1M4, Canada\',
+  stockSymbol: \'SES\',
+  exchange: \'TSX\',
+  keyHighlights: [
+    \'Leading Canadian provider of integrated services\',
+    \'Coiled tubing and fracturing services\',
+    \'Comprehensive well completion solutions\',
+    \'Production enhancement solutions\',
+    \'Operations across Western Canada and US\',
+    \'Emphasis on safety, technology and efficiency\',
+  ],
+  landHoldings: {
+    totalAcres: \'Operations across Western Canada and US\',
+    locations: \'Well sites in Canada and United States\',
+  },
+  capitalOutlook: \'Service equipment expansion and technology upgrades\',
+};
+---
+
+<CompanyPageLayout company={company} />

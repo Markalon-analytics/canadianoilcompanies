@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Foremost Industries Inc.',
+  website: 'https://www.foremost.ca/',
+  description: 'Foremost Industries Inc. is a manufacturer and distributor of specialized mobile equipment for remote locations and challenging environments. The company designs and builds drilling rigs, camp equipment, and specialized vehicles for oil and gas, mining, and construction industries. Foremost has been serving customers globally for over 60 years from its base in Calgary.',
+  address: '2330 - 68th Avenue SE, Calgary, Alberta T2C 2R4, Canada',
+  stockSymbol: 'FMO',
+  exchange: 'TSX',
+  keyHighlights: [
+    'Manufacturer of specialized mobile equipment',
+    'For remote locations and challenging environments',
+    'Designs and builds drilling rigs',
+    'Camp equipment manufacturing',
+    'Specialized vehicles',
+    'Serves oil and gas, mining, and construction industries',
+    'Over 60 years of global service',
+  ],
+  landHoldings: {
+    totalAcres: 'Global operations',
+    locations: 'Base in Calgary, worldwide service',
+  },
+  capitalOutlook: 'Specialized equipment manufacturing expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

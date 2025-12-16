@@ -1,0 +1,26 @@
+---
+import CompanyPageLayout from '../../layouts/CompanyPageLayout.astro';
+
+const company = {
+  name: 'Strathcona Resources Ltd.',
+  website: 'https://www.strathconaresources.com/',
+  description: 'Strathcona Resources Ltd. is one of North America\'s fastest-growing pure play heavy oil producers headquartered in Calgary, Alberta. The company is a major thermal oil producer in the Cold Lake region of Alberta benefiting from premium pricing and a massive proven resource. Strathcona focuses on responsible and efficient heavy oil development.',
+  address: 'Suite 1200, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada',
+  stockSymbol: 'SCR',
+  exchange: 'TSX',
+  keyHighlights: [
+    'One of North America\'s fastest-growing pure play heavy oil producers',
+    'Headquartered in Calgary, Alberta',
+    'Major thermal oil producer in Cold Lake region',
+    'Benefits from premium pricing and massive proven resource',
+    'Focus on responsible and efficient heavy oil development',
+  ],
+  landHoldings: {
+    totalAcres: 'Operations in Cold Lake region',
+    locations: 'Alberta, Canada',
+  },
+  capitalOutlook: 'Thermal oil development and expansion',
+};
+---
+
+<CompanyPageLayout company={company} />

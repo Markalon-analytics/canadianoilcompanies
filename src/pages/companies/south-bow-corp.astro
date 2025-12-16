@@ -1,0 +1,28 @@
+---
+import CompanyPageLayout from \'../../layouts/CompanyPageLayout.astro\';
+
+const company = {
+  name: \'South Bow Corporation\',
+  website: \'https://www.southbow.com/\',
+  description: \'South Bow Corporation is a newly formed energy infrastructure company following the October 2024 spinoff from TC Energy Corporation\'s Liquids Pipelines business. The company operates critical crude oil pipeline systems across North America including the Keystone Pipeline System and liquids marketing business. South Bow is focused on safe, reliable operations and creating value for stakeholders.\',
+  address: \'450 - 1st Street SW, Calgary, Alberta T2P 5H1, Canada\',
+  stockSymbol: \'SBO\',
+  exchange: \'TSX\',
+  keyHighlights: [
+    \'Newly formed energy infrastructure company\',
+    \'Spun off from TC Energy in October 2024\',
+    \'Operates critical crude oil pipeline systems\',
+    \'Keystone Pipeline System operator\',
+    \'Liquids marketing business\',
+    \'Operations across North America\',
+    \'Focus on safe, reliable operations\',
+  ],
+  landHoldings: {
+    totalAcres: \'Pipeline infrastructure across North America\',
+    locations: \'Crude oil pipeline networks\',
+  },
+  capitalOutlook: \'Energy infrastructure operations and optimization\',
+};
+---
+
+<CompanyPageLayout company={company} />
