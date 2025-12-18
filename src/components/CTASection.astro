@@ -4,10 +4,12 @@ interface Props {
   title: string;
   description: string;
   primaryButton?: string;
+  primaryButtonHref?: string;
   secondaryButton?: string;
+  secondaryButtonHref?: string;
 }
 
-const { label, title, description, primaryButton, secondaryButton } = Astro.props;
+const { label, title, description, primaryButton, primaryButtonHref, secondaryButton, secondaryButtonHref } = Astro.props;
 ---
 
 <section class="px-8 py-24 bg-gradient-to-br from-deep-navy to-[#051225] relative">
@@ -30,12 +32,20 @@ const { label, title, description, primaryButton, secondaryButton } = Astro.prop
 
     {(primaryButton || secondaryButton) && (
       <div class="flex gap-6 justify-center flex-wrap">
-        {primaryButton && (
+        {primaryButton && primaryButtonHref ? (
+          <a href={primaryButtonHref} class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 hover:shadow-lg hover:shadow-petroleum-gold/30 inline-block">
+            {primaryButton}
+          </a>
+        ) : primaryButton && (
           <button class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 hover:shadow-lg hover:shadow-petroleum-gold/30">
             {primaryButton}
           </button>
         )}
-        {secondaryButton && (
+        {secondaryButton && secondaryButtonHref ? (
+          <a href={secondaryButtonHref} class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1 inline-block">
+            {secondaryButton}
+          </a>
+        ) : secondaryButton && (
           <button class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1">
             {secondaryButton}
           </button>
