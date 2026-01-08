@@ -1,56 +1,86 @@
 ---
 interface Props {
   label?: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   primaryButton?: string;
   primaryButtonHref?: string;
   secondaryButton?: string;
   secondaryButtonHref?: string;
+  isGeologicCTA?: boolean;
 }
 
-const { label, title, description, primaryButton, primaryButtonHref, secondaryButton, secondaryButtonHref } = Astro.props;
+const { label, title, description, primaryButton, primaryButtonHref, secondaryButton, secondaryButtonHref, isGeologicCTA } = Astro.props;
+
+const geologicTitle = "Discover More with Geologic";
+const geologicDescription = "Canadian Oil Companies Directory is a resource from Geologic. Explore our full suite of energy intelligence tools and solutions.";
+const geologicButton = "Learn More About Geologic";
+const geologicButtonHref = "https://www.geologic.com/";
 ---
 
 <section class="px-8 py-24 bg-gradient-to-br from-deep-navy to-[#051225] relative">
   <div class="absolute inset-0 opacity-50" style="background-image: url('data:image/svg+xml,<svg width=&quot;100&quot; height=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><rect width=&quot;100&quot; height=&quot;100&quot; fill=&quot;none&quot;/><path d=&quot;M0 50 L50 0 L100 50 L50 100 Z&quot; fill=&quot;rgba(212,168,70,0.03)&quot;/></svg>');"></div>
 
   <div class="max-w-[900px] mx-auto text-center relative z-10">
-    {label && (
-      <span class="inline-block text-petroleum-gold text-[0.85rem] font-bold tracking-[2px] uppercase mb-4">
-        {label}
-      </span>
-    )}
+    {isGeologicCTA ? (
+      <>
+        <span class="inline-block text-petroleum-gold text-[0.85rem] font-bold tracking-[2px] uppercase mb-4">
+          Powered by Geologic
+        </span>
 
-    <h2 class="text-[2.8rem] font-extrabold text-white mb-6 leading-tight">
-      {title}
-    </h2>
+        <h2 class="text-[2.8rem] font-extrabold text-white mb-6 leading-tight">
+          {geologicTitle}
+        </h2>
 
-    <p class="text-lg text-white/90 leading-relaxed mb-10">
-      {description}
-    </p>
+        <p class="text-lg text-white/90 leading-relaxed mb-10">
+          {geologicDescription}
+        </p>
 
-    {(primaryButton || secondaryButton) && (
-      <div class="flex gap-6 justify-center flex-wrap">
-        {primaryButton && primaryButtonHref ? (
-          <a href={primaryButtonHref} class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 hover:shadow-lg hover:shadow-petroleum-gold/30 inline-block">
-            {primaryButton}
+        <div class="flex gap-6 justify-center flex-wrap">
+          <a href={geologicButtonHref} target="_blank" rel="noopener noreferrer" class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 hover:shadow-lg hover:shadow-petroleum-gold/30 inline-block">
+            {geologicButton}
           </a>
-        ) : primaryButton && (
-          <button class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 hover:shadow-lg hover:shadow-petroleum-gold/30">
-            {primaryButton}
-          </button>
+        </div>
+      </>
+    ) : (
+      <>
+        {label && (
+          <span class="inline-block text-petroleum-gold text-[0.85rem] font-bold tracking-[2px] uppercase mb-4">
+            {label}
+          </span>
         )}
-        {secondaryButton && secondaryButtonHref ? (
-          <a href={secondaryButtonHref} class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1 inline-block">
-            {secondaryButton}
-          </a>
-        ) : secondaryButton && (
-          <button class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1">
-            {secondaryButton}
-          </button>
+
+        <h2 class="text-[2.8rem] font-extrabold text-white mb-6 leading-tight">
+          {title}
+        </h2>
+
+        <p class="text-lg text-white/90 leading-relaxed mb-10">
+          {description}
+        </p>
+
+        {(primaryButton || secondaryButton) && (
+          <div class="flex gap-6 justify-center flex-wrap">
+            {primaryButton && primaryButtonHref ? (
+              <a href={primaryButtonHref} class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 hover:shadow-lg hover:shadow-petroleum-gold/30 inline-block">
+                {primaryButton}
+              </a>
+            ) : primaryButton && (
+              <button class="bg-petroleum-gold text-deep-navy border-2 border-petroleum-gold px-10 py-5 text-base font-bold rounded-md cursor-pointer transition-all duration-300 hover:bg-rich-amber hover:border-rich-amber hover:-translate-y-1 hover:shadow-lg hover:shadow-petroleum-gold/30">
+                {primaryButton}
+              </button>
+            )}
+            {secondaryButton && secondaryButtonHref ? (
+              <a href={secondaryButtonHref} class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1 inline-block">
+                {secondaryButton}
+              </a>
+            ) : secondaryButton && (
+              <button class="bg-transparent text-white border-2 border-white px-10 py-5 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-deep-navy hover:-translate-y-1">
+                {secondaryButton}
+              </button>
+            )}
+          </div>
         )}
-      </div>
+      </>
     )}
   </div>
 </section>

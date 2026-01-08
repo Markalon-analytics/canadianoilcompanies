@@ -30,33 +30,27 @@ const teamValues = [
 >
   <Hero
     badge="About Us"
-    title="The Authority on Canadian Energy Intelligence"
-    subtitle="Providing trusted data and insights to energy professionals since 2005"
+    title="Empowering Energy Professionals with Trusted Intelligence"
   />
 
   <section class="px-8 py-24 bg-white">
     <div class="max-w-[1000px] mx-auto">
       <SectionHeader
         label="Our Mission"
-        title="Empowering Energy Professionals with Trusted Intelligence"
+        title="Comprehensive Energy Intelligence at Your Fingertips"
       />
 
       <div class="prose prose-lg max-w-none text-charcoal">
         <p class="text-lg leading-relaxed mb-6">
-          Canadian Oil Companies Directory has been the premier source of energy intelligence for analysts,
-          investors, and industry professionals for over 18 years. Our comprehensive database covers the
-          entire Canadian energy sector, from major integrated producers to independent operators.
+          Canadian Oil Companies Directory is a comprehensive resource from Geologic, designed to provide energy professionals with authoritative intelligence on Canada's oil and gas sector. Our database covers the entire Canadian energy landscape, from major integrated producers to independent operators.
         </p>
 
         <p class="text-lg leading-relaxed mb-6">
-          We understand that accurate, timely information is critical for making informed decisions in the
-          energy sector. That's why we've built a platform that combines comprehensive data coverage with
-          rigorous verification processes and continuous updates.
+          We understand that accurate, timely information is critical for making informed decisions in the energy sector. This resource brings together comprehensive data on Canada's major oil and gas companies in one accessible platform.
         </p>
 
         <p class="text-lg leading-relaxed">
-          Our team of industry experts and data specialists work around the clock to ensure our platform
-          provides the most reliable and actionable intelligence available.
+          Whether you're an analyst, investor, or industry professional, this resource is designed to help you quickly access the intelligence you need about Canada's energy sector.
         </p>
       </div>
     </div>
@@ -80,44 +74,5 @@ const teamValues = [
     </div>
   </section>
 
-  <section class="px-8 py-24 bg-white">
-    <div class="max-w-[1000px] mx-auto text-center">
-      <SectionHeader
-        label="By the Numbers"
-        title="Our Impact"
-      />
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-off-white p-8 rounded-lg">
-          <div class="text-5xl font-bold text-petroleum-gold mb-2">18+</div>
-          <div class="text-charcoal">Years of Service</div>
-        </div>
-
-        <div class="bg-off-white p-8 rounded-lg">
-          <div class="text-5xl font-bold text-petroleum-gold mb-2">5,000+</div>
-          <div class="text-charcoal">Active Users</div>
-        </div>
-
-        <div class="bg-off-white p-8 rounded-lg">
-          <div class="text-5xl font-bold text-petroleum-gold mb-2">50+</div>
-          <div class="text-charcoal">Countries Served</div>
-        </div>
-
-        <div class="bg-off-white p-8 rounded-lg">
-          <div class="text-5xl font-bold text-petroleum-gold mb-2">99.9%</div>
-          <div class="text-charcoal">Uptime</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <CTASection
-    label="Join Us"
-    title="Become Part of Our Community"
-    description="Join thousands of energy professionals who trust our platform for critical industry intelligence."
-    primaryButton="Get Started Today"
-    primaryButtonHref="https://info.evaluateenergy.com/"
-    secondaryButton="Contact Us"
-    secondaryButtonHref="https://info.evaluateenergy.com/"
-  />
+  <CTASection isGeologicCTA={true} />
 </BaseLayout>
