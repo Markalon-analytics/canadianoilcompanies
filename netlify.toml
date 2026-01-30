@@ -5,6 +5,26 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Redirect old directory page to homepage directory section
+[[redirects]]
+  from = "/directory/"
+  to = "/#directory"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/directory"
+  to = "/#directory"
+  status = 301
+  force = true
+
+# Redirect all old company pages to homepage
+[[redirects]]
+  from = "/companies/*"
+  to = "/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

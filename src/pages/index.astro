@@ -1,145 +1,91 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
-import SectionHeader from '../components/SectionHeader.astro';
-import ValueCard from '../components/ValueCard.astro';
-import CompanyCard from '../components/CompanyCard.astro';
-import CTASection from '../components/CTASection.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import DirectoryFilters from "../components/DirectoryFilters.astro";
+import CompanyListItem from "../components/CompanyListItem.astro";
+import CTASection from "../components/CTASection.astro";
+
+import companiesData from "../data/companies.json";
+
+const companies = companiesData.companies;
+const totalCount = companies.length;
+
+// Count by category
+const producerCount = companies.filter((c) => c.category === "producer").length;
+const midstreamCount = companies.filter(
+  (c) => c.category === "midstream",
+).length;
+const servicesCount = companies.filter((c) => c.category === "services").length;
 
 const metrics = [
-  { number: '120+', text: 'Major Companies' },
-  { number: '$250B+', text: 'Combined Revenue' },
-  { number: '5.2M', text: 'Barrels Per Day' },
-  { number: '98%', text: 'Data Accuracy' },
-];
-
-const valueProps = [
-  {
-    icon: '⭐',
-    title: 'Verified Excellence',
-    description: 'Every company profile is thoroughly verified and updated with the highest standards of accuracy and reliability.',
-  },
-  {
-    icon: '🔒',
-    title: 'Comprehensive Data',
-    description: 'Access complete financial metrics, production volumes, reserves data, and strategic insights across all major operators.',
-  },
-  {
-    icon: '⏱️',
-    title: 'Real-Time Updates',
-    description: 'Stay informed with continuously updated operational data, market positions, and industry developments.',
-  },
-  {
-    icon: '📈',
-    title: 'Professional Tools',
-    description: 'Utilize advanced filtering, comparison capabilities, and data export functions designed for serious analysts.',
-  },
-];
-
-const companies = [
-  {
-    rank: '01',
-    name: 'ARC Resources Ltd.',
-    type: 'Montney Producer',
-    stats: [
-      { label: 'Daily Production', value: '~410,000 BOE/D' },
-      { label: 'Stock Symbol', value: 'ARX (TSX)' },
-      { label: 'Land Holdings', value: '1M+ net acres' },
-    ],
-    slug: 'arc-resources',
-  },
-  {
-    rank: '02',
-    name: 'Canadian Natural Resources Limited',
-    type: 'Integrated Producer',
-    stats: [
-      { label: 'Operations', value: 'Canada, UK North Sea, Africa' },
-      { label: 'Stock Symbol', value: 'CNQ (TSX/NYSE)' },
-      { label: 'Focus', value: 'Oil Sands & Conventional' },
-    ],
-    slug: 'canadian-natural-resources',
-  },
-  {
-    rank: '03',
-    name: 'Cenovus Energy Inc.',
-    type: 'Integrated Energy',
-    stats: [
-      { label: 'Operations', value: 'Canada, US, Asia Pacific' },
-      { label: 'Stock Symbol', value: 'CVE (TSX/NYSE)' },
-      { label: 'Focus', value: 'Oil Sands & Refining' },
-    ],
-    slug: 'cenovus-energy',
-  },
-  {
-    rank: '04',
-    name: 'Suncor Energy Inc.',
-    type: 'Integrated Energy',
-    stats: [
-      { label: 'Operations', value: 'Oil Sands, Refining, Retail' },
-      { label: 'Stock Symbol', value: 'SU (TSX)' },
-      { label: 'Focus', value: 'Diverse Energy Sources' },
-    ],
-    slug: 'suncor-energy',
-  },
+  { number: `${totalCount}+`, text: "Companies Listed" },
+  { number: "3", text: "Industry Sectors" },
+  { number: "10+", text: "Provinces Covered" },
+  { number: "100%", text: "Verified Data" },
 ];
 ---
 
 <BaseLayout
-  title="Canadian Oil Companies | Corporate Directory"
-  description="Comprehensive directory of Canada's largest oil companies - Professional resource for energy analysts."
+  title="Canadian Oil Companies Directory | Complete Industry Guide"
+  description="Browse the complete directory of 117+ Canadian oil and energy companies. Filter by category, search by name, and access company information instantly."
 >
   <Hero
     badge="Trusted Industry Resource"
-    title="The Definitive Directory of Canada's Oil & Energy Leaders"
-    subtitle="Authoritative intelligence and comprehensive profiles for Canadian and international energy analysts"
-    primaryCTA="Access Directory"
-    primaryCTAHref="/directory/"
-    secondaryCTA="Request Information"
+    title="Canadian Oil & Energy Company Directory"
+    subtitle="The definitive resource for Canadian energy industry companies. Search and filter through producers, midstream operators, and service providers."
+    primaryCTA="Browse Directory"
+    primaryCTAHref="#directory"
+    secondaryCTA="About Us"
+    secondaryCTAHref="/about/"
     metrics={metrics}
   />
 
-  <section class="px-8 py-24 bg-white">
-    <div class="max-w-[1400px] mx-auto">
-      <SectionHeader
-        label="Why Choose Us"
-        title="The Industry Standard for Energy Intelligence"
-      />
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        {valueProps.map(prop => (
-          <ValueCard
-            icon={prop.icon}
-            title={prop.title}
-            description={prop.description}
-          />
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="px-8 py-24 bg-off-white">
-    <div class="max-w-[1400px] mx-auto">
-      <SectionHeader
-        label="Industry Leaders"
-        title="Featured Canadian Energy Companies"
-        subtitle="Profiles of Canada's most significant oil and gas producers"
-      />
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        {companies.map(company => (
-          <CompanyCard
-            rank={company.rank}
-            name={company.name}
-            type={company.type}
-            stats={company.stats}
-          />
-        ))}
+  <section class="directory-section" id="directory">
+    <div class="directory-container">
+      <div class="directory-header">
+        <div class="section-label">Complete Directory</div>
+        <h2 class="section-title">Browse All Companies</h2>
+        <p class="section-subtitle">
+          Explore our comprehensive database of Canadian oil and energy
+          companies. Use the filters below to find companies by category or
+          search for specific organizations.
+        </p>
       </div>
 
-      <div class="text-center">
-        <a href="/directory/" class="bg-transparent text-deep-navy border-2 border-deep-navy px-10 py-4 text-base font-semibold rounded-md cursor-pointer transition-all duration-300 hover:bg-deep-navy hover:text-white hover:-translate-y-0.5 inline-block">
-          View Complete Directory
-        </a>
+      <DirectoryFilters totalCount={totalCount} />
+
+      <div id="company-list" class="company-grid">
+        {
+          companies.map((company) => (
+            <CompanyListItem
+              id={company.id}
+              name={company.name}
+              shortDescription={company.shortDescription}
+              location={company.location}
+              address={company.address}
+              website={company.website}
+              category={
+                company.category as "producer" | "midstream" | "services"
+              }
+            />
+          ))
+        }
+      </div>
+
+      <div id="no-results" class="no-results hidden">
+        <div class="no-results-icon">🔍</div>
+        <h3>No companies found</h3>
+        <p>Try adjusting your search terms or clearing the filters.</p>
+        <button type="button" id="reset-filters" class="reset-btn">
+          Clear All Filters
+        </button>
+      </div>
+
+      <div class="directory-footer">
+        <p>
+          Can't find a company? <a href="/about/">Contact us</a> to suggest additions
+          to our directory.
+        </p>
       </div>
     </div>
   </section>
@@ -148,8 +94,288 @@ const companies = [
     label="Get Started Today"
     title="Join Leading Energy Analysts Worldwide"
     description="Access the most comprehensive and trusted directory of Canadian oil companies. Trusted by analysts, investors, and industry professionals across the globe."
-    primaryButton="Access Full Directory"
-    primaryButtonHref="/directory/"
-    secondaryButton="Schedule a Demo"
+    primaryButton="Contact Us"
+    primaryButtonHref="/about/"
+    secondaryButton="Learn More"
   />
 </BaseLayout>
+
+<script
+  define:vars={{ producerCount, midstreamCount, servicesCount, totalCount }}
+>
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("company-search");
+    const clearSearchBtn = document.getElementById("clear-search");
+    const categoryButtons = document.querySelectorAll("[data-category]");
+    const companyItems = document.querySelectorAll(".company-list-item");
+    const resultsCount = document.getElementById("results-count");
+    const noResults = document.getElementById("no-results");
+    const resetFiltersBtn = document.getElementById("reset-filters");
+
+    // Category count elements
+    const countAll = document.getElementById("count-all");
+    const countProducer = document.getElementById("count-producer");
+    const countMidstream = document.getElementById("count-midstream");
+    const countServices = document.getElementById("count-services");
+
+    // Set initial counts
+    if (countAll) countAll.textContent = totalCount;
+    if (countProducer) countProducer.textContent = producerCount;
+    if (countMidstream) countMidstream.textContent = midstreamCount;
+    if (countServices) countServices.textContent = servicesCount;
+
+    let currentCategory = "all";
+    let currentSearch = "";
+
+    function filterCompanies() {
+      let visibleCount = 0;
+      const searchLower = currentSearch.toLowerCase().trim();
+
+      companyItems.forEach((item) => {
+        const itemCategory = item.dataset.category;
+        const itemName = item.dataset.name || "";
+        const itemLocation = item.dataset.location || "";
+        const itemDescription = item.dataset.description || "";
+        const itemAddress = item.dataset.address || "";
+
+        const matchesCategory =
+          currentCategory === "all" || itemCategory === currentCategory;
+
+        const matchesSearch =
+          searchLower === "" ||
+          itemName.includes(searchLower) ||
+          itemLocation.includes(searchLower) ||
+          itemDescription.includes(searchLower) ||
+          itemAddress.includes(searchLower);
+
+        if (matchesCategory && matchesSearch) {
+          item.style.display = "";
+          visibleCount++;
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      // Update results count
+      resultsCount.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? "company" : "companies"}`;
+
+      // Show/hide no results message
+      noResults.classList.toggle("hidden", visibleCount > 0);
+
+      // Toggle clear button visibility
+      clearSearchBtn.classList.toggle("hidden", currentSearch === "");
+    }
+
+    // Search input handler with debounce
+    let debounceTimer;
+    searchInput.addEventListener("input", (e) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        currentSearch = e.target.value;
+        filterCompanies();
+      }, 150);
+    });
+
+    // Clear search button
+    clearSearchBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      currentSearch = "";
+      filterCompanies();
+      searchInput.focus();
+    });
+
+    // Category button handlers
+    categoryButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        categoryButtons.forEach((b) => {
+          b.classList.remove("active");
+          b.setAttribute("aria-selected", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
+        currentCategory = btn.dataset.category;
+        filterCompanies();
+      });
+    });
+
+    // Reset filters button
+    resetFiltersBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      currentSearch = "";
+      currentCategory = "all";
+
+      categoryButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-selected", "false");
+        if (btn.dataset.category === "all") {
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+        }
+      });
+
+      filterCompanies();
+    });
+
+    // Smooth scroll for anchor link
+    const directoryLink = document.querySelector('a[href="#directory"]');
+    if (directoryLink) {
+      directoryLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        const directorySection = document.getElementById("directory");
+        if (directorySection) {
+          directorySection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      });
+    }
+
+    // Initialize
+    filterCompanies();
+  });
+</script>
+
+<style>
+  .directory-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  }
+
+  .directory-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .directory-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-label {
+    display: inline-block;
+    background: linear-gradient(
+      135deg,
+      rgba(212, 168, 70, 0.15) 0%,
+      rgba(232, 160, 39, 0.15) 100%
+    );
+    color: #d4a846;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #0a2647;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 2rem;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 1rem;
+    border: 2px dashed #e5e7eb;
+  }
+
+  .no-results.hidden {
+    display: none;
+  }
+
+  .no-results-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .no-results h3 {
+    font-size: 1.5rem;
+    color: #0a2647;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .no-results p {
+    color: #6b7280;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .reset-btn {
+    background: #0a2647;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+  }
+
+  .reset-btn:hover {
+    background: #d4a846;
+    transform: translateY(-2px);
+  }
+
+  .directory-footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .directory-footer p {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+
+  .directory-footer a {
+    color: #d4a846;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .directory-footer a:hover {
+    color: #e8a027;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .directory-section {
+      padding: 3rem 1rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+    }
+
+    .company-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+</style>

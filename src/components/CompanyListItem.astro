@@ -1,0 +1,283 @@
+---
+interface Props {
+    id: string;
+    name: string;
+    shortDescription: string;
+    location: string;
+    address: string;
+    website: string;
+    category: "producer" | "midstream" | "services";
+}
+
+const { id, name, shortDescription, location, address, website, category } =
+    Astro.props;
+
+const categoryLabels: Record<string, string> = {
+    producer: "Oil & Gas Producer",
+    midstream: "Midstream",
+    services: "Services",
+};
+
+const categoryColors: Record<string, string> = {
+    producer: "#D4A846",
+    midstream: "#2563eb",
+    services: "#059669",
+};
+---
+
+<article
+    class="company-list-item"
+    data-category={category}
+    data-name={name.toLowerCase()}
+    data-location={location.toLowerCase()}
+    data-description={shortDescription.toLowerCase()}
+    data-address={address.toLowerCase()}
+>
+    <div class="company-header">
+        <div
+            class="category-badge"
+            style={`--badge-color: ${categoryColors[category]}`}
+        >
+            {categoryLabels[category]}
+        </div>
+    </div>
+
+    <div class="company-content">
+        <h3 class="company-name">{name}</h3>
+        <p class="company-description">{shortDescription}</p>
+
+        <div class="company-address">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="address-text">{address}</span>
+        </div>
+    </div>
+
+    <div class="company-footer">
+        <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="website-link"
+            aria-label={`Visit ${name} website`}
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                ></path>
+                <path d="M2 12h20"></path>
+            </svg>
+            <span>Visit Website</span>
+            <svg
+                class="arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" x2="21" y1="14" y2="3"></line>
+            </svg>
+        </a>
+    </div>
+</article>
+
+<style>
+    .company-list-item {
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 2px 16px rgba(10, 38, 71, 0.06);
+        border: 1px solid rgba(10, 38, 71, 0.06);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        position: relative;
+        min-height: 320px;
+    }
+
+    .company-list-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, #d4a846 0%, #e8a027 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .company-list-item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(10, 38, 71, 0.12);
+    }
+
+    .company-list-item:hover::before {
+        opacity: 1;
+    }
+
+    .company-header {
+        padding: 1.5rem 1.75rem 0;
+    }
+
+    .category-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.35rem 0.875rem;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        background: color-mix(in srgb, var(--badge-color) 12%, transparent);
+        color: var(--badge-color);
+    }
+
+    .company-content {
+        padding: 1.25rem 1.75rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .company-name {
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: #0a2647;
+        margin: 0;
+        line-height: 1.25;
+        font-family: "Playfair Display", serif;
+    }
+
+    .company-description {
+        font-size: 0.925rem;
+        color: #4b5563;
+        line-height: 1.65;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .company-address {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.875rem 1rem;
+        background: #f8f9fa;
+        border-radius: 0.5rem;
+        margin-top: auto;
+    }
+
+    .company-address svg {
+        flex-shrink: 0;
+        color: #d4a846;
+        margin-top: 0.125rem;
+    }
+
+    .address-text {
+        font-size: 0.825rem;
+        color: #4b5563;
+        line-height: 1.5;
+    }
+
+    .company-footer {
+        padding: 1.25rem 1.75rem 1.5rem;
+        border-top: 1px solid #f3f4f6;
+    }
+
+    .website-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        font-weight: 600;
+        font-size: 0.875rem;
+        text-decoration: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+        transition: all 0.2s ease;
+        background: linear-gradient(135deg, #0a2647 0%, #163d5c 100%);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .website-link:hover {
+        background: linear-gradient(135deg, #d4a846 0%, #e8a027 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(212, 168, 70, 0.3);
+    }
+
+    .website-link .arrow-icon {
+        transition: transform 0.2s ease;
+        margin-left: auto;
+    }
+
+    .website-link:hover .arrow-icon {
+        transform: translate(2px, -2px);
+    }
+
+    @media (max-width: 640px) {
+        .company-list-item {
+            min-height: 280px;
+        }
+
+        .company-header {
+            padding: 1.25rem 1.25rem 0;
+        }
+
+        .company-content {
+            padding: 1rem 1.25rem;
+        }
+
+        .company-footer {
+            padding: 1rem 1.25rem 1.25rem;
+        }
+
+        .company-name {
+            font-size: 1.2rem;
+        }
+
+        .company-description {
+            font-size: 0.875rem;
+            -webkit-line-clamp: 3;
+        }
+
+        .address-text {
+            font-size: 0.8rem;
+        }
+    }
+</style>

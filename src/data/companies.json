@@ -1,0 +1,1066 @@
+{
+    "meta": {
+        "totalCount": 117,
+        "lastUpdated": "2026-01-30",
+        "categories": [
+            "producer",
+            "midstream",
+            "services"
+        ]
+    },
+    "companies": [
+        {
+            "id": "advantage-energy",
+            "name": "Advantage Energy Ltd.",
+            "shortDescription": "Advantage Energy is a Canadian natural gas-focused energy company with operations in the Montney Formation in Alberta, emphasizing low-cost production and sustainable development.",
+            "location": "Calgary, AB",
+            "address": "Millennium Tower, Suite 2200, 440 2nd Avenue SW, Calgary, Alberta T2P 5E9, Canada",
+            "website": "https://www.advantageog.com/",
+            "category": "producer"
+        },
+        {
+            "id": "africa-energy",
+            "name": "Africa Energy Corp.",
+            "shortDescription": "Africa Energy Corp. is a Canadian oil and gas exploration company focused on exploration assets in South Africa and Namibia, listed on the TSX Venture Exchange.",
+            "location": "Vancouver, BC",
+            "address": "885 West Georgia Street, Suite 2000, Vancouver, BC V6C 3E8, Canada",
+            "website": "https://africaenergycorp.com/",
+            "category": "producer"
+        },
+        {
+            "id": "altima-energy",
+            "name": "Altima Energy Inc.",
+            "shortDescription": "Altima Energy Inc. is a junior energy company engaged in exploring and developing oil and natural gas assets in Western Canada's Sedimentary Basin.",
+            "location": "Vancouver, BC",
+            "address": "Suite 303, 595 Howe Street, Vancouver, BC V6C 2T5, Canada",
+            "website": "https://altimaenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "alvopetro-energy",
+            "name": "Alvopetro Energy Ltd.",
+            "shortDescription": "Alvopetro Energy Ltd. is a Canadian energy company operating in Brazil and Canada, developing natural gas resources in the Recôncavo Basin.",
+            "location": "Calgary, AB",
+            "address": "Suite 401, 255 – 17th Avenue SW, Calgary, Alberta T2S 2T8, Canada",
+            "website": "https://alvopetro.com/",
+            "category": "producer"
+        },
+        {
+            "id": "arc-resources",
+            "name": "ARC Resources Ltd.",
+            "shortDescription": "ARC Resources Ltd. is a leading Canadian energy producer focused on developing high-quality crude oil, condensate, and natural gas assets in the Montney Formation.",
+            "location": "Calgary, AB",
+            "address": "1200, 308 – 4th Avenue SW, Calgary, Alberta T2P 0H7, Canada",
+            "website": "https://www.arcresources.com/",
+            "category": "producer"
+        },
+        {
+            "id": "argo-gold",
+            "name": "Argo Gold Inc.",
+            "shortDescription": "Argo Gold Inc. is a Canadian mineral exploration company focused on gold exploration in Ontario, west of the Abitibi Greenstone Belt.",
+            "location": "Toronto, ON",
+            "address": "25 Adelaide Street East, Suite 1400, Toronto, ON M5C 3A1, Canada",
+            "website": "https://argogold.com/",
+            "category": "producer"
+        },
+        {
+            "id": "arrow-exploration",
+            "name": "Arrow Exploration Corp.",
+            "shortDescription": "Arrow Exploration Corp. is a Canadian oil and gas exploration company with operations focused in Colombia, developing conventional reserves in South America.",
+            "location": "Calgary, AB",
+            "address": "203, 2303 4th Street SW, Calgary, Alberta T2S 2S7, Canada",
+            "website": "https://arrowexploration.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "athabasca-oil",
+            "name": "Athabasca Oil Corporation",
+            "shortDescription": "Athabasca Oil Corporation is a Canadian energy company focused on sustainable resource development of thermal and light oil assets in Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 1200, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://www.atha.com/",
+            "category": "producer"
+        },
+        {
+            "id": "atlas-energy",
+            "name": "Atlas Energy Corp.",
+            "shortDescription": "Atlas Energy Corp. is a Canadian international oil and gas royalty company building a portfolio of production and development stage assets worldwide.",
+            "location": "Calgary, AB",
+            "address": "3200, Dome Tower, 333 7th Avenue SW, Calgary, Alberta T2P 2Z1, Canada",
+            "website": "https://atlas-corp.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "avanti-helium",
+            "name": "Avanti Helium Corp.",
+            "shortDescription": "Avanti Helium Corp. is a gas exploration company specializing in helium extraction across western Canada and the United States.",
+            "location": "Calgary, AB",
+            "address": "1810 – 840 7th Avenue SW, Calgary, Alberta T2P 3G2, Canada",
+            "website": "https://avantihelium.com/",
+            "category": "producer"
+        },
+        {
+            "id": "avila-energy",
+            "name": "Avila Energy Corporation",
+            "shortDescription": "Avila Energy Corporation is an emerging oil and gas producer with 100% owned and operated conventional assets primarily in Alberta.",
+            "location": "Calgary, AB",
+            "address": "500 4th Avenue SW, Suite 2500, Calgary, Alberta T2P 3K2, Canada",
+            "website": "https://avilaenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "barnwell-industries",
+            "name": "Barnwell Industries Inc.",
+            "shortDescription": "Barnwell Industries Inc. is a diversified company engaged in oil and gas exploration, development, production and sales in Canada for over 65 years.",
+            "location": "Calgary, AB",
+            "address": "500 – 4th Avenue S.W., Suite 2410, Calgary, Alberta T2P 2V6, Canada",
+            "website": "https://brninc.com/",
+            "category": "producer"
+        },
+        {
+            "id": "baytex-energy",
+            "name": "Baytex Energy Corp.",
+            "shortDescription": "Baytex Energy Corp. is a Canadian oil and gas company with operations in the Western Canadian Sedimentary Basin and the Eagle Ford formation in Texas.",
+            "location": "Calgary, AB",
+            "address": "Centennial Place, East Tower, 2800, 520 - 3rd Avenue SW, Calgary, Alberta T2P 0R3, Canada",
+            "website": "https://www.baytexenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "bengal-energy",
+            "name": "Bengal Energy Ltd.",
+            "shortDescription": "Bengal Energy Ltd. is an international junior oil and gas exploration company with operations in Australia, maintaining offices in Calgary and Brisbane.",
+            "location": "Calgary, AB",
+            "address": "Suite 640, 630 6th Avenue SW, Calgary, Alberta T2P 0S8, Canada",
+            "website": "https://bengalenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "birchcliff-energy",
+            "name": "Birchcliff Energy Ltd.",
+            "shortDescription": "Birchcliff Energy Ltd. is an intermediate oil and natural gas company focused on the Montney/Doig resource play in the Peace River Arch of Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 1000, 600 - 3rd Avenue SW, Calgary, Alberta T2P 0G5, Canada",
+            "website": "https://www.birchcliffenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "blacksteel-energy",
+            "name": "Blacksteel Energy Inc.",
+            "shortDescription": "Blacksteel Energy Inc. is a Canadian oil and gas exploration and production company focused on developing assets in Western Canada.",
+            "location": "Calgary, AB",
+            "address": "840 Sixth Avenue SW, Suite 220, Calgary, Alberta T2P 3E5, Canada",
+            "website": "https://www.blacksteelenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "bonterra-energy",
+            "name": "Bonterra Energy Corp.",
+            "shortDescription": "Bonterra Energy Corp. is one of Canada's longest standing junior oil and gas companies with operations in the Pembina Cardium, Charlie Lake, and Montney formations.",
+            "location": "Calgary, AB",
+            "address": "Suite 2500, 525 – 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://bonterraenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "canacol-energy",
+            "name": "Canacol Energy Ltd.",
+            "shortDescription": "Canacol Energy Ltd. is a leading natural gas exploration and production company focused on Colombia, producing approximately 17% of the country's domestic supply.",
+            "location": "Calgary, AB",
+            "address": "Suite 2000, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://canacolenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "canadian-natural-resources",
+            "name": "Canadian Natural Resources Limited",
+            "shortDescription": "Canadian Natural Resources Limited is one of the largest independent crude oil and natural gas producers in the world, operating across Western Canada.",
+            "location": "Calgary, AB",
+            "address": "2100, 855 - 2nd Street SW, Calgary, Alberta T2P 4J8, Canada",
+            "website": "https://www.cnrl.com/",
+            "category": "producer"
+        },
+        {
+            "id": "canadian-spirit-resources",
+            "name": "Canadian Spirit Resources Inc.",
+            "shortDescription": "Canadian Spirit Resources Inc. is focused on the exploration and production of natural gas in the Montney Formation of northeast British Columbia.",
+            "location": "Calgary, AB",
+            "address": "c/o Sproule Asset Management Limited, 900, 140 4th Avenue SW, Calgary, Alberta T2P 3N3, Canada",
+            "website": "https://www.csri.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "canasia-energy",
+            "name": "CanAsia Energy Corp.",
+            "shortDescription": "CanAsia Energy Corp. is a Canadian publicly listed junior oil and gas company focused on exploration and production in Western Canada.",
+            "location": "Calgary, AB",
+            "address": "Suite 1505, 505 - 3rd Street SW, Calgary, Alberta T2P 3E6, Canada",
+            "website": "https://canasiacorp.com/",
+            "category": "producer"
+        },
+        {
+            "id": "capitan-investment",
+            "name": "Capitan Investment Ltd.",
+            "shortDescription": "Capitan Investment Ltd. is a publicly traded investment company focused on oil and gas exploration and production, headquartered in Calgary.",
+            "location": "Calgary, AB",
+            "address": "444 - 7th Avenue SW, Calgary, Alberta T2P 0X8, Canada",
+            "website": "https://www.capitaninvestment.com/",
+            "category": "producer"
+        },
+        {
+            "id": "cardinal-energy",
+            "name": "Cardinal Energy Ltd.",
+            "shortDescription": "Cardinal Energy Ltd. is a Canadian oil-focused exploration and production company with operations in Alberta and Saskatchewan.",
+            "location": "Calgary, AB",
+            "address": "600, 400 – 3rd Avenue SW, Calgary, Alberta T2P 4H2, Canada",
+            "website": "https://cardinalenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "cavvy-energy",
+            "name": "Cavvy Energy Ltd.",
+            "shortDescription": "Cavvy Energy Ltd. is a major producer and custom processor of natural gas from Alberta's Foothills and northeast British Columbia.",
+            "location": "Calgary, AB",
+            "address": "Suite 1100, 411 - 1st Street SE, Calgary, Alberta T2G 4Y5, Canada",
+            "website": "https://www.cavvyenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "cenovus-energy",
+            "name": "Cenovus Energy Inc.",
+            "shortDescription": "Cenovus Energy Inc. is a Canadian integrated oil and natural gas company engaged in oil sands production, conventional production, and refining operations.",
+            "location": "Calgary, AB",
+            "address": "225 - 6th Avenue SW, P.O. Box 766, Calgary, Alberta T2P 0M5, Canada",
+            "website": "https://www.cenovus.com/",
+            "category": "producer"
+        },
+        {
+            "id": "centaurus-energy",
+            "name": "Centaurus Energy Inc.",
+            "shortDescription": "Centaurus Energy Inc. is a Canadian exploration and development company managing proceeds from overriding royalty interests.",
+            "location": "Calgary, AB",
+            "address": "333 - 7th Avenue SW, Suite 1600, Dome Tower, Calgary, Alberta T2P 2Z1, Canada",
+            "website": "https://ctaurus.com/",
+            "category": "producer"
+        },
+        {
+            "id": "cgx-energy",
+            "name": "CGX Energy Inc.",
+            "shortDescription": "CGX Energy Inc. is an oil and gas exploration company with three licenses in the Guyana-Suriname Basin, focused on deep water exploration.",
+            "location": "Toronto, ON",
+            "address": "333 Bay Street, Suite 2400, Toronto, Ontario M5H 2T6, Canada",
+            "website": "https://cgxenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "claren-energy",
+            "name": "Claren Energy Corp.",
+            "shortDescription": "Claren Energy Corp. is a Canadian energy company engaged in oil and gas exploration and development in Western Canada.",
+            "location": "Vancouver, BC",
+            "address": "1199 West Hastings Street, Suite 1100, Vancouver, BC V6E 3T5, Canada",
+            "website": "https://www.clarenenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "cobra-venture",
+            "name": "Cobra Venture Corporation",
+            "shortDescription": "Cobra Venture Corporation is a Canadian oil and gas development company focused on conventional crude oil exploration, development, and production.",
+            "location": "Calgary, AB",
+            "address": "Suite 1920, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://www.cobraventure.com/",
+            "category": "producer"
+        },
+        {
+            "id": "coelacanth-energy",
+            "name": "Coelacanth Energy Inc.",
+            "shortDescription": "Coelacanth Energy Inc. is a Montney-focused oil and natural gas exploration and development company in northeastern British Columbia.",
+            "location": "Calgary, AB",
+            "address": "2110, 530 - 8th Avenue SW, Calgary, Alberta T2P 3S8, Canada",
+            "website": "https://www.coelacanth.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "condor-energies",
+            "name": "Condor Energies Inc.",
+            "shortDescription": "Condor Energies Inc. is the largest TSX-listed energy developer with diverse initiatives in Central Asia including Kazakhstan, Turkey and Uzbekistan.",
+            "location": "Calgary, AB",
+            "address": "Suite 1810, 500 - 4th Avenue SW, Calgary, Alberta T2P 2V6, Canada",
+            "website": "https://condorenergies.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "criterium-energy",
+            "name": "Criterium Energy Ltd.",
+            "shortDescription": "Criterium Energy Ltd. is an independent upstream energy company focused on building a high-quality portfolio of undercapitalized energy assets.",
+            "location": "Calgary, AB",
+            "address": "1120, 202 - 6th Avenue SW, Bow Valley Square Tower 1, Calgary, Alberta T2P 2R9, Canada",
+            "website": "https://criteriumenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "crown-point-energy",
+            "name": "Crown Point Energy Inc.",
+            "shortDescription": "Crown Point Energy Inc. is a Calgary-based junior international oil and gas company with production and exploration assets in Argentina.",
+            "location": "Calgary, AB",
+            "address": "PO Box 1562, Station M, Calgary, Alberta T2P 3B9, Canada",
+            "website": "https://crownpointenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "decimus-oil",
+            "name": "Decimus Oil Corp.",
+            "shortDescription": "Decimus Oil Corp. is a Canadian oil and gas exploration company focused on unlocking the hydrocarbon potential in the Mannville Formation in Southern Alberta.",
+            "location": "Calgary, AB",
+            "address": "639 - 5th Avenue SW, Suite 1250, Calgary, Alberta T2P 0M9, Canada",
+            "website": "https://decimusoil.com/",
+            "category": "producer"
+        },
+        {
+            "id": "eco-atlantic-oil-gas",
+            "name": "Eco (Atlantic) Oil & Gas Ltd.",
+            "shortDescription": "Eco (Atlantic) Oil & Gas Ltd. is an oil and gas exploration company focused on unique upstream petroleum opportunities in Namibia, Guyana, and Ghana.",
+            "location": "Toronto, ON",
+            "address": "7 Coulson Avenue, Toronto, Ontario M4V 1Y3, Canada",
+            "website": "https://www.ecooilandgas.com/",
+            "category": "producer"
+        },
+        {
+            "id": "falcon-oil-gas",
+            "name": "Falcon Oil & Gas Ltd.",
+            "shortDescription": "Falcon Oil & Gas Ltd. is an international oil and gas company engaged in the exploration and development of unconventional oil and gas assets.",
+            "location": "Vancouver, BC",
+            "address": "1200 Waterfront Centre, 200 Burrard Street, Vancouver, BC V7X 1T2, Canada",
+            "website": "https://falconoilandgas.com/",
+            "category": "producer"
+        },
+        {
+            "id": "fiddlehead-resources",
+            "name": "Fiddlehead Resources Corp.",
+            "shortDescription": "Fiddlehead Resources Corp. is an upstream energy producer operating in the Western Canadian Sedimentary Basin's Peace River oil field.",
+            "location": "Calgary, AB",
+            "address": "1200, 715 - 5th Avenue SW, Calgary, Alberta T2P 2X6, Canada",
+            "website": "https://www.fiddleheadresources.com/",
+            "category": "producer"
+        },
+        {
+            "id": "first-helium",
+            "name": "First Helium Inc.",
+            "shortDescription": "First Helium Inc. is a Canadian helium exploration and development company focused on developing a premier helium project in Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 1810, 840 - 7th Avenue SW, Calgary, Alberta T2P 3G2, Canada",
+            "website": "https://www.firsthelium.com/",
+            "category": "producer"
+        },
+        {
+            "id": "freehold-royalties",
+            "name": "Freehold Royalties Ltd.",
+            "shortDescription": "Freehold Royalties Ltd. manages one of the largest non-government portfolios of oil and natural gas royalties in Canada with a sizeable US land base.",
+            "location": "Calgary, AB",
+            "address": "Suite 1000, 517 - 10th Avenue SW, Calgary, Alberta T2R 0A8, Canada",
+            "website": "https://freeholdroyalties.com/",
+            "category": "producer"
+        },
+        {
+            "id": "frontera-energy",
+            "name": "Frontera Energy Corporation",
+            "shortDescription": "Frontera Energy Corporation is dedicated to the exploration, development, production, and sale of oil and natural gas in South America.",
+            "location": "Calgary, AB",
+            "address": "1030, 140 - 4th Avenue SW, Calgary, Alberta T2P 3N3, Canada",
+            "website": "https://www.fronteraenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "gran-tierra-energy",
+            "name": "Gran Tierra Energy Inc.",
+            "shortDescription": "Gran Tierra Energy Inc. is an independent international energy company focused on oil and natural gas exploration and production in Colombia and Ecuador.",
+            "location": "Calgary, AB",
+            "address": "500 Centre Street SE, Calgary, Alberta T2G 1A6, Canada",
+            "website": "https://www.grantierra.com/",
+            "category": "producer"
+        },
+        {
+            "id": "greenfire-resources",
+            "name": "Greenfire Resources Ltd.",
+            "shortDescription": "Greenfire Resources Ltd. is an oil sands producer developing long-life thermal oil assets in the Athabasca region of Alberta using SAGD technology.",
+            "location": "Calgary, AB",
+            "address": "Suite 1200, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://www.greenfireres.com/",
+            "category": "producer"
+        },
+        {
+            "id": "headwater-exploration",
+            "name": "Headwater Exploration Inc.",
+            "shortDescription": "Headwater Exploration Inc. is a Canadian oil and gas exploration and development company focused on superior returns and sustainability in Western Canada.",
+            "location": "Calgary, AB",
+            "address": "Unit 1400, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://headwaterexp.com/",
+            "category": "producer"
+        },
+        {
+            "id": "hemisphere-energy",
+            "name": "Hemisphere Energy Corporation",
+            "shortDescription": "Hemisphere Energy Corporation is a dividend-paying Canadian oil company focused on maximizing value per share growth from Canadian assets.",
+            "location": "Toronto, ON",
+            "address": "Suite 200, 70 York Street, Toronto, Ontario M5J 1S9, Canada",
+            "website": "https://www.hemisphereenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "imperial-oil",
+            "name": "Imperial Oil Limited",
+            "shortDescription": "Imperial Oil Limited is a major Canadian oil and gas producer and refiner headquartered in Calgary, marketing products under the Esso and Mobil brands.",
+            "location": "Calgary, AB",
+            "address": "505 Quarry Park Boulevard SE, Calgary, Alberta T2C 5N1, Canada",
+            "website": "https://www.imperialoil.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "inplay-oil",
+            "name": "InPlay Oil Corp.",
+            "shortDescription": "InPlay Oil Corp. is a growth-oriented light oil development and production company focused on large resource plays in the Alberta Deep Basin.",
+            "location": "Calgary, AB",
+            "address": "Suite 2500, 715 - 5th Avenue SW, Calgary, Alberta T2P 2X6, Canada",
+            "website": "https://www.inplayoil.com/",
+            "category": "producer"
+        },
+        {
+            "id": "international-petroleum",
+            "name": "International Petroleum Corporation",
+            "shortDescription": "International Petroleum Corporation is an international oil and gas exploration and production company with assets in Canada, Malaysia and France.",
+            "location": "Calgary, AB",
+            "address": "Suite 900, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://www.international-petroleum.com/",
+            "category": "producer"
+        },
+        {
+            "id": "jericho-energy-ventures",
+            "name": "Jericho Energy Ventures Inc.",
+            "shortDescription": "Jericho Energy Ventures Inc. is a Canadian company focused on energy innovation and technology for AI infrastructure and energy transition.",
+            "location": "Vancouver, BC",
+            "address": "1055 West Georgia Street, Suite 2100, PO Box 11110, Vancouver, BC V6E 3P3, Canada",
+            "website": "https://www.jerichoenergyventures.com/",
+            "category": "producer"
+        },
+        {
+            "id": "journey-energy",
+            "name": "Journey Energy Inc.",
+            "shortDescription": "Journey Energy Inc. is a Canadian exploration and production company focused on conventional, oil-weighted operations in Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 700, Centre 10, 517 - 10th Avenue SW, Calgary, Alberta T2R 0A8, Canada",
+            "website": "https://www.journeyenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "jura-energy",
+            "name": "Jura Energy Corporation",
+            "shortDescription": "Jura Energy Corporation is an international independent upstream oil and gas company operating in Pakistan with headquarters in Calgary.",
+            "location": "Calgary, AB",
+            "address": "Suite 2100, 144 - 4th Avenue SW, Calgary, Alberta T2P 3N4, Canada",
+            "website": "https://juraenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "kelt-exploration",
+            "name": "Kelt Exploration Ltd.",
+            "shortDescription": "Kelt Exploration Ltd. is a Calgary-based oil and gas exploration and production company focused on multi-zone hydrocarbon potential in Western Canada.",
+            "location": "Calgary, AB",
+            "address": "Suite 300, East Tower, 311 - 6th Avenue SW, Calgary, Alberta T2P 3H2, Canada",
+            "website": "https://keltexploration.com/",
+            "category": "producer"
+        },
+        {
+            "id": "kiwetinohk-energy",
+            "name": "Kiwetinohk Energy Corp.",
+            "shortDescription": "Kiwetinohk Energy Corp. is an integrated energy transition company focused on production of low carbon/carbon free energy in Alberta.",
+            "location": "Calgary, AB",
+            "address": "1700, 250 - 2nd Street SW, Calgary, Alberta T2P 0C1, Canada",
+            "website": "https://kiwetinohk.com/",
+            "category": "producer"
+        },
+        {
+            "id": "lycos-energy",
+            "name": "Lycos Energy Inc.",
+            "shortDescription": "Lycos Energy Inc. is an exploration, development and production company focused on the Clearwater play in Alberta and Saskatchewan.",
+            "location": "Calgary, AB",
+            "address": "Suite 1900, 215 - 2nd Street SW, Calgary, Alberta T2P 1M4, Canada",
+            "website": "https://lycosenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "nuvista-energy",
+            "name": "NuVista Energy Ltd.",
+            "shortDescription": "NuVista Energy Ltd. is an intermediate oil and natural gas company focused on the condensate-rich Montney formation in the Alberta Deep Basin.",
+            "location": "Calgary, AB",
+            "address": "2500, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://nvaenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "obsidian-energy",
+            "name": "Obsidian Energy Ltd.",
+            "shortDescription": "Obsidian Energy Ltd. is an intermediate-sized oil and gas producer with high-quality assets focused in Alberta's Peace River and Pembina areas.",
+            "location": "Calgary, AB",
+            "address": "Suite 200, 207 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://obsidianenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "paramount-resources",
+            "name": "Paramount Resources Ltd.",
+            "shortDescription": "Paramount Resources Ltd. is an independent Canadian energy company that explores for and develops petroleum and natural gas reserves in Western Canada.",
+            "location": "Calgary, AB",
+            "address": "Suite 2800, 421 - 7th Avenue SW, Calgary, Alberta T2P 4K9, Canada",
+            "website": "https://www.paramountres.com/",
+            "category": "producer"
+        },
+        {
+            "id": "parex-resources",
+            "name": "Parex Resources Inc.",
+            "shortDescription": "Parex Resources Inc. is a Colombia-focused oil and gas producer responsibly developing resources for social and economic development.",
+            "location": "Calgary, AB",
+            "address": "2700 Eighth Avenue Place, West Tower, 585 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://www.parexresources.com/",
+            "category": "producer"
+        },
+        {
+            "id": "petrus-resources",
+            "name": "Petrus Resources Ltd.",
+            "shortDescription": "Petrus Resources Ltd. is a Canadian energy company active in property exploitation, strategic acquisitions and exploration in Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 1110, 240 - 4th Avenue SW, Calgary, Alberta T2P 4H4, Canada",
+            "website": "https://www.petrusresources.com/",
+            "category": "producer"
+        },
+        {
+            "id": "petrotal-corp",
+            "name": "PetroTal Corp.",
+            "shortDescription": "PetroTal Corp. is a publicly traded oil and gas development and production company operating in Peru's Maranon Basin.",
+            "location": "Calgary, AB",
+            "address": "4300 Bankers Hall West, 888 - 3rd Street SW, Calgary, Alberta T2P 5C5, Canada",
+            "website": "https://petrotalcorp.com/",
+            "category": "producer"
+        },
+        {
+            "id": "peyto-exploration",
+            "name": "Peyto Exploration & Development Corp.",
+            "shortDescription": "Peyto Exploration & Development Corp. is an explorer and producer of unconventional natural gas in Alberta's Deep Basin with industry-leading cost structure.",
+            "location": "Calgary, AB",
+            "address": "Suite 300, 600 - 3rd Avenue SW, Calgary, Alberta T2P 0G5, Canada",
+            "website": "https://www.peyto.com/",
+            "category": "producer"
+        },
+        {
+            "id": "pine-cliff-energy",
+            "name": "Pine Cliff Energy Ltd.",
+            "shortDescription": "Pine Cliff Energy Ltd. is a Canadian natural gas and oil producing company that has grown to become a significant producer (79% natural gas weighted).",
+            "location": "Calgary, AB",
+            "address": "Suite 850, 1015 - 4th Street SW, Calgary, Alberta T2R 1J4, Canada",
+            "website": "https://www.pinecliffenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "prairiesky-royalty",
+            "name": "PrairieSky Royalty Ltd.",
+            "shortDescription": "PrairieSky Royalty Ltd. is a pure-play royalty company and the largest fee simple mineral title land owner in Western Canada with 9.8 million acres.",
+            "location": "Calgary, AB",
+            "address": "Suite 1700, 350 - 7th Avenue SW, Calgary, Alberta T2P 3N9, Canada",
+            "website": "https://www.prairiesky.com/",
+            "category": "producer"
+        },
+        {
+            "id": "saturn-oil-gas",
+            "name": "Saturn Oil & Gas Inc.",
+            "shortDescription": "Saturn Oil & Gas Inc. is one of Canada's fastest-growing energy companies committed to responsible development of high-quality light oil assets.",
+            "location": "Calgary, AB",
+            "address": "Suite 2800, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://saturnoil.com/",
+            "category": "producer"
+        },
+        {
+            "id": "source-rock-royalties",
+            "name": "Source Rock Royalties Ltd.",
+            "shortDescription": "Source Rock Royalties Ltd. is a pure-play oil and gas royalty company with portfolios in southeast Saskatchewan, central Alberta and west-central Saskatchewan.",
+            "location": "Calgary, AB",
+            "address": "30th Floor, 421 - 7th Avenue SW, Calgary, Alberta T2P 4K9, Canada",
+            "website": "https://www.sourcerockroyalties.com/",
+            "category": "producer"
+        },
+        {
+            "id": "spartan-delta",
+            "name": "Spartan Delta Corp.",
+            "shortDescription": "Spartan Delta Corp. is a Canadian oil and gas exploration and production company focused on high-quality assets in the Deep Basin and Montney formations.",
+            "location": "Calgary, AB",
+            "address": "Suite 1400, First Canadian Centre, 350 - 7th Avenue SW, Calgary, Alberta T2P 3N9, Canada",
+            "website": "https://www.spartandeltacorp.com/",
+            "category": "producer"
+        },
+        {
+            "id": "strathcona-resources",
+            "name": "Strathcona Resources Ltd.",
+            "shortDescription": "Strathcona Resources Ltd. is one of North America's fastest-growing pure play heavy oil producers in the Cold Lake region of Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 1200, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://www.strathconaresources.com/",
+            "category": "producer"
+        },
+        {
+            "id": "suncor-energy",
+            "name": "Suncor Energy Inc.",
+            "shortDescription": "Suncor Energy Inc. is a globally competitive integrated energy company providing energy from oil sands, conventional oil and gas, and renewable fuels.",
+            "location": "Calgary, AB",
+            "address": "P.O. Box 2844, 150 - 6th Avenue SW, Calgary, Alberta T2P 3E3, Canada",
+            "website": "https://www.suncor.com/",
+            "category": "producer"
+        },
+        {
+            "id": "surge-energy",
+            "name": "Surge Energy Inc.",
+            "shortDescription": "Surge Energy Inc. is an oil-focused exploration and production company with premier oil assets in Western Canada driving free cash flow generation.",
+            "location": "Calgary, AB",
+            "address": "Suite 1200, Centennial Place - East Tower, 520 - 3rd Avenue SW, Calgary, Alberta T2P 0R3, Canada",
+            "website": "https://www.surgeenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "tamarack-valley-energy",
+            "name": "Tamarack Valley Energy Ltd.",
+            "shortDescription": "Tamarack Valley Energy Ltd. is a Canadian oil and gas company with a long-term strategic focus on responsible, value-driven energy development.",
+            "location": "Calgary, AB",
+            "address": "Suite 2100, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://www.tamarackvalley.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "tenaz-energy",
+            "name": "Tenaz Energy Corp.",
+            "shortDescription": "Tenaz Energy Corp. is the largest operator of natural gas assets in the Dutch North Sea and develops crude oil and natural gas at Leduc-Woodbend in Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 700, 605 - 5th Avenue SW, Calgary, Alberta T2P 3H5, Canada",
+            "website": "https://www.tenazenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "topaz-energy",
+            "name": "Topaz Energy Corp.",
+            "shortDescription": "Topaz Energy Corp. is a Canadian royalty and infrastructure energy company providing shareholders with reliable, growing dividends.",
+            "location": "Calgary, AB",
+            "address": "2900, 250 - 6th Avenue SW, Calgary, Alberta T2P 3H7, Canada",
+            "website": "https://www.topazenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "touchstone-exploration",
+            "name": "Touchstone Exploration Inc.",
+            "shortDescription": "Touchstone Exploration Inc. is an innovative company engaged in the complete exploration, development, and production lifecycle in Trinidad and Tobago.",
+            "location": "Calgary, AB",
+            "address": "Suite 4100, 350 - 7th Avenue SW, Calgary, Alberta T2P 3N9, Canada",
+            "website": "https://www.touchstoneexploration.com/",
+            "category": "producer"
+        },
+        {
+            "id": "tourmaline-oil",
+            "name": "Tourmaline Oil Corp.",
+            "shortDescription": "Tourmaline Oil Corp. is Canada's largest natural gas producer focused on long-term growth through exploration, development, and production.",
+            "location": "Calgary, AB",
+            "address": "2900, 250 - 6th Avenue SW, Calgary, Alberta T2P 3H7, Canada",
+            "website": "https://www.tourmalineoil.com/",
+            "category": "producer"
+        },
+        {
+            "id": "valeura-energy",
+            "name": "Valeura Energy Inc.",
+            "shortDescription": "Valeura Energy Inc. is a Canadian company engaged in the exploration, development and production of petroleum and natural gas in Thailand.",
+            "location": "Calgary, AB",
+            "address": "Suite 685, 404 - 6th Avenue SW, Calgary, Alberta T2P 0R9, Canada",
+            "website": "https://www.valeuraenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "vermilion-energy",
+            "name": "Vermilion Energy Inc.",
+            "shortDescription": "Vermilion Energy Inc. is a global gas producer developing liquids-rich natural gas in Canada and Europe across multiple countries.",
+            "location": "Calgary, AB",
+            "address": "3500, 520 - 3rd Avenue SW, Calgary, Alberta T2P 0R3, Canada",
+            "website": "https://www.vermilionenergy.com/",
+            "category": "producer"
+        },
+        {
+            "id": "whitecap-resources",
+            "name": "Whitecap Resources Inc.",
+            "shortDescription": "Whitecap Resources Inc. is a leading Canadian energy company committed to delivering reliable returns through responsible development of oil and gas assets.",
+            "location": "Calgary, AB",
+            "address": "3800, 525 - 8th Avenue SW, Eighth Avenue Place East Tower, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://www.wcap.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "yangarra-resources",
+            "name": "Yangarra Resources Ltd.",
+            "shortDescription": "Yangarra Resources Ltd. is a Canadian junior oil and gas company engaged in exploration, development and production focused on the Cardium play in Alberta.",
+            "location": "Calgary, AB",
+            "address": "Suite 1530, 715 - 5th Avenue SW, Calgary, Alberta T2P 2X6, Canada",
+            "website": "https://www.yangarra.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "zenith-energy",
+            "name": "Zenith Energy Ltd.",
+            "shortDescription": "Zenith Energy Ltd. is a forward-looking energy production company with strategic focus on electricity production and renewable energy.",
+            "location": "Calgary, AB",
+            "address": "Suite 1500, 15th Floor, Bankers Court, 850 - 2nd Street SW, Calgary, Alberta T2P 0R8, Canada",
+            "website": "https://zenithenergy.ca/",
+            "category": "producer"
+        },
+        {
+            "id": "altagas",
+            "name": "AltaGas Ltd.",
+            "shortDescription": "AltaGas Ltd. is a leading North American infrastructure company connecting customers to affordable and reliable sources of energy.",
+            "location": "Calgary, AB",
+            "address": "707 - 5th Street SW, Suite 1300, Calgary, Alberta T2P 1V8, Canada",
+            "website": "https://www.altagas.ca/",
+            "category": "midstream"
+        },
+        {
+            "id": "gibson-energy",
+            "name": "Gibson Energy Inc.",
+            "shortDescription": "Gibson Energy Inc. is a leading North American liquids infrastructure company with 25.2 million barrels of storage capacity across Western Canada and the US.",
+            "location": "Calgary, AB",
+            "address": "1700, 440 - 2nd Avenue SW, Calgary, Alberta T2P 5E9, Canada",
+            "website": "https://www.gibsonenergy.com/",
+            "category": "midstream"
+        },
+        {
+            "id": "inter-pipeline",
+            "name": "Inter Pipeline Ltd.",
+            "shortDescription": "Inter Pipeline Ltd. is a world-scale energy infrastructure company engaged in transportation, processing and storage across Western Canada and Europe.",
+            "location": "Calgary, AB",
+            "address": "Suite 3200, 215 - 2nd Street SW, Calgary, Alberta T2P 1M4, Canada",
+            "website": "https://interpipeline.com/",
+            "category": "midstream"
+        },
+        {
+            "id": "keyera-corp",
+            "name": "Keyera Corp.",
+            "shortDescription": "Keyera Corp. operates an integrated Canadian-based midstream business providing gathering, processing services, and NGL marketing.",
+            "location": "Calgary, AB",
+            "address": "The Ampersand, West Tower 200, 144 - 4th Avenue SW, Calgary, Alberta T2P 3N4, Canada",
+            "website": "https://www.keyera.com/",
+            "category": "midstream"
+        },
+        {
+            "id": "pembina-pipeline",
+            "name": "Pembina Pipeline Corporation",
+            "shortDescription": "Pembina Pipeline Corporation is a leading energy transportation and midstream service provider serving North America's energy industry for 70 years.",
+            "location": "Calgary, AB",
+            "address": "4000, 585 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://www.pembina.com/",
+            "category": "midstream"
+        },
+        {
+            "id": "south-bow-corp",
+            "name": "South Bow Corporation",
+            "shortDescription": "South Bow Corporation operates critical crude oil pipeline systems across North America including the Keystone Pipeline System.",
+            "location": "Calgary, AB",
+            "address": "450 - 1st Street SW, Calgary, Alberta T2P 5H1, Canada",
+            "website": "https://www.southbow.com/",
+            "category": "midstream"
+        },
+        {
+            "id": "tc-energy",
+            "name": "TC Energy Corporation",
+            "shortDescription": "TC Energy Corporation is one of North America's leading energy infrastructure companies operating natural gas pipelines and power generation facilities.",
+            "location": "Calgary, AB",
+            "address": "450 - 1st Street SW, Calgary, Alberta T2P 5H1, Canada",
+            "website": "https://www.tcenergy.com/",
+            "category": "midstream"
+        },
+        {
+            "id": "tidewater-midstream",
+            "name": "Tidewater Midstream and Infrastructure Ltd.",
+            "shortDescription": "Tidewater Midstream provides natural gas processing, fractionation, storage and transportation services in Western Canada.",
+            "location": "Calgary, AB",
+            "address": "Suite 2550, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://www.tidewatermidstream.com/",
+            "category": "midstream"
+        },
+        {
+            "id": "akita-drilling",
+            "name": "Akita Drilling Ltd.",
+            "shortDescription": "Akita Drilling Ltd. is a leading intermediate North American land drilling contractor with a fleet of 32 high-spec drilling rigs.",
+            "location": "Calgary, AB",
+            "address": "1000, 333 - 7th Avenue SW, Calgary, Alberta T2P 2Z1, Canada",
+            "website": "https://www.akita-drilling.com/",
+            "category": "services"
+        },
+        {
+            "id": "calfrac-well-services",
+            "name": "Calfrac Well Services Ltd.",
+            "shortDescription": "Calfrac Well Services Ltd. is the largest Canadian-headquartered pressure pumping company providing hydraulic fracturing and cementing services.",
+            "location": "Calgary, AB",
+            "address": "Suite 500, 407 - 8th Avenue SW, Calgary, Alberta T2P 1E5, Canada",
+            "website": "https://calfrac.com/",
+            "category": "services"
+        },
+        {
+            "id": "ces-energy-solutions",
+            "name": "CES Energy Solutions Corp.",
+            "shortDescription": "CES Energy Solutions Corp. is a leading provider of technically advanced consumable chemical solutions throughout the lifecycle of the oilfield.",
+            "location": "Calgary, AB",
+            "address": "Suite 1400, 332 - 6th Avenue SW, Calgary, Alberta T2P 0B2, Canada",
+            "website": "https://www.cesenergysolutions.com/",
+            "category": "services"
+        },
+        {
+            "id": "enerflex",
+            "name": "Enerflex Ltd.",
+            "shortDescription": "Enerflex Ltd. provides sustainable energy infrastructure solutions globally, from gas processing to electric power generation.",
+            "location": "Calgary, AB",
+            "address": "904, 1331 Macleod Trail SE, Calgary, Alberta T2G 0K3, Canada",
+            "website": "https://www.enerflex.com/",
+            "category": "services"
+        },
+        {
+            "id": "ensign-energy-services",
+            "name": "Ensign Energy Services Inc.",
+            "shortDescription": "Ensign Energy Services Inc. is a global leader in oilfield services, providing drilling and well servicing capabilities worldwide.",
+            "location": "Calgary, AB",
+            "address": "1000, 400 - 5th Avenue SW, Calgary, Alberta T2P 0L6, Canada",
+            "website": "https://www.ensignenergy.com/",
+            "category": "services"
+        },
+        {
+            "id": "precision-drilling",
+            "name": "Precision Drilling Corporation",
+            "shortDescription": "Precision Drilling Corporation is the largest drilling rig contractor in Canada, providing onshore oil and gas drilling technology and services.",
+            "location": "Calgary, AB",
+            "address": "Suite 800, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://www.precisiondrilling.com/",
+            "category": "services"
+        },
+        {
+            "id": "pason-systems",
+            "name": "Pason Systems Inc.",
+            "shortDescription": "Pason Systems Inc. is a leading provider of specialized data management systems and services to the drilling industry.",
+            "location": "Calgary, AB",
+            "address": "6130 Third Street SE, Calgary, Alberta T2H 1K4, Canada",
+            "website": "https://www.pason.com/",
+            "category": "services"
+        },
+        {
+            "id": "phx-energy-services",
+            "name": "PHX Energy Services Corp.",
+            "shortDescription": "PHX Energy Services Corp. provides horizontal and directional drilling technology and services to oil and natural gas producing companies.",
+            "location": "Calgary, AB",
+            "address": "Suite 1600, 250 - 2nd Street SW, Calgary, Alberta T2P 0C1, Canada",
+            "website": "https://www.phxtech.com/",
+            "category": "services"
+        },
+        {
+            "id": "trican-well-service",
+            "name": "Trican Well Service Ltd.",
+            "shortDescription": "Trican Well Service Ltd. is a leading provider of pressure pumping services in Canada, including hydraulic fracturing and cementing.",
+            "location": "Calgary, AB",
+            "address": "Suite 2900, 645 - 7th Avenue SW, Calgary, Alberta T2P 4G8, Canada",
+            "website": "https://www.tricanwellservice.com/",
+            "category": "services"
+        },
+        {
+            "id": "step-energy-services",
+            "name": "STEP Energy Services Ltd.",
+            "shortDescription": "STEP Energy Services Ltd. is a leading Canadian provider of integrated coiled tubing and fracturing services across Western Canada and the US.",
+            "location": "Calgary, AB",
+            "address": "Suite 2000, 215 - 2nd Street SW, Calgary, Alberta T2P 1M4, Canada",
+            "website": "https://www.stepenergyservices.com/",
+            "category": "services"
+        },
+        {
+            "id": "badger-infrastructure-solutions",
+            "name": "Badger Infrastructure Solutions Ltd.",
+            "shortDescription": "Badger Infrastructure Solutions Ltd. is the largest provider of non-destructive excavating services in North America using hydrovac technology.",
+            "location": "Calgary, AB",
+            "address": "Suite 1000, 635 - 8th Avenue SW, Calgary, Alberta T2P 3M3, Canada",
+            "website": "https://www.badgerinc.com/",
+            "category": "services"
+        },
+        {
+            "id": "black-diamond-group",
+            "name": "Black Diamond Group Limited",
+            "shortDescription": "Black Diamond Group Limited is a specialty rentals and industrial services company providing modular buildings and workforce solutions.",
+            "location": "Calgary, AB",
+            "address": "1000, 440 - 2nd Avenue SW, Calgary, Alberta T2P 5E9, Canada",
+            "website": "https://www.blackdiamondgroup.com/",
+            "category": "services"
+        },
+        {
+            "id": "dexterra-group",
+            "name": "Dexterra Group Inc.",
+            "shortDescription": "Dexterra Group Inc. provides facilities management, remote hospitality, access solutions, and forestry services across North America.",
+            "location": "Calgary, AB",
+            "address": "Suite 320, 240 - 4th Avenue SW, Calgary, Alberta T2P 4H4, Canada",
+            "website": "https://dexterra.com/",
+            "category": "services"
+        },
+        {
+            "id": "total-energy-services",
+            "name": "Total Energy Services Inc.",
+            "shortDescription": "Total Energy Services Inc. is a diversified energy services supplier operating through contract drilling, well servicing, and rental units.",
+            "location": "Calgary, AB",
+            "address": "Suite 1000, 734 - 7th Avenue SW, Calgary, Alberta T2P 3P8, Canada",
+            "website": "https://www.totalenergy.ca/",
+            "category": "services"
+        },
+        {
+            "id": "high-arctic-energy-services",
+            "name": "High Arctic Energy Services Inc.",
+            "shortDescription": "High Arctic Energy Services Inc. provides specialized well completion services and rental equipment with over 30 years of experience.",
+            "location": "Calgary, AB",
+            "address": "Suite 2350, 330 - 5th Avenue SW, Calgary, Alberta T2P 0L4, Canada",
+            "website": "https://haes.ca/",
+            "category": "services"
+        },
+        {
+            "id": "mullen-group",
+            "name": "Mullen Group Ltd.",
+            "shortDescription": "Mullen Group Ltd. is one of Canada's largest logistics companies providing transportation, warehousing and oilfield services.",
+            "location": "Okotoks, AB",
+            "address": "121A - 31st Avenue SE, Okotoks, Alberta T1S 2N3, Canada",
+            "website": "https://www.mullen-group.com/",
+            "category": "services"
+        },
+        {
+            "id": "north-american-construction-group",
+            "name": "North American Construction Group Ltd.",
+            "shortDescription": "North American Construction Group Ltd. is a premier provider of heavy civil construction and mining services in Canada and the United States.",
+            "location": "Acheson, AB",
+            "address": "27287 - 100th Avenue, Acheson, Alberta T7X 6H8, Canada",
+            "website": "https://www.nacg.ca/",
+            "category": "services"
+        },
+        {
+            "id": "mccoy-global",
+            "name": "McCoy Global Inc.",
+            "shortDescription": "McCoy Global Inc. is a global leader in the design, manufacture and supply of premium drill pipe connection systems and services.",
+            "location": "Calgary, AB",
+            "address": "Suite 900, 333 - 96th Avenue NE, Calgary, Alberta T3K 0S3, Canada",
+            "website": "https://www.mccoyglobal.com/",
+            "category": "services"
+        },
+        {
+            "id": "mattr-corp",
+            "name": "Mattr Corp.",
+            "shortDescription": "Mattr Corp. is a leading provider of environmentally responsible solutions offering waste management, recycling, and processing services.",
+            "location": "Calgary, AB",
+            "address": "Suite 100, 3308 Hillview Drive SW, Calgary, Alberta T2T 6H7, Canada",
+            "website": "https://mattr.com/",
+            "category": "services"
+        },
+        {
+            "id": "foremost-industries",
+            "name": "Foremost Industries Inc.",
+            "shortDescription": "Foremost Industries Inc. is a manufacturer of specialized mobile equipment for remote locations including drilling rigs and camp equipment.",
+            "location": "Calgary, AB",
+            "address": "2330 - 68th Avenue SE, Calgary, Alberta T2C 2R4, Canada",
+            "website": "https://www.foremost.ca/",
+            "category": "services"
+        },
+        {
+            "id": "western-energy-services",
+            "name": "Western Energy Services Corp.",
+            "shortDescription": "Western Energy Services Corp. is a land-based drilling and well servicing contractor operating in Canada and the United States.",
+            "location": "Calgary, AB",
+            "address": "Suite 1000, 215 - 9th Avenue SW, Calgary, Alberta T2P 1K3, Canada",
+            "website": "https://www.wesc.ca/",
+            "category": "services"
+        },
+        {
+            "id": "act-energy-technologies",
+            "name": "ACT Energy Technologies Ltd.",
+            "shortDescription": "ACT Energy Technologies Ltd. specializes in advanced coiled tubing drilling and production enhancement technologies.",
+            "location": "Calgary, AB",
+            "address": "Suite 100, 2816 - 11th Street NE, Calgary, Alberta T2E 7S7, Canada",
+            "website": "https://www.actenergy.com/",
+            "category": "services"
+        },
+        {
+            "id": "pulse-seismic",
+            "name": "Pulse Seismic Inc.",
+            "shortDescription": "Pulse Seismic Inc. is a market leader in acquisition, marketing and licensing of seismic data to the western Canadian energy sector.",
+            "location": "Calgary, AB",
+            "address": "Suite 1100, 250 - 2nd Street SW, Calgary, Alberta T2P 0C1, Canada",
+            "website": "https://www.pulseseismic.com/",
+            "category": "services"
+        },
+        {
+            "id": "questor-technology",
+            "name": "Questor Technology Inc.",
+            "shortDescription": "Questor Technology Inc. is an environmental clean technology company specializing in eliminating methane and VOC emissions from industrial operations.",
+            "location": "Calgary, AB",
+            "address": "Suite 2030, 715 - 5th Avenue SW, Calgary, Alberta T2P 2X6, Canada",
+            "website": "https://www.questortech.com/",
+            "category": "services"
+        },
+        {
+            "id": "secure-energy-services",
+            "name": "SECURE Energy Services Inc.",
+            "shortDescription": "SECURE Energy Services Inc. provides specialized solutions for safe and efficient management of fluids and solids throughout the lifecycle of oil and gas wells.",
+            "location": "Calgary, AB",
+            "address": "Suite 400, 6130 - 3rd Street SE, Calgary, Alberta T2H 1K4, Canada",
+            "website": "https://www.secure-energy.com/",
+            "category": "services"
+        },
+        {
+            "id": "source-energy-services",
+            "name": "Source Energy Services Ltd.",
+            "shortDescription": "Source Energy Services Ltd. is a leading provider of multi-stage completions, wellsite make-up and frac sand transloading services.",
+            "location": "Calgary, AB",
+            "address": "Suite 2300, 525 - 8th Avenue SW, Calgary, Alberta T2P 1G1, Canada",
+            "website": "https://www.sourceenergyservices.com/",
+            "category": "services"
+        },
+        {
+            "id": "enterprise-group",
+            "name": "Enterprise Group Inc.",
+            "shortDescription": "Enterprise Group Inc. is a diversified energy services company providing drilling and production services in Western Canada.",
+            "location": "Calgary, AB",
+            "address": "Suite 600, 1331 Macleod Trail SE, Calgary, Alberta T2G 0K3, Canada",
+            "website": "https://www.enterprisegrp.ca/",
+            "category": "services"
+        },
+        {
+            "id": "cleantek-industries",
+            "name": "Cleantek Industries Inc.",
+            "shortDescription": "Cleantek Industries Inc. specializes in industrial cleaning, waste management, and environmental services for the energy sector.",
+            "location": "Edmonton, AB",
+            "address": "9655 - 41st Avenue, Edmonton, Alberta T6E 6R7, Canada",
+            "website": "https://www.cleantekgroup.com/",
+            "category": "services"
+        },
+        {
+            "id": "angel-wing-metals",
+            "name": "Angel Wing Metals Inc.",
+            "shortDescription": "Angel Wing Metals Inc. is engaged in the acquisition and exploration of mineral properties with a focus on precious and base metals.",
+            "location": "Vancouver, BC",
+            "address": "Suite 410, 325 Howe Street, Vancouver, BC V6C 1Z7, Canada",
+            "website": "https://www.angelwingmetals.com/",
+            "category": "services"
+        },
+        {
+            "id": "peak-discovery-capital",
+            "name": "Peak Discovery Capital Ltd.",
+            "shortDescription": "Peak Discovery Capital Ltd. is an investment company focused on the resource sector including energy services and exploration companies.",
+            "location": "Calgary, AB",
+            "address": "Suite 1020, 250 - 6th Avenue SW, Calgary, Alberta T2P 3H7, Canada",
+            "website": "https://www.peakdiscoverycapital.com/",
+            "category": "services"
+        },
+        {
+            "id": "russel-metals",
+            "name": "Russel Metals Inc.",
+            "shortDescription": "Russel Metals Inc. is one of the largest metals distribution and processing companies in North America serving the oil and gas industry.",
+            "location": "Mississauga, ON",
+            "address": "6600 Financial Drive, Suite 100, Mississauga, Ontario L5N 7J6, Canada",
+            "website": "https://www.russelmetals.com/",
+            "category": "services"
+        }
+    ]
+}
