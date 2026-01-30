@@ -1,16 +1,25 @@
 ---
-import Nav from './Nav.astro';
+import Nav from "./Nav.astro";
 
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="bg-white border-b-[3px] border-petroleum-gold shadow-sm sticky top-0 z-[1000]">
-  <div class="max-w-[1400px] mx-auto px-8 py-7 flex justify-between items-center">
+<header
+  class="bg-white border-b-[3px] border-petroleum-gold shadow-sm sticky top-0 z-[1000]"
+>
+  <div
+    class="max-w-[1400px] mx-auto px-8 py-6 flex flex-col items-center gap-4"
+  >
     <a href="/" class="flex items-center gap-4">
       <span class="text-[1.8rem] text-petroleum-gold">◆</span>
       <div class="flex flex-col">
-        <span class="text-[1.3rem] font-bold text-deep-navy font-serif">Canadian Oil Companies</span>
-        <span class="text-[0.7rem] text-petroleum-gold tracking-[2px] uppercase font-semibold">Industry Authority</span>
+        <span class="text-[1.3rem] font-bold text-deep-navy font-serif"
+          >Canadian Oil Companies</span
+        >
+        <span
+          class="text-[0.7rem] text-petroleum-gold tracking-[2px] uppercase font-semibold text-center"
+          >Industry Authority</span
+        >
       </div>
     </a>
     <Nav currentPath={currentPath} />

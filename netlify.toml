@@ -25,6 +25,19 @@
   status = 301
   force = true
 
+# Redirect removed services page to homepage
+[[redirects]]
+  from = "/services/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services"
+  to = "/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
